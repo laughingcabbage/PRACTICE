@@ -1,0 +1,27 @@
+<!-- 
+	method 
+		-  get: 주소표시줄에 사용자가 입력한 정보가 그대로 드러남(256~4096byte 전달 가능)
+			    http://localhost:8080/WEB_EX01/03/login.do?user_id=1234&user_pw=1234
+		- post: 입력내용에 제한이 없음. 주소표시줄에 사용자가 입력한 정보가 드러나지 않음.
+	action: 서버 상에 처리할 프로그램 지정
+	name  : 폼에 이름을 지정하는 것
+	target: 태그에서 지정한 파일을 현재 창이 아닌 다른 위치
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form</title>
+</head>
+<body>
+	<h3>form</h3>
+	<hr/>
+	<form action="login.do" method="post">
+		<label>아이디<input type="text" name="user_id" id="user_id" size="20"/></label>
+		<br/>
+		<label>비번&nbsp;&nbsp;&nbsp;<input type="password" name="user_pw" id="user_pw" size="20"/></label>
+		<br/>
+		<input type="submit" value="로그인">
+	</form>
+</body>
+</html>

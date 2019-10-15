@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script>
+	/*
+		isFinite(): is finite 유한한 숫자인지 확인하여 결과를 반환(유한이면 true, 무한이면 false)
+		isNaN(): is not a number 파라미터가 숫자인지 확인하여 결과를 반환(숫자면 false, 숫자가 아니면 true)
+	*/
+	
+	var strNum01 = "12";
+	var strNum02 = "12.1";
+	var strNum03 = "12$"
+	
+	//12는 유한수이므로 true
+	console.log(isFinite(strNum01));
+	
+	//$표시가 붙어 있어 판단할 수 없기 때문에 false가 나온다. 
+	console.log(isFinite(strNum03));
+	
+	//숫자이므로 false
+	console.log(isNaN(strNum01));
+	
+	//숫자가 아니므로 true
+	console.log(isNaN(strNum03));
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/decorators">
+	<!-- 메인테마 -->
+	<decorator name="basic-theme" page="basic-theme.jsp">
+		<pattern>/data/*</pattern>
+	</decorator>
+	
+	<!-- sub -->
+	<decorator name="basic-theme.jsp" page="basic-theme.jsp">
+		<pattern>/member/*</pattern>
+	</decorator>
+	
+	<!-- sub -->
+	<decorator name="basic-theme.jsp" page="basic-theme.jsp">
+		<pattern>/board/*</pattern>
+	</decorator>
+	
+	<!-- 예외설정 -->
+	<excludes>
+		<pattern>*.html*</pattern>
+		<pattern>*.download*</pattern>
+		<pattern>*.json*</pattern>
+	</excludes>
+</decorators>

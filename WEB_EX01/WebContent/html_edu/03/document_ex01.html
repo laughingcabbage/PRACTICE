@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 id="header1">My header1</h1>
+	<h1 class="header2">My header2</h1>
+	<a name="tagA" href="https://cafe.naer.com/kndjang">My Link</a>
+	<script>
+	
+	
+		/*
+			Dom(Document): html, xml문서와 같이 부분적 요소나 내용이 관련된 것들끼리 묶여서 존재하는 구조화된 문서
+			
+						Html(Root Element)
+								|
+			head						 				body 
+			|							  				 |
+			title				attribute(href, name)-a(element)	h1	table	div		br
+			|											 |
+			text(제목)									text
+		*/
+
+		
+		
+		//Element 찾기
+		
+		//id값이 header1인 것을 선택 + style제어
+		var idElement = document.getElementById('header1');
+		idElement.style.color='red';
+		
+		//class값이 header2인 것을 선택 + style제어
+		//class값은 다건이 될 수 있기 때문에 []로 배열에서의 순서를 찾아 준다.(위에서부터)
+		var classElement = document.getElementsByClassName("header2");
+		classElement[0].style.color='yellow';
+		
+		//name값이 tagA인 것을 선택 + style제어
+		//name값도 다건이 될 수 있으므로 []로 적는다.
+		var nameElement = document.getElementsByName('tagA');
+		nameElement[0].style.color='pink';
+		
+		
+		
+		
+		//CSS Selector
+		
+		//CSS에서 class는 .class로 지정하니까 점을 찍어줌
+		var selElement = document.querySelector('.header2');
+		//selElement.style.backgroundColor = '#000000';
+		
+		//CSS SelectAll : h1이라는 태그 중 [n]번째 것에 적용
+		var selAllElement = document.querySelectorAll('h1');
+		selAllElement[0].style.backgroundColor = '#0000f0';
+		
+	</script>
+</body>
+</html>

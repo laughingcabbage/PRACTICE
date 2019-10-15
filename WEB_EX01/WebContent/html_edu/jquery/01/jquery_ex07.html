@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+	h3{
+		margin: 0;
+	}
+	div, span, p{
+		width : 80px;
+		height: 40px;
+		background-color: #eeeeee;
+		float 	: left;
+		padding : 10px;
+		margin   : 10px;
+	}
+</style>
+<title>Insert title here</title>
+<script src="/WEB_EX01/js/jquery-1.12.4.js"></script>
+</head>
+<body>
+	<div  class="myClass">DIV</div>
+	<span class="myClass">SPAN</span>
+	<div  class="otherclass myClass">DIV</div>
+	<script>
+		
+		$(".otherclass.myClass").css("border", "3px solid red");
+		
+	</script>
+</body>
+</html>

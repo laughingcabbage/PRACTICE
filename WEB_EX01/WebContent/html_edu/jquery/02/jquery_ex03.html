@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="/WEB_EX01/js/jquery-1.12.4.js"></script>
+</head>
+<body>
+	<p>Once there was a <em title="huge, gigantic">large</em> dinosaur... </p>
+	log: <div></div>
+	<script>
+		
+		/*
+			attribute제어
+				-attr(): 주어진 조건에 맞는 속성값을 가져온다. (속성값 설정: attr(속성, 값))
+						 $(element).attr("checked"): checked라는 String값이 나옴
+				-prop(): 주어진 조건에 맞는 프로퍼티값을 가져온다. 
+						 $(element).prop("checked"): 체크박스의 체크 상태를 알려 줌(true, false)
+				-val() : 주어진 조건에 맞는 element의 값을 가져온다.
+				-removeAttr(): 주어진 조건에 맞는 조건을 삭제한다.
+				-removeProp(): 주어진 조건에 맞는 프로퍼티를 삭제한다.	
+		*/
+		
+		var title = $("em").attr("title");
+
+		console.log("title:"+title);
+		
+		$("div").text("attr:"+title);
+		
+		$("em").on("click", function(){
+			
+			$(this).attr("title", "click change");
+			var tmp = $(this).attr("title");
+			console.log("tmp:"+tmp);
+			
+			$("div").text("attr:"+tmp);
+		});
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+2019-08-05 09:44:08,100 DEBUG [main] mail.NaverMailTest (NaverMailTest.java:55)     - ====================================
+2019-08-05 09:44:08,118 DEBUG [main] mail.NaverMailTest (NaverMailTest.java:56)     - MessagingException:javax.mail.AuthenticationFailedException: 535 5.7.1 Username and Password not accepted wsCmOt++QjuY+iHpI21EEg - nsmtp
+
+2019-08-05 09:44:08,119 DEBUG [main] mail.NaverMailTest (NaverMailTest.java:57)     - ====================================
+2019-08-05 09:44:08,119 DEBUG [main] mail.NaverMailTest (NaverMailTest.java:60)     - Send Success
+2019-08-05 09:47:21,376 DEBUG [main] mail.NaverMailTest (NaverMailTest.java:55)     - ====================================
+2019-08-05 09:47:21,383 DEBUG [main] mail.NaverMailTest (NaverMailTest.java:56)     - MessagingException:javax.mail.AuthenticationFailedException: 535 5.7.1 Username and Password not accepted akhZ673iTACgyKKWJtechg - nsmtp
+
+2019-08-05 09:47:21,385 DEBUG [main] mail.NaverMailTest (NaverMailTest.java:57)     - ====================================
+2019-08-05 09:47:21,385 DEBUG [main] mail.NaverMailTest (NaverMailTest.java:60)     - Send Success
+2019-08-05 09:50:56,988 DEBUG [main] mail.NaverMailTest (NaverMailTest.java:60)     - Send Success
+2019-08-05 10:08:48,977 DEBUG [main] mail.NaverMailTest (NaverMailTest.java:81)     - Send Success

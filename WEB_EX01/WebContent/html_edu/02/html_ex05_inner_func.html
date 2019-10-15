@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script>
+		/*
+			closure: 자신의 범위 밖에 있는 변수들에 접근할 수 있는 함수.
+			함수의 생명 주기는 끝났지만 함수 내의 변수를 내부함수가 참조하고 있기 때문에 변수가 유지되어 접근할 수 있는 함수
+		*/
+		
+		function outterFunc(){
+			var strNum = 0;
+			
+			return function(){
+				strNum++;
+				console.log("strNum="+strNum);
+			}
+		}
+	
+		var innerFunc = outterFunc();
+		
+		innerFunc();//1
+		innerFunc();//2
+		innerFunc();//3
+		
+	</script>
+</body>
+</html>

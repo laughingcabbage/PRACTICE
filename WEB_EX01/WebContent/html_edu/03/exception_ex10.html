@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script>
+		/*
+			try{
+			//예외 발생가능 코드
+			}catch(e){
+				//예외처리
+			}finally{
+				//예외와 관계없이 무조건 수행
+			}
+			
+			throw 예외메시지: 사용자가 예외 발생시키는 것
+		*/
+		
+		//javascript에서 배열의 크기는 32bit까지
+		
+		try{
+			var array = new Array(4294967296); //배열의 범위를 벗어나게 설정
+		}catch(e){
+			//예외처리 코드
+			alert(e);
+		}finally{
+			alert('배열의 Max length: 4294967295');
+		}
+	
+	</script>
+</body>
+</html>

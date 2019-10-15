@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<!-- onload: 웹페이지에 포함된 모든 것들이 완전히 로드되었을 때 발생하는 event -->
+<body>
+	<form id="formTag" action="https://cafe.naver.com/kndjang">
+		<label for="name">Input Name</label>
+		<input type="text" id="name"/>
+		<input type="submit" value="전송"/>
+	</form>
+	<script>
+		
+		//event target 객체 검색
+		var formTag = document.getElementById('formTag');
+		
+		//submit event 재정의
+		formTag.onsubmit = function(event){
+			
+								console.log("document.getElementById('name').value.length: "+document.getElementById('name').value.length);
+								console.log("document.getElementById('name').value: "+document.getElementById('name').value);
+								
+								if(document.getElementById('name').value.length===0
+								   ||document.getElementById('name').value==""){
+									alert('Name을 입력해 주세요.');
+									return false; //
+								}else{
+									alert('올바른 입력');
+								}
+							}
+		
+	</script>
+</body>
+</html>

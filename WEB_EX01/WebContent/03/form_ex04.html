@@ -1,0 +1,38 @@
+<!-- 
+	method 
+		-  get: 주소표시줄에 사용자가 입력한 정보가 그대로 드러남(256~4096byte 전달 가능)
+			    http://localhost:8080/WEB_EX01/03/login.do?user_id=1234&user_pw=1234
+		- post: 입력내용에 제한이 없음. 주소표시줄에 사용자가 입력한 정보가 드러나지 않음.
+	action: 서버 상에 처리할 프로그램 지정
+	name  : 폼에 이름을 지정하는 것
+	target: 태그에서 지정한 파일을 현재 창이 아닌 다른 위치
+-->
+
+<!-- 
+	input type="text, hidden, password, checkbox, radio, file, submit, button, reset"만 쓴다
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form</title>
+</head>
+<body>
+	<h3>form</h3>
+	<hr/>
+	<!-- 
+		maxlength: 입력 최대길이(DB의 컬럼 사이즈)
+		required: 필수 입력란
+		autofocus: 화면 로딩 시 이 부분에 focus됨
+		readonly: 읽기 전용. 수정할 수 없음.
+		placeholder: input에 설명 label
+		value: 값
+	-->
+	<form action="login.do" method="get">
+		<input type="text" placeholder="아이디" maxlength="5" required="required"/>
+		<input type="password" placeholder="비번" autofocus="autofocus"/>
+		<input type="text" placeholder="읽기전용" readonly="readonly" value="1234" />
+		<input type="submit" value="전송">
+	</form>
+</body>
+</html>

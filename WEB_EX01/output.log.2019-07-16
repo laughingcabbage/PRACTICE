@@ -1,0 +1,46 @@
+2019-07-16 11:55:27,080 DEBUG [main] member.HrMemberDao (HrMemberDao.java:298)     - sql:
+ SELECT T1.*, T2.*										 
+ FROM                                                     
+ (                                                        
+ SELECT B.rnum as num                                     
+       ,B.user_id                                         
+ 	  ,B.password                                        
+ 	  ,B.name                                            
+ 	  ,B.email                                           
+ 	  ,B.birth                                           
+		  ,(                        						 
+    		 SELECT code_nm        							 
+ 		 FROM code             							 
+ 		 WHERE code_id=B.gender 						 
+ 		)gender                    						 
+		  ,B.cell_phone_num         						 
+ 	  ,cd_name('LVL', B.lvl) lvl 						 
+ 	  ,B.mod_id                                          
+ 	  ,TO_CHAR(b.mod_dt,'YYYY-MM-DD') mod_dt             
+ FROM(                                                    
+ 	SELECT ROWNUM AS rnum, A.*                           
+ 	FROM(                                                
+ 		SELECT * FROM hr_member                          
+ 		--SEARCH CONDITION                               
+WHERE name like ?||'%' 
+ 		ORDER BY mod_dt DESC                             
+ 	)A                                                   
+     WHERE ROWNUM <=( ? *( ? -1)+?) 
+     )B                                                   
+ WHERE B.rnum>= ( ? *( ? -1)+1)              
+ )T1                                                      
+ CROSS JOIN                                               
+ (                                                        
+ SELECT COUNT(*) total_cnt                                
+ FROM hr_member                                           
+ --SEARCH CONDITION                                       
+WHERE name like ?||'%' 
+ )T2                                                      
+
+2019-07-16 11:55:27,141 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-16 11:55:27,332 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@75828a0f
+2019-07-16 11:55:27,385 DEBUG [main] member.HrMemberDao (HrMemberDao.java:334)     - 3.param: 
+SearchVO [pageSize=10, pageNum=1, searchDiv=10, searchWord=이상무001]
+2019-07-16 11:55:29,236 DEBUG [main] member.HrMemberMain (HrMemberMain.java:98)     - ---------------
+2019-07-16 11:55:29,236 DEBUG [main] member.HrMemberMain (HrMemberMain.java:99)     - list[HrMemberVO [userId=happy_hr_c0010000, password=1234, name=이상무0010000, email=james0010000@naver.com, birth=20180428, gender=여자, cellPhone=010-1000-1000, lvl=관리자, regId=null, regDt=null, modId=happy_hr_c0010000, modDt=2018-04-28, toString()=DTO [total=10000, num=1]], HrMemberVO [userId=happy_hr_c0010009, password=1234, name=이상무0010009, email=james0010009@naver.com, birth=20180428, gender=남자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010009, modDt=2018-04-28, toString()=DTO [total=10000, num=2]], HrMemberVO [userId=happy_hr_c0010008, password=1234, name=이상무0010008, email=james0010008@naver.com, birth=20180428, gender=여자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010008, modDt=2018-04-28, toString()=DTO [total=10000, num=3]], HrMemberVO [userId=happy_hr_c0010007, password=1234, name=이상무0010007, email=james0010007@naver.com, birth=20180428, gender=남자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010007, modDt=2018-04-28, toString()=DTO [total=10000, num=4]], HrMemberVO [userId=happy_hr_c0010006, password=1234, name=이상무0010006, email=james0010006@naver.com, birth=20180428, gender=여자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010006, modDt=2018-04-28, toString()=DTO [total=10000, num=5]], HrMemberVO [userId=happy_hr_c0010005, password=1234, name=이상무0010005, email=james0010005@naver.com, birth=20180428, gender=남자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010005, modDt=2018-04-28, toString()=DTO [total=10000, num=6]], HrMemberVO [userId=happy_hr_c0010004, password=1234, name=이상무0010004, email=james0010004@naver.com, birth=20180428, gender=여자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010004, modDt=2018-04-28, toString()=DTO [total=10000, num=7]], HrMemberVO [userId=happy_hr_c0010003, password=1234, name=이상무0010003, email=james0010003@naver.com, birth=20180428, gender=남자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010003, modDt=2018-04-28, toString()=DTO [total=10000, num=8]], HrMemberVO [userId=happy_hr_c0010002, password=1234, name=이상무0010002, email=james0010002@naver.com, birth=20180428, gender=여자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010002, modDt=2018-04-28, toString()=DTO [total=10000, num=9]], HrMemberVO [userId=happy_hr_c0010001, password=1234, name=이상무0010001, email=james0010001@naver.com, birth=20180428, gender=남자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010001, modDt=2018-04-28, toString()=DTO [total=10000, num=10]]]
+2019-07-16 11:55:29,267 DEBUG [main] member.HrMemberMain (HrMemberMain.java:100)     - ---------------

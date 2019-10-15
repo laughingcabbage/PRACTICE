@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script>
+		/*
+			객체: 데이터 저장(데이터 접근 방법이 Array)
+				 key-value쌍으로 구성되어 있음.
+				 key를 통해서 data에 접근
+				 함수, 배열, 다른 객체
+		*/
+		
+		var user = {name:"Tim", age:23, gender:"man", country:"KO"};
+		
+		var detail = "";
+		
+		for(var key in user){
+			console.log(key+":"+user[key]);
+			detail += key+":"+user[key]+"\n";
+		}
+		
+		console.log("name property:"+("name" in user));
+		alert(detail);
+	</script>
+</body>
+</html>

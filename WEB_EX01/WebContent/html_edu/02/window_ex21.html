@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<button onclick="funcGoBack();">Go Back</button>
+	<button onclick="funcGoForward();">GoForward</button>
+	<button onclick="funcGo();">Go</button>
+	<script>
+		/*
+			history: 방문한 사이트의 정보를 관리하는 객체
+					 back(): 이전 페이지
+					 forward(): 다음 페이지
+					 go(숫자): 지정된 단계의 페이지
+		*/
+		
+		console.log(history.length);
+					 
+		function funcGoBack(){
+			history.back(); //이전				 
+		}
+					 
+		function funcGoForward(){
+			history.forward(); //다음
+		}
+		
+		function funcGo(){
+			history.go(-1);
+		}
+		
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+	function send(){
+		var x = document.frm.username.value;
+		console.log('1x:'+x);
+		if(x==""){
+			alert('값을 입력하세요.');
+			document.frm.username.focus;
+			return;
+		}
+		console.log('2x:'+x);
+		document.frm.submit();
+	}
+</script>
+<title>Request_Form</title>
+</head>
+<body>
+	<h2>Request Form</h2>
+	<hr/>
+	<form name="frm" method="get" action="/WEB_EX01/s2/formservlet.do">
+		<input type="hidden" name="command" id="command" value="do_retrieve" />
+		<table border="1" cellpadding="5" cellspacing="1">
+			<tr>
+				<td>이름</td>
+				<td><input type="text" size="10" name="username" id="username" /></td>
+			</tr>
+			<tr>
+				<td>직업</td>
+				<td><select name="job">
+					<option>SI</option>
+					<option>QA</option>
+					<option>SM</option>
+					<option>DBA</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>관심분야</td>
+				<td>
+					<input type="checkbox" name="favorite" value="JAVA" id="java">JAVA</input>
+					<input type="checkbox" name="favorite" value="JSP" id="JSP">JSP</input>
+					<input type="checkbox" name="favorite" value="Javascript" id="Javascript">Javascript</input>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="button" onclick="javascript:send();" value="전송"/>
+					<input type="reset" value="초기화"/>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script>
+		/*
+			scope chain: scope 내에서 찾지 못한 변수를 상위 scope에서 변수를 찾아가는 과정
+		*/
+		
+		var varX = 1;
+		function outterFunc(){
+			var varY = 2;
+			function innerFunc(){
+				var varZ = 3;
+				console.log("varX="+varX);
+				console.log("varY="+varY);
+				console.log("varZ="+varZ);
+			}
+			innerFunc();
+		}
+		outterFunc();
+	</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+2019-07-04 15:18:42,509 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-04 15:18:42,713 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@5f205aa
+2019-07-04 15:18:42,713 DEBUG [main] board.BoardDao    (BoardDao.java:515)     - 1===========================
+2019-07-04 15:18:42,713 DEBUG [main] board.BoardDao    (BoardDao.java:516)     - query:{call up_sal(?)}
+2019-07-04 15:18:42,715 DEBUG [main] board.BoardDao    (BoardDao.java:517)     - 1===========================
+2019-07-04 15:18:42,767 DEBUG [main] board.BoardDao    (BoardDao.java:522)     - 2===========================
+2019-07-04 15:18:42,767 DEBUG [main] board.BoardDao    (BoardDao.java:523)     - param:204
+2019-07-04 15:18:42,768 DEBUG [main] board.BoardDao    (BoardDao.java:524)     - 2===========================
+2019-07-04 15:18:42,819 DEBUG [main] board.BoardDao    (BoardDao.java:533)     - ===========================
+2019-07-04 15:18:42,819 DEBUG [main] board.BoardDao    (BoardDao.java:534)     - SQLException:ORA-06550: 줄 1, 열7:PLS-00201: 'UP_SAL' 식별자가 정의되어야 합니다
+ORA-06550: 줄 1, 열7:PL/SQL: Statement ignored
+
+2019-07-04 15:18:42,820 DEBUG [main] board.BoardDao    (BoardDao.java:535)     - ===========================
+2019-07-04 15:19:09,579 DEBUG [main] board.BoardDao    (BoardDao.java:380)     - sql:
+ SELECT T1.*, T2.*                                                                              
+ FROM                                                                                           
+ (                                                                                              
+     SELECT B.rnum as num                                                                       
+           ,B.seq                                                                               
+           ,B.title                                                                             
+           ,B.read_cnt                                                                          
+           ,B.contents                                                                          
+           ,B.reg_id                                                                            
+           ,DECODE(TO_CHAR(B.reg_dt, 'YYYY-MM-DD'), TO_CHAR(SYSDATE, 'YYYY-MM-DD'),             
+ 				  TO_CHAR(B.reg_dt, 'HH24:MI:SS'), TO_CHAR(B.reg_dt, 'YYYY-MM-DD')) AS reg_dt  
+     FROM(                                                                                      
+         SELECT ROWNUM AS rnum, A.*                                                             
+         FROM(                                                                                  
+             SELECT * FROM board                                                                
+             --SEARCH CONDITION                                                                 
+WHERE title like ?||'%' 
+             ORDER BY reg_dt DESC                                                               
+         )A                                                                                     
+         WHERE ROWNUM <= ( ? *( ? -1)+ ?)                                  
+     )B                                                                                         
+     WHERE B.rnum >= ( ? *( ? -1)+1)                                               
+ )T1                                                                                            
+ CROSS JOIN                                                                                     
+ (                                                                                              
+     SELECT COUNT(*) total_cnt                                                                  
+     FROM board a                                                                               
+     --SEARCH CONDITION                                                                         
+WHERE title like ?||'%' 
+ )T2																							   
+
+2019-07-04 15:19:09,644 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-04 15:19:09,848 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@5f205aa
+2019-07-04 15:19:09,896 DEBUG [main] board.BoardDao    (BoardDao.java:403)     - param:
+SearchVO [pageSize=10, pageNum=1, searchDiv=10, searchWord=제목]
+2019-07-04 15:19:09,915 DEBUG [main] board.BoardTest   (BoardTest.java:152)     - =====================
+2019-07-04 15:19:09,915 DEBUG [main] board.BoardTest   (BoardTest.java:154)     - voBoardVO [seq=44, title=제목_U, readCnt=0, contents=내용_U, regId=admin_U, regDt=2019-07-01, toString()=DTO [total=6, num=1]]
+2019-07-04 15:19:09,915 DEBUG [main] board.BoardTest   (BoardTest.java:154)     - voBoardVO [seq=43, title=제목_U, readCnt=0, contents=내용_U, regId=admin_U, regDt=2019-07-01, toString()=DTO [total=6, num=2]]
+2019-07-04 15:19:09,915 DEBUG [main] board.BoardTest   (BoardTest.java:154)     - voBoardVO [seq=42, title=제목_U, readCnt=0, contents=내용_U, regId=admin_U, regDt=2019-07-01, toString()=DTO [total=6, num=3]]
+2019-07-04 15:19:09,916 DEBUG [main] board.BoardTest   (BoardTest.java:154)     - voBoardVO [seq=41, title=제목1, readCnt=0, contents=내용1, regId=admin, regDt=2019-07-01, toString()=DTO [total=6, num=4]]
+2019-07-04 15:19:09,916 DEBUG [main] board.BoardTest   (BoardTest.java:154)     - voBoardVO [seq=40, title=제목1, readCnt=0, contents=내용1, regId=admin, regDt=2019-07-01, toString()=DTO [total=6, num=5]]
+2019-07-04 15:19:09,916 DEBUG [main] board.BoardTest   (BoardTest.java:154)     - voBoardVO [seq=17, title=제목1, readCnt=0, contents=내용1, regId=admin, regDt=2019-06-27, toString()=DTO [total=6, num=6]]
+2019-07-04 15:19:09,916 DEBUG [main] board.BoardTest   (BoardTest.java:156)     - =====================

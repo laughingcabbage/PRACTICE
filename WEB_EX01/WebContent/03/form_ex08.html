@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+ul{
+	list-style-type: none
+}
+</style>
+<title>form</title>
+</head>
+<body>
+	<h1>프런트엔드 개발자 지원서</h1>
+	<p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p><hr/>
+	<form action="login.do" method="get">
+		<h4>개인정보</h4>
+			<ul>
+				<li>
+					<label>이름<input type="text" name="user_name" placeholder="공백없이 입력하세요"/></label>
+				</li>
+				<li>
+					<label>연락처<input type="text" name="user_tel" /></label>
+				</li>
+			</ul>
+		<h4>지원분야</h4>
+			<ul>
+				<li>
+					<label><input type="radio" name="appl" value="100"/>웹 퍼블리싱</label><br/>
+					<label><input type="radio" name="appl" value="200"/>웹 애플리케이션 개발</label><br/>
+					<label><input type="radio" name="appl" value="300"/>개발 환경 개선</label>
+				</li>
+			</ul>
+		<h4>지원동기</h4>
+		<textarea name="txtArea" rows="5" cols="60" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea><br/>
+		<input type="submit" value="접수하기"/>
+		<input type="reset" value="다시쓰기"/>
+	</form>
+</body>
+</html>

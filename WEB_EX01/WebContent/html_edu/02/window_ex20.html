@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<button onclick="funcAssign();">location assign</button>
+	<button onclick="funcReload();">location reload</button>
+	<button onclick="funcReplace();">location replace</button>
+	<button onclick="funcGoBack();">Go Back</button>
+	<script>
+		/*
+			location객체 : 현재 웹 브라우저에 로드 된 html문서의 주소를 표현하고 제어
+			href|http://localhost:8080/WEB_EX01/html_edu/02/window_ex19.html
+			assign|function assign() { [native code] }
+			reload|function reload() { [native code] }
+			toString|function toString() { [native code] }
+
+		*/
+		function funcAssign(){
+			//새문서 로딩: 새 탭에서 로딩
+			location.assign("https://cafe.naver.com/kndjang");
+		}
+		
+		function funcReload(){
+			//새로고침
+			location.reload();
+		}
+		
+		function funcReplace(){
+			//새 문서 로딩 후 이전 페이지로 가지 못하게 함
+			location.replace("https://cafe.naver.com/kndjang");
+		}
+		
+		function funcGoBack(){
+			history.back(); //이전				 
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="/WEB_EX01/js/jquery-1.12.4.js"></script>
+</head>
+<body>
+	<table id="records_table" border="1">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>이름</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+	<script>
+		/*
+			ajax: 비동기 통신(페이지 전체의 업데이트 없이 페이지의 일부만 업데이트 하는 기술)
+			$.ajax({
+				type: "POST",	 			//request의 type설정(POST/GET)
+				url: "/test.jsp", 			//request를 전송 url
+				dataType: "html", 			//서버로부터 응답받을 타입(html/JSON)
+				data:{			 			//서버에 전송할 데이터
+					"action":"doSelectOne",
+					"gb_id":
+				},
+				success: function(data){	//통신이 성공적으로 이루어졌을 때 실행될 함수
+					
+				},
+				complete: function(data){	//무조건 수행(success, error이후에 동작)
+					
+				},
+				error: function(shr, status, error){
+					
+				}
+			}); //--$.ajax
+		*/
+
+		$.ajax({
+			type:"get",	 				//request의 type설정(POST/GET)
+			url:"http://localhost:8080/WEB_EX01/html_edu/jquery/02/user.json", //request를 전송 url
+			dataType:"JSON", 			//서버로부터 응답받을 타입(html/JSON)
+			data:{			 			//서버에 전송할 데이터
+				"action":"doSelectOne"
+			},
+			success: function(data){	//통신이 성공적으로 이루어졌을 때 실행될 함수
+				//console.log("success:"+data);
+				var event_data = '';
+				$.each(data.user, function(index, value){
+					console.log(index+":"+value.name);
+					console.log(index+":"+value.id);
+					event_data+='<tr>';
+					event_data+='<td>'+value.id+'</td>';
+					event_data+='<td>'+value.name+'</td>';
+					event_data+='</tr>';
+				});
+				
+				$("#records_table").append(event_data);
+			},
+			complete: function(data){	//무조건 수행(success, error이후에 동작)
+				console.log("complete:"+data);
+			},
+			error: function(shr, status, error){
+				console.log("error:"+error);
+			}
+		}); //--$.ajax
+	</script>
+	
+</body>
+</html>

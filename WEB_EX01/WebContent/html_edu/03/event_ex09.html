@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<input type="button" id="btn" value="버튼" />
+	<script>
+		var btn = document.getElementById('btn');
+		btn.onclick = function(e){
+			var event = e||window.event;
+			document.body.innerHTML = "";
+			
+			for(var key in event){
+				//event객체를 모두 출력
+				document.body.innerHTML += key+":"+event[key]+"<br/>";
+			}
+		}
+	</script>
+</body>
+</html>

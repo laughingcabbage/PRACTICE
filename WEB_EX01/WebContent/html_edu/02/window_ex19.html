@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script>
+		/*
+			location객체 : 현재 웹 브라우저에 로드 된 html문서의 주소를 표현하고 제어
+			href|http://localhost:8080/WEB_EX01/html_edu/02/window_ex19.html
+			assign|function assign() { [native code] }
+			reload|function reload() { [native code] }
+			toString|function toString() { [native code] }
+
+		*/
+		
+		var output="";
+		for(var i in location){
+			output+="%"+i+"|"+location[i]+"\n";
+			console.log(i+"|"+location[i]);
+		}
+		alert(output);
+	</script>
+</body>
+</html>

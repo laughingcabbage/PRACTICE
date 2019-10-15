@@ -1,0 +1,1059 @@
+2019-07-02 14:40:11,902 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-02 14:40:12,122 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-07-02 14:40:12,122 DEBUG [main] board.BoardDao    (BoardDao.java:515)     - 1===========================
+2019-07-02 14:40:12,122 DEBUG [main] board.BoardDao    (BoardDao.java:516)     - query:{call up_sal(?)}
+2019-07-02 14:40:12,123 DEBUG [main] board.BoardDao    (BoardDao.java:517)     - 1===========================
+2019-07-02 14:40:12,192 DEBUG [main] board.BoardDao    (BoardDao.java:522)     - 2===========================
+2019-07-02 14:40:12,193 DEBUG [main] board.BoardDao    (BoardDao.java:523)     - param:1
+2019-07-02 14:40:12,193 DEBUG [main] board.BoardDao    (BoardDao.java:524)     - 2===========================
+2019-07-02 14:40:12,199 DEBUG [main] board.BoardDao    (BoardDao.java:533)     - ===========================
+2019-07-02 14:40:12,199 DEBUG [main] board.BoardDao    (BoardDao.java:534)     - SQLException:ORA-06550: 줄 1, 열7:PLS-00201: 'UP_SAL' 식별자가 정의되어야 합니다
+ORA-06550: 줄 1, 열7:PL/SQL: Statement ignored
+
+2019-07-02 14:40:12,199 DEBUG [main] board.BoardDao    (BoardDao.java:535)     - ===========================
+2019-07-02 14:41:32,618 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-02 14:41:32,823 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-07-02 14:41:32,824 DEBUG [main] board.BoardDao    (BoardDao.java:515)     - 1===========================
+2019-07-02 14:41:32,824 DEBUG [main] board.BoardDao    (BoardDao.java:516)     - query:{call up_sal(?)}
+2019-07-02 14:41:32,825 DEBUG [main] board.BoardDao    (BoardDao.java:517)     - 1===========================
+2019-07-02 14:41:32,888 DEBUG [main] board.BoardDao    (BoardDao.java:522)     - 2===========================
+2019-07-02 14:41:32,888 DEBUG [main] board.BoardDao    (BoardDao.java:523)     - param:204
+2019-07-02 14:41:32,888 DEBUG [main] board.BoardDao    (BoardDao.java:524)     - 2===========================
+2019-07-02 14:41:32,893 DEBUG [main] board.BoardDao    (BoardDao.java:533)     - ===========================
+2019-07-02 14:41:32,894 DEBUG [main] board.BoardDao    (BoardDao.java:534)     - SQLException:ORA-06550: 줄 1, 열7:PLS-00201: 'UP_SAL' 식별자가 정의되어야 합니다
+ORA-06550: 줄 1, 열7:PL/SQL: Statement ignored
+
+2019-07-02 14:41:32,894 DEBUG [main] board.BoardDao    (BoardDao.java:535)     - ===========================
+2019-07-02 14:43:58,952 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-02 14:43:59,152 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-07-02 14:43:59,152 DEBUG [main] board.BoardDao    (BoardDao.java:515)     - 1===========================
+2019-07-02 14:43:59,153 DEBUG [main] board.BoardDao    (BoardDao.java:516)     - query:{call up_sal(?)}
+2019-07-02 14:43:59,154 DEBUG [main] board.BoardDao    (BoardDao.java:517)     - 1===========================
+2019-07-02 14:43:59,219 DEBUG [main] board.BoardDao    (BoardDao.java:522)     - 2===========================
+2019-07-02 14:43:59,219 DEBUG [main] board.BoardDao    (BoardDao.java:523)     - param:204
+2019-07-02 14:43:59,219 DEBUG [main] board.BoardDao    (BoardDao.java:524)     - 2===========================
+2019-07-02 14:43:59,224 DEBUG [main] board.BoardDao    (BoardDao.java:533)     - ===========================
+2019-07-02 14:43:59,224 DEBUG [main] board.BoardDao    (BoardDao.java:534)     - SQLException:ORA-06550: 줄 1, 열7:PLS-00201: 'UP_SAL' 식별자가 정의되어야 합니다
+ORA-06550: 줄 1, 열7:PL/SQL: Statement ignored
+
+2019-07-02 14:43:59,224 DEBUG [main] board.BoardDao    (BoardDao.java:535)     - ===========================
+2019-07-02 14:46:31,466 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-02 14:46:31,670 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-07-02 14:46:31,670 DEBUG [main] board.BoardDao    (BoardDao.java:515)     - 1===========================
+2019-07-02 14:46:31,670 DEBUG [main] board.BoardDao    (BoardDao.java:516)     - query:{call up_sal(?)}
+2019-07-02 14:46:31,672 DEBUG [main] board.BoardDao    (BoardDao.java:517)     - 1===========================
+2019-07-02 14:46:31,731 DEBUG [main] board.BoardDao    (BoardDao.java:522)     - 2===========================
+2019-07-02 14:46:31,731 DEBUG [main] board.BoardDao    (BoardDao.java:523)     - param:204
+2019-07-02 14:46:31,731 DEBUG [main] board.BoardDao    (BoardDao.java:524)     - 2===========================
+2019-07-02 14:47:12,180 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-02 14:47:12,393 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-07-02 14:47:12,393 DEBUG [main] board.BoardDao    (BoardDao.java:515)     - 1===========================
+2019-07-02 14:47:12,393 DEBUG [main] board.BoardDao    (BoardDao.java:516)     - query:{call up_sal(?)}
+2019-07-02 14:47:12,394 DEBUG [main] board.BoardDao    (BoardDao.java:517)     - 1===========================
+2019-07-02 14:47:12,455 DEBUG [main] board.BoardDao    (BoardDao.java:522)     - 2===========================
+2019-07-02 14:47:12,456 DEBUG [main] board.BoardDao    (BoardDao.java:523)     - param:204
+2019-07-02 14:47:12,456 DEBUG [main] board.BoardDao    (BoardDao.java:524)     - 2===========================
+2019-07-02 14:47:12,460 DEBUG [main] board.BoardDao    (BoardDao.java:528)     - 3===========================
+2019-07-02 14:47:12,460 DEBUG [main] board.BoardDao    (BoardDao.java:529)     - flag:1
+2019-07-02 14:47:12,460 DEBUG [main] board.BoardDao    (BoardDao.java:530)     - 3===========================
+2019-07-03 14:31:45,975 DEBUG [main] code.CodeDao      ( CodeDao.java:63)     - 1=============================
+2019-07-03 14:31:45,990 DEBUG [main] code.CodeDao      ( CodeDao.java:64)     - query:
+ SELECT b.code_id,                   
+        b.code_nm                    
+ FROM code_type a JOIN code b        
+ ON a.code_type_id = b.code_type_id  
+ WHERE b.code_type_id= ?             
+ AND b.use_yn=1                      
+ ORDER BY b.num                      
+
+2019-07-03 14:31:45,990 DEBUG [main] code.CodeDao      ( CodeDao.java:65)     - 1=============================
+2019-07-03 14:32:22,996 DEBUG [main] code.CodeDao      ( CodeDao.java:63)     - 1=============================
+2019-07-03 14:32:22,998 DEBUG [main] code.CodeDao      ( CodeDao.java:64)     - query:
+ SELECT b.code_id,                   
+        b.code_nm                    
+ FROM code_type a JOIN code b        
+ ON a.code_type_id = b.code_type_id  
+ WHERE b.code_type_id= ?             
+ AND b.use_yn=1                      
+ ORDER BY b.num                      
+
+2019-07-03 14:32:22,998 DEBUG [main] code.CodeDao      ( CodeDao.java:65)     - 1=============================
+2019-07-03 14:32:53,350 DEBUG [main] code.CodeDao      ( CodeDao.java:63)     - 1=============================
+2019-07-03 14:32:53,351 DEBUG [main] code.CodeDao      ( CodeDao.java:64)     - query:
+ SELECT b.code_id,                   
+        b.code_nm                    
+ FROM code_type a JOIN code b        
+ ON a.code_type_id = b.code_type_id  
+ WHERE b.code_type_id= ?             
+ AND b.use_yn=1                      
+ ORDER BY b.num                      
+
+2019-07-03 14:32:53,352 DEBUG [main] code.CodeDao      ( CodeDao.java:65)     - 1=============================
+2019-07-03 14:33:22,396 DEBUG [main] code.CodeDao      ( CodeDao.java:63)     - 1=============================
+2019-07-03 14:33:22,398 DEBUG [main] code.CodeDao      ( CodeDao.java:64)     - query:
+ SELECT b.code_id,                   
+        b.code_nm                    
+ FROM code_type a JOIN code b        
+ ON a.code_type_id = b.code_type_id  
+ WHERE b.code_type_id= ?             
+ AND b.use_yn=1                      
+ ORDER BY b.num                      
+
+2019-07-03 14:33:22,398 DEBUG [main] code.CodeDao      ( CodeDao.java:65)     - 1=============================
+2019-07-03 14:36:45,461 DEBUG [main] code.CodeDao      ( CodeDao.java:63)     - 1=============================
+2019-07-03 14:36:45,463 DEBUG [main] code.CodeDao      ( CodeDao.java:64)     - query:
+ SELECT b.code_id,                   
+        b.code_nm                    
+ FROM code_type a JOIN code b        
+ ON a.code_type_id = b.code_type_id  
+ WHERE b.code_type_id= ?             
+ AND b.use_yn=1                      
+ ORDER BY b.num                      
+
+2019-07-03 14:36:45,463 DEBUG [main] code.CodeDao      ( CodeDao.java:65)     - 1=============================
+2019-07-03 14:37:35,750 DEBUG [main] code.CodeDao      ( CodeDao.java:63)     - 1=============================
+2019-07-03 14:37:35,751 DEBUG [main] code.CodeDao      ( CodeDao.java:64)     - query:
+ SELECT b.code_id,                   
+        b.code_nm                    
+ FROM code_type a JOIN code b        
+ ON a.code_type_id = b.code_type_id  
+ WHERE b.code_type_id= ?             
+ AND b.use_yn=1                      
+ ORDER BY b.num                      
+
+2019-07-03 14:37:35,752 DEBUG [main] code.CodeDao      ( CodeDao.java:65)     - 1=============================
+2019-07-03 14:43:51,604 DEBUG [main] code.CodeDao      ( CodeDao.java:63)     - 1=============================
+2019-07-03 14:43:51,606 DEBUG [main] code.CodeDao      ( CodeDao.java:64)     - query:
+ SELECT b.code_id,                   
+        b.code_nm                    
+ FROM code_type a JOIN code b        
+ ON a.code_type_id = b.code_type_id  
+ WHERE b.code_type_id= ?             
+ AND b.use_yn=1                      
+ ORDER BY b.num                      
+
+2019-07-03 14:43:51,606 DEBUG [main] code.CodeDao      ( CodeDao.java:65)     - 1=============================
+2019-07-03 14:44:26,310 DEBUG [main] code.CodeDao      ( CodeDao.java:65)     - 1.==========================
+2019-07-03 14:44:26,312 DEBUG [main] code.CodeDao      ( CodeDao.java:66)     - 1.query
+ SELECT b.code_id,                   
+        b.code_nm                    
+ FROM code_type A JOIN code B        
+ ON a.code_type_id = b.code_type_id  
+ WHERE b.code_type_id = ?            
+ AND b.use_yn =1                     
+ ORDER BY b.num                      
+
+2019-07-03 14:44:26,312 DEBUG [main] code.CodeDao      ( CodeDao.java:67)     - 1.==========================
+2019-07-03 14:51:53,620 DEBUG [main] code.CodeDao      ( CodeDao.java:65)     - 1.==========================
+2019-07-03 14:51:53,620 DEBUG [main] code.CodeDao      ( CodeDao.java:66)     - 1.query
+ SELECT b.code_id,                   
+        b.code_nm                    
+ FROM code_type A JOIN code B        
+ ON a.code_type_id = b.code_type_id  
+ WHERE b.code_type_id = ?            
+ AND b.use_yn =1                     
+ ORDER BY b.num                      
+
+2019-07-03 14:51:53,621 DEBUG [main] code.CodeDao      ( CodeDao.java:67)     - 1.==========================
+2019-07-03 14:52:19,689 DEBUG [main] code.CodeDao      ( CodeDao.java:65)     - 1.==========================
+2019-07-03 14:52:19,692 DEBUG [main] code.CodeDao      ( CodeDao.java:66)     - 1.query
+ SELECT b.code_id,                   
+        b.code_nm                    
+ FROM code_type A JOIN code B        
+ ON a.code_type_id = b.code_type_id  
+ WHERE b.code_type_id = ?            
+ AND b.use_yn =1                     
+ ORDER BY b.num                      
+
+2019-07-03 14:52:19,692 DEBUG [main] code.CodeDao      ( CodeDao.java:67)     - 1.==========================
+2019-07-03 14:53:23,566 DEBUG [main] code.CodeDao      ( CodeDao.java:65)     - 1.==========================
+2019-07-03 14:53:23,567 DEBUG [main] code.CodeDao      ( CodeDao.java:66)     - 1.query
+ SELECT b.code_id,                   
+        b.code_nm                    
+ FROM code_type A JOIN code B        
+ ON a.code_type_id = b.code_type_id  
+ WHERE b.code_type_id = ?            
+ AND b.use_yn =1                     
+ ORDER BY b.num                      
+
+2019-07-03 14:53:23,568 DEBUG [main] code.CodeDao      ( CodeDao.java:67)     - 1.==========================
+2019-07-03 14:53:35,406 DEBUG [main] code.CodeDao      ( CodeDao.java:65)     - 1.==========================
+2019-07-03 14:53:35,407 DEBUG [main] code.CodeDao      ( CodeDao.java:66)     - 1.query
+ SELECT b.code_id,                   
+        b.code_nm                    
+ FROM code_type A JOIN code B        
+ ON a.code_type_id = b.code_type_id  
+ WHERE b.code_type_id = ?            
+ AND b.use_yn =1                     
+ ORDER BY b.num                      
+
+2019-07-03 14:53:35,407 DEBUG [main] code.CodeDao      ( CodeDao.java:67)     - 1.==========================
+2019-07-03 14:53:39,183 DEBUG [main] code.CodeDao      ( CodeDao.java:65)     - 1.==========================
+2019-07-03 14:53:39,184 DEBUG [main] code.CodeDao      ( CodeDao.java:66)     - 1.query
+ SELECT b.code_id,                   
+        b.code_nm                    
+ FROM code_type A JOIN code B        
+ ON a.code_type_id = b.code_type_id  
+ WHERE b.code_type_id = ?            
+ AND b.use_yn =1                     
+ ORDER BY b.num                      
+
+2019-07-03 14:53:39,184 DEBUG [main] code.CodeDao      ( CodeDao.java:67)     - 1.==========================
+2019-07-03 14:55:02,658 DEBUG [main] code.CodeDao      ( CodeDao.java:69)     - 1.==========================
+2019-07-03 14:55:02,659 DEBUG [main] code.CodeDao      ( CodeDao.java:70)     - 1.query
+ SELECT b.code_id,                   
+        b.code_nm                    
+ FROM code_type A JOIN code B        
+ ON a.code_type_id = b.code_type_id  
+ WHERE b.code_type_id = ?            
+ AND b.use_yn =1                     
+ ORDER BY b.num                      
+
+2019-07-03 14:55:02,660 DEBUG [main] code.CodeDao      ( CodeDao.java:71)     - 1.==========================
+2019-07-03 14:55:02,714 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 14:55:02,927 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@31f924f5
+2019-07-03 14:55:02,983 DEBUG [main] code.CodeDao      ( CodeDao.java:78)     - 2.==========================
+2019-07-03 14:55:02,984 DEBUG [main] code.CodeDao      ( CodeDao.java:79)     - 2.param=PAGE_SIZE
+2019-07-03 14:55:02,984 DEBUG [main] code.CodeDao      ( CodeDao.java:80)     - 2.==========================
+2019-07-03 14:55:02,997 DEBUG [main] code.CodeTest     (CodeTest.java:20)     - CodeVO [codeTypeId=null, codeId=5, codeNm=5, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-03 14:55:02,998 DEBUG [main] code.CodeTest     (CodeTest.java:20)     - CodeVO [codeTypeId=null, codeId=10, codeNm=10, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-03 14:55:02,998 DEBUG [main] code.CodeTest     (CodeTest.java:20)     - CodeVO [codeTypeId=null, codeId=50, codeNm=50, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-03 14:55:02,998 DEBUG [main] code.CodeTest     (CodeTest.java:20)     - CodeVO [codeTypeId=null, codeId=100, codeNm=100, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-03 14:55:02,998 DEBUG [main] code.CodeTest     (CodeTest.java:20)     - CodeVO [codeTypeId=null, codeId=200, codeNm=200, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-03 15:12:43,336 DEBUG [main] member.HrMemberDao (HrMemberDao.java:302)     - sql:
+ SELECT T1.*, T2.*										 
+ FROM                                                     
+ (                                                        
+ SELECT B.rnum as num                                     
+       ,B.user_id                                         
+ 	  ,B.password                                        
+ 	  ,B.name                                            
+ 	  ,B.email                                           
+ 	  ,B.birth                                           
+ ,(                         
+     SELECT code_nm         
+ 	FROM code              
+ 	WHERE code_id=B.gender 
+ )gender                    
+ ,B.cell_phone_num          
+ ,cd_name('LVL', B.lvl) lvl 
+ 	  ,B.mod_id                                          
+ 	  ,TO_CHAR(b.mod_dt,'YYYY-MM-DD') mod_dt             
+ FROM(                                                    
+ 	SELECT ROWNUM AS rnum, A.*                           
+ 	FROM(                                                
+ 		SELECT * FROM hr_member                          
+ 		--SEARCH CONDITION                               
+WHERE name like ?||'%' 
+ 		ORDER BY mod_dt DESC                             
+ 	)A                                                   
+     WHERE ROWNUM <=( ? *( ? -1)+?) 
+     )B                                                   
+ WHERE B.rnum>= ( ? *( ? -1)+1)              
+ )T1                                                      
+ CROSS JOIN                                               
+ (                                                        
+ SELECT COUNT(*) total_cnt                                
+ FROM hr_member                                           
+ --SEARCH CONDITION                                       
+WHERE name like ?||'%' 
+ )T2                                                      
+
+2019-07-03 15:12:43,393 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:12:43,601 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@4cf4d528
+2019-07-03 15:12:43,657 DEBUG [main] member.HrMemberDao (HrMemberDao.java:338)     - 3.param: 
+SearchVO [pageSize=10, pageNum=1, searchDiv=10, searchWord=이상무001]
+2019-07-03 15:12:43,919 DEBUG [main] member.HrMemberMain (HrMemberMain.java:98)     - ---------------
+2019-07-03 15:12:43,919 DEBUG [main] member.HrMemberMain (HrMemberMain.java:99)     - list[HrMemberVO [userId=happy_hr_c0010000, password=1234, name=이상무0010000, email=james0010000@naver.com, birth=20180428, gender=여자, cellPhone=010-1000-1000, lvl=관리자, regId=null, regDt=null, modId=happy_hr_c0010000, modDt=2018-04-28, toString()=DTO [total=10000, num=1]], HrMemberVO [userId=happy_hr_c0010009, password=1234, name=이상무0010009, email=james0010009@naver.com, birth=20180428, gender=남자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010009, modDt=2018-04-28, toString()=DTO [total=10000, num=2]], HrMemberVO [userId=happy_hr_c0010008, password=1234, name=이상무0010008, email=james0010008@naver.com, birth=20180428, gender=여자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010008, modDt=2018-04-28, toString()=DTO [total=10000, num=3]], HrMemberVO [userId=happy_hr_c0010007, password=1234, name=이상무0010007, email=james0010007@naver.com, birth=20180428, gender=남자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010007, modDt=2018-04-28, toString()=DTO [total=10000, num=4]], HrMemberVO [userId=happy_hr_c0010006, password=1234, name=이상무0010006, email=james0010006@naver.com, birth=20180428, gender=여자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010006, modDt=2018-04-28, toString()=DTO [total=10000, num=5]], HrMemberVO [userId=happy_hr_c0010005, password=1234, name=이상무0010005, email=james0010005@naver.com, birth=20180428, gender=남자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010005, modDt=2018-04-28, toString()=DTO [total=10000, num=6]], HrMemberVO [userId=happy_hr_c0010004, password=1234, name=이상무0010004, email=james0010004@naver.com, birth=20180428, gender=여자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010004, modDt=2018-04-28, toString()=DTO [total=10000, num=7]], HrMemberVO [userId=happy_hr_c0010003, password=1234, name=이상무0010003, email=james0010003@naver.com, birth=20180428, gender=남자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010003, modDt=2018-04-28, toString()=DTO [total=10000, num=8]], HrMemberVO [userId=happy_hr_c0010002, password=1234, name=이상무0010002, email=james0010002@naver.com, birth=20180428, gender=여자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010002, modDt=2018-04-28, toString()=DTO [total=10000, num=9]], HrMemberVO [userId=happy_hr_c0010001, password=1234, name=이상무0010001, email=james0010001@naver.com, birth=20180428, gender=남자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010001, modDt=2018-04-28, toString()=DTO [total=10000, num=10]]]
+2019-07-03 15:12:43,919 DEBUG [main] member.HrMemberMain (HrMemberMain.java:100)     - ---------------
+2019-07-03 15:15:27,787 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:15:28,005 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-07-03 15:15:28,005 DEBUG [main] member.HrMemberDao (HrMemberDao.java:122)     - 1==================
+2019-07-03 15:15:28,005 DEBUG [main] member.HrMemberDao (HrMemberDao.java:123)     - query:
+DELETE FROM hr_member 
+WHERE user_id = ?     
+
+2019-07-03 15:15:28,006 DEBUG [main] member.HrMemberDao (HrMemberDao.java:124)     - 1==================
+2019-07-03 15:15:28,064 DEBUG [main] member.HrMemberDao (HrMemberDao.java:130)     - 2==================
+2019-07-03 15:15:28,064 DEBUG [main] member.HrMemberDao (HrMemberDao.java:131)     - param:
+HrMemberVO [userId=jame007_144, password=1234, name=이상무0000152, email=james0000152@naver.com, birth=20190613, gender=F, cellPhone=010-0152-0152, lvl=1, regId=happy_hr_c0000152, regDt=, modId=admin, modDt=, toString()=DTO [total=0, num=0]]
+2019-07-03 15:15:28,064 DEBUG [main] member.HrMemberDao (HrMemberDao.java:132)     - 2==================
+2019-07-03 15:15:28,071 DEBUG [main] member.HrMemberDao (HrMemberDao.java:143)     - 3==================
+2019-07-03 15:15:28,071 DEBUG [main] member.HrMemberDao (HrMemberDao.java:144)     - flag:
+1
+2019-07-03 15:15:28,071 DEBUG [main] member.HrMemberDao (HrMemberDao.java:145)     - 3==================
+2019-07-03 15:15:28,071 DEBUG [main] member.HrMemberMain (HrMemberMain.java:57)     - ---------------
+2019-07-03 15:15:28,071 DEBUG [main] member.HrMemberMain (HrMemberMain.java:58)     - delFlag:1
+2019-07-03 15:15:28,071 DEBUG [main] member.HrMemberMain (HrMemberMain.java:59)     - ---------------
+2019-07-03 15:15:28,071 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:15:28,107 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@30c15d8b
+2019-07-03 15:15:28,111 DEBUG [main] member.HrMemberDao (HrMemberDao.java:35)     - 1.conn:oracle.jdbc.driver.T4CConnection@30c15d8b
+2019-07-03 15:15:28,111 DEBUG [main] member.HrMemberDao (HrMemberDao.java:66)     - 2.sql:
+INSERT INTO hr_member ( 
+    user_id,            
+    password,           
+    name,               
+    email,              
+    birth,              
+    gender,             
+    cell_phone_num,     
+    lvl,                
+    reg_id,             
+    reg_dt,             
+    mod_id,             
+    mod_dt              
+) VALUES (              
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    SYSDATE,            
+    ?,                  
+    SYSDATE             
+)                       
+
+2019-07-03 15:15:28,111 DEBUG [main] member.HrMemberDao (HrMemberDao.java:67)     - 3.param:
+HrMemberVO [userId=jame007_144, password=1234, name=이상무0000152, email=james0000152@naver.com, birth=20190613, gender=F, cellPhone=010-0152-0152, lvl=1, regId=happy_hr_c0000152, regDt=, modId=admin, modDt=, toString()=DTO [total=0, num=0]]
+2019-07-03 15:15:28,126 DEBUG [main] member.HrMemberDao (HrMemberDao.java:82)     - 4.flag:1
+2019-07-03 15:15:28,128 DEBUG [main] member.HrMemberMain (HrMemberMain.java:65)     - ---------------
+2019-07-03 15:15:28,129 DEBUG [main] member.HrMemberMain (HrMemberMain.java:66)     - add flag:1
+2019-07-03 15:15:28,130 DEBUG [main] member.HrMemberMain (HrMemberMain.java:67)     - ---------------
+2019-07-03 15:15:28,130 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:15:28,165 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@13c9d689
+2019-07-03 15:15:28,165 DEBUG [main] member.HrMemberDao (HrMemberDao.java:187)     - 1.conn:oracle.jdbc.driver.T4CConnection@13c9d689
+2019-07-03 15:15:28,165 DEBUG [main] member.HrMemberDao (HrMemberDao.java:188)     - 2.sql:
+ SELECT                                       
+     user_id,                                 
+     password,                                
+     name,                                    
+     email,                                   
+     birth,                                   
+ 	(				                         
+     	SELECT code_nm       			     
+ 		FROM code             				 
+ 		WHERE code_id=B.gender 				 
+ 	)gender                    				 
+ 	,B.cell_phone_num         				 
+ 	,cd_name('LVL', B.lvl) lvl 				 
+     reg_id,                                  
+     TO_CHAR(reg_dt,'YYYY-MM-DD') red_dt,     
+     mod_id,                                  
+     TO_CHAR(mod_dt,'YYYY-MM-DD') mod_dt      
+ FROM                                         
+     hr_member                                
+ where user_id = :user_id                     
+
+2019-07-03 15:15:28,166 DEBUG [main] member.HrMemberDao (HrMemberDao.java:193)     - 3.param:jame007_144
+2019-07-03 15:15:28,172 DEBUG [main] member.HrMemberMain (HrMemberMain.java:73)     - ---------------
+2019-07-03 15:15:28,172 DEBUG [main] member.HrMemberMain (HrMemberMain.java:74)     - outVO:null
+2019-07-03 15:15:28,172 DEBUG [main] member.HrMemberMain (HrMemberMain.java:75)     - ---------------
+2019-07-03 15:15:28,172 DEBUG [main] member.HrMemberMain (HrMemberMain.java:85)     - ---------------
+2019-07-03 15:15:28,172 DEBUG [main] member.HrMemberMain (HrMemberMain.java:86)     - 두 객체는 다르다: 등록실패null
+2019-07-03 15:15:28,172 DEBUG [main] member.HrMemberMain (HrMemberMain.java:87)     - ---------------
+2019-07-03 15:16:04,047 DEBUG [main] member.HrMemberDao (HrMemberDao.java:302)     - sql:
+ SELECT T1.*, T2.*										 
+ FROM                                                     
+ (                                                        
+ SELECT B.rnum as num                                     
+       ,B.user_id                                         
+ 	  ,B.password                                        
+ 	  ,B.name                                            
+ 	  ,B.email                                           
+ 	  ,B.birth                                           
+		  ,(                        						 
+    		 SELECT code_nm        							 
+ 		 FROM code             							 
+ 		 WHERE code_id=B.gender 						 
+ 		)gender                    						 
+		  ,B.cell_phone_num         						 
+ 	  ,cd_name('LVL', B.lvl) lvl 						 
+ 	  ,B.mod_id                                          
+ 	  ,TO_CHAR(b.mod_dt,'YYYY-MM-DD') mod_dt             
+ FROM(                                                    
+ 	SELECT ROWNUM AS rnum, A.*                           
+ 	FROM(                                                
+ 		SELECT * FROM hr_member                          
+ 		--SEARCH CONDITION                               
+WHERE name like ?||'%' 
+ 		ORDER BY mod_dt DESC                             
+ 	)A                                                   
+     WHERE ROWNUM <=( ? *( ? -1)+?) 
+     )B                                                   
+ WHERE B.rnum>= ( ? *( ? -1)+1)              
+ )T1                                                      
+ CROSS JOIN                                               
+ (                                                        
+ SELECT COUNT(*) total_cnt                                
+ FROM hr_member                                           
+ --SEARCH CONDITION                                       
+WHERE name like ?||'%' 
+ )T2                                                      
+
+2019-07-03 15:16:04,105 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:16:04,306 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@5f205aa
+2019-07-03 15:16:04,355 DEBUG [main] member.HrMemberDao (HrMemberDao.java:338)     - 3.param: 
+SearchVO [pageSize=10, pageNum=1, searchDiv=10, searchWord=이상무001]
+2019-07-03 15:16:04,614 DEBUG [main] member.HrMemberMain (HrMemberMain.java:98)     - ---------------
+2019-07-03 15:16:04,615 DEBUG [main] member.HrMemberMain (HrMemberMain.java:99)     - list[HrMemberVO [userId=happy_hr_c0010000, password=1234, name=이상무0010000, email=james0010000@naver.com, birth=20180428, gender=여자, cellPhone=010-1000-1000, lvl=관리자, regId=null, regDt=null, modId=happy_hr_c0010000, modDt=2018-04-28, toString()=DTO [total=10000, num=1]], HrMemberVO [userId=happy_hr_c0010009, password=1234, name=이상무0010009, email=james0010009@naver.com, birth=20180428, gender=남자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010009, modDt=2018-04-28, toString()=DTO [total=10000, num=2]], HrMemberVO [userId=happy_hr_c0010008, password=1234, name=이상무0010008, email=james0010008@naver.com, birth=20180428, gender=여자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010008, modDt=2018-04-28, toString()=DTO [total=10000, num=3]], HrMemberVO [userId=happy_hr_c0010007, password=1234, name=이상무0010007, email=james0010007@naver.com, birth=20180428, gender=남자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010007, modDt=2018-04-28, toString()=DTO [total=10000, num=4]], HrMemberVO [userId=happy_hr_c0010006, password=1234, name=이상무0010006, email=james0010006@naver.com, birth=20180428, gender=여자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010006, modDt=2018-04-28, toString()=DTO [total=10000, num=5]], HrMemberVO [userId=happy_hr_c0010005, password=1234, name=이상무0010005, email=james0010005@naver.com, birth=20180428, gender=남자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010005, modDt=2018-04-28, toString()=DTO [total=10000, num=6]], HrMemberVO [userId=happy_hr_c0010004, password=1234, name=이상무0010004, email=james0010004@naver.com, birth=20180428, gender=여자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010004, modDt=2018-04-28, toString()=DTO [total=10000, num=7]], HrMemberVO [userId=happy_hr_c0010003, password=1234, name=이상무0010003, email=james0010003@naver.com, birth=20180428, gender=남자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010003, modDt=2018-04-28, toString()=DTO [total=10000, num=8]], HrMemberVO [userId=happy_hr_c0010002, password=1234, name=이상무0010002, email=james0010002@naver.com, birth=20180428, gender=여자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010002, modDt=2018-04-28, toString()=DTO [total=10000, num=9]], HrMemberVO [userId=happy_hr_c0010001, password=1234, name=이상무0010001, email=james0010001@naver.com, birth=20180428, gender=남자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010001, modDt=2018-04-28, toString()=DTO [total=10000, num=10]]]
+2019-07-03 15:16:04,615 DEBUG [main] member.HrMemberMain (HrMemberMain.java:100)     - ---------------
+2019-07-03 15:16:27,323 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:16:27,528 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@5f205aa
+2019-07-03 15:16:27,528 DEBUG [main] member.HrMemberDao (HrMemberDao.java:122)     - 1==================
+2019-07-03 15:16:27,528 DEBUG [main] member.HrMemberDao (HrMemberDao.java:123)     - query:
+DELETE FROM hr_member 
+WHERE user_id = ?     
+
+2019-07-03 15:16:27,530 DEBUG [main] member.HrMemberDao (HrMemberDao.java:124)     - 1==================
+2019-07-03 15:16:27,579 DEBUG [main] member.HrMemberDao (HrMemberDao.java:130)     - 2==================
+2019-07-03 15:16:27,579 DEBUG [main] member.HrMemberDao (HrMemberDao.java:131)     - param:
+HrMemberVO [userId=jame007_144, password=1234, name=이상무0000152, email=james0000152@naver.com, birth=20190613, gender=F, cellPhone=010-0152-0152, lvl=1, regId=happy_hr_c0000152, regDt=, modId=admin, modDt=, toString()=DTO [total=0, num=0]]
+2019-07-03 15:16:27,579 DEBUG [main] member.HrMemberDao (HrMemberDao.java:132)     - 2==================
+2019-07-03 15:16:27,584 DEBUG [main] member.HrMemberDao (HrMemberDao.java:143)     - 3==================
+2019-07-03 15:16:27,584 DEBUG [main] member.HrMemberDao (HrMemberDao.java:144)     - flag:
+1
+2019-07-03 15:16:27,584 DEBUG [main] member.HrMemberDao (HrMemberDao.java:145)     - 3==================
+2019-07-03 15:16:27,584 DEBUG [main] member.HrMemberMain (HrMemberMain.java:57)     - ---------------
+2019-07-03 15:16:27,584 DEBUG [main] member.HrMemberMain (HrMemberMain.java:58)     - delFlag:1
+2019-07-03 15:16:27,585 DEBUG [main] member.HrMemberMain (HrMemberMain.java:59)     - ---------------
+2019-07-03 15:16:27,585 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:16:27,617 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@a67c67e
+2019-07-03 15:16:27,618 DEBUG [main] member.HrMemberDao (HrMemberDao.java:35)     - 1.conn:oracle.jdbc.driver.T4CConnection@a67c67e
+2019-07-03 15:16:27,618 DEBUG [main] member.HrMemberDao (HrMemberDao.java:66)     - 2.sql:
+INSERT INTO hr_member ( 
+    user_id,            
+    password,           
+    name,               
+    email,              
+    birth,              
+    gender,             
+    cell_phone_num,     
+    lvl,                
+    reg_id,             
+    reg_dt,             
+    mod_id,             
+    mod_dt              
+) VALUES (              
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    SYSDATE,            
+    ?,                  
+    SYSDATE             
+)                       
+
+2019-07-03 15:16:27,618 DEBUG [main] member.HrMemberDao (HrMemberDao.java:67)     - 3.param:
+HrMemberVO [userId=jame007_144, password=1234, name=이상무0000152, email=james0000152@naver.com, birth=20190613, gender=F, cellPhone=010-0152-0152, lvl=1, regId=happy_hr_c0000152, regDt=, modId=admin, modDt=, toString()=DTO [total=0, num=0]]
+2019-07-03 15:16:27,662 DEBUG [main] member.HrMemberDao (HrMemberDao.java:82)     - 4.flag:1
+2019-07-03 15:16:27,663 DEBUG [main] member.HrMemberMain (HrMemberMain.java:65)     - ---------------
+2019-07-03 15:16:27,663 DEBUG [main] member.HrMemberMain (HrMemberMain.java:66)     - add flag:1
+2019-07-03 15:16:27,663 DEBUG [main] member.HrMemberMain (HrMemberMain.java:67)     - ---------------
+2019-07-03 15:16:27,663 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:16:27,708 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@5ce81285
+2019-07-03 15:16:27,708 DEBUG [main] member.HrMemberDao (HrMemberDao.java:187)     - 1.conn:oracle.jdbc.driver.T4CConnection@5ce81285
+2019-07-03 15:16:27,709 DEBUG [main] member.HrMemberDao (HrMemberDao.java:188)     - 2.sql:
+ SELECT                                       
+     user_id,                                 
+     password,                                
+     name,                                    
+     email,                                   
+     birth,                                   
+ 	(				                         
+     	SELECT code_nm       			     
+ 		FROM code             				 
+ 		WHERE code_id=B.gender 				 
+ 	)gender                    				 
+ 	,B.cell_phone_num         				 
+ 	,cd_name('LVL', B.lvl) lvl 				 
+     reg_id,                                  
+     TO_CHAR(reg_dt,'YYYY-MM-DD') red_dt,     
+     mod_id,                                  
+     TO_CHAR(mod_dt,'YYYY-MM-DD') mod_dt      
+ FROM                                         
+     hr_member                                
+ where user_id = :user_id                     
+
+2019-07-03 15:16:27,709 DEBUG [main] member.HrMemberDao (HrMemberDao.java:193)     - 3.param:jame007_144
+2019-07-03 15:16:27,733 DEBUG [main] member.HrMemberMain (HrMemberMain.java:73)     - ---------------
+2019-07-03 15:16:27,733 DEBUG [main] member.HrMemberMain (HrMemberMain.java:74)     - outVO:null
+2019-07-03 15:16:27,733 DEBUG [main] member.HrMemberMain (HrMemberMain.java:75)     - ---------------
+2019-07-03 15:16:27,733 DEBUG [main] member.HrMemberMain (HrMemberMain.java:85)     - ---------------
+2019-07-03 15:16:27,734 DEBUG [main] member.HrMemberMain (HrMemberMain.java:86)     - 두 객체는 다르다: 등록실패null
+2019-07-03 15:16:27,734 DEBUG [main] member.HrMemberMain (HrMemberMain.java:87)     - ---------------
+2019-07-03 15:17:35,919 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:17:36,128 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-07-03 15:17:36,128 DEBUG [main] member.HrMemberDao (HrMemberDao.java:122)     - 1==================
+2019-07-03 15:17:36,128 DEBUG [main] member.HrMemberDao (HrMemberDao.java:123)     - query:
+DELETE FROM hr_member 
+WHERE user_id = ?     
+
+2019-07-03 15:17:36,130 DEBUG [main] member.HrMemberDao (HrMemberDao.java:124)     - 1==================
+2019-07-03 15:17:36,186 DEBUG [main] member.HrMemberDao (HrMemberDao.java:130)     - 2==================
+2019-07-03 15:17:36,187 DEBUG [main] member.HrMemberDao (HrMemberDao.java:131)     - param:
+HrMemberVO [userId=jame007_144, password=1234, name=이상무0000152, email=james0000152@naver.com, birth=20190613, gender=F, cellPhone=010-0152-0152, lvl=1, regId=happy_hr_c0000152, regDt=, modId=admin, modDt=, toString()=DTO [total=0, num=0]]
+2019-07-03 15:17:36,187 DEBUG [main] member.HrMemberDao (HrMemberDao.java:132)     - 2==================
+2019-07-03 15:17:36,192 DEBUG [main] member.HrMemberDao (HrMemberDao.java:143)     - 3==================
+2019-07-03 15:17:36,192 DEBUG [main] member.HrMemberDao (HrMemberDao.java:144)     - flag:
+1
+2019-07-03 15:17:36,192 DEBUG [main] member.HrMemberDao (HrMemberDao.java:145)     - 3==================
+2019-07-03 15:17:36,192 DEBUG [main] member.HrMemberMain (HrMemberMain.java:57)     - ---------------
+2019-07-03 15:17:36,192 DEBUG [main] member.HrMemberMain (HrMemberMain.java:58)     - delFlag:1
+2019-07-03 15:17:36,192 DEBUG [main] member.HrMemberMain (HrMemberMain.java:59)     - ---------------
+2019-07-03 15:17:36,192 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:17:36,214 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@30c15d8b
+2019-07-03 15:17:36,217 DEBUG [main] member.HrMemberDao (HrMemberDao.java:35)     - 1.conn:oracle.jdbc.driver.T4CConnection@30c15d8b
+2019-07-03 15:17:36,217 DEBUG [main] member.HrMemberDao (HrMemberDao.java:66)     - 2.sql:
+INSERT INTO hr_member ( 
+    user_id,            
+    password,           
+    name,               
+    email,              
+    birth,              
+    gender,             
+    cell_phone_num,     
+    lvl,                
+    reg_id,             
+    reg_dt,             
+    mod_id,             
+    mod_dt              
+) VALUES (              
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    SYSDATE,            
+    ?,                  
+    SYSDATE             
+)                       
+
+2019-07-03 15:17:36,218 DEBUG [main] member.HrMemberDao (HrMemberDao.java:67)     - 3.param:
+HrMemberVO [userId=jame007_144, password=1234, name=이상무0000152, email=james0000152@naver.com, birth=20190613, gender=F, cellPhone=010-0152-0152, lvl=1, regId=happy_hr_c0000152, regDt=, modId=admin, modDt=, toString()=DTO [total=0, num=0]]
+2019-07-03 15:17:36,258 DEBUG [main] member.HrMemberDao (HrMemberDao.java:82)     - 4.flag:1
+2019-07-03 15:17:36,305 DEBUG [main] member.HrMemberMain (HrMemberMain.java:65)     - ---------------
+2019-07-03 15:17:36,305 DEBUG [main] member.HrMemberMain (HrMemberMain.java:66)     - add flag:1
+2019-07-03 15:17:36,305 DEBUG [main] member.HrMemberMain (HrMemberMain.java:67)     - ---------------
+2019-07-03 15:17:36,305 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:17:36,330 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@13c9d689
+2019-07-03 15:17:36,330 DEBUG [main] member.HrMemberDao (HrMemberDao.java:187)     - 1.conn:oracle.jdbc.driver.T4CConnection@13c9d689
+2019-07-03 15:17:36,330 DEBUG [main] member.HrMemberDao (HrMemberDao.java:188)     - 2.sql:
+ SELECT                                       
+     user_id,                                 
+     password,                                
+     name,                                    
+     email,                                   
+     birth,                                   
+ 	(				                         
+     	SELECT code_nm       			     
+ 		FROM code             				 
+ 		WHERE code_id=B.gender 				 
+ 	)gender,                    			 
+ 	B.cell_phone_num,         				 
+ 	cd_name('LVL', B.lvl) lvl, 				 
+     reg_id,                                  
+     TO_CHAR(reg_dt,'YYYY-MM-DD') red_dt,     
+     mod_id,                                  
+     TO_CHAR(mod_dt,'YYYY-MM-DD') mod_dt      
+ FROM                                         
+     hr_member                                
+ where user_id = :user_id                     
+
+2019-07-03 15:17:36,331 DEBUG [main] member.HrMemberDao (HrMemberDao.java:193)     - 3.param:jame007_144
+2019-07-03 15:17:36,336 DEBUG [main] member.HrMemberMain (HrMemberMain.java:73)     - ---------------
+2019-07-03 15:17:36,336 DEBUG [main] member.HrMemberMain (HrMemberMain.java:74)     - outVO:null
+2019-07-03 15:17:36,337 DEBUG [main] member.HrMemberMain (HrMemberMain.java:75)     - ---------------
+2019-07-03 15:17:36,337 DEBUG [main] member.HrMemberMain (HrMemberMain.java:85)     - ---------------
+2019-07-03 15:17:36,337 DEBUG [main] member.HrMemberMain (HrMemberMain.java:86)     - 두 객체는 다르다: 등록실패null
+2019-07-03 15:17:36,337 DEBUG [main] member.HrMemberMain (HrMemberMain.java:87)     - ---------------
+2019-07-03 15:19:22,724 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:19:22,925 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-07-03 15:19:22,926 DEBUG [main] member.HrMemberDao (HrMemberDao.java:122)     - 1==================
+2019-07-03 15:19:22,926 DEBUG [main] member.HrMemberDao (HrMemberDao.java:123)     - query:
+DELETE FROM hr_member 
+WHERE user_id = ?     
+
+2019-07-03 15:19:22,927 DEBUG [main] member.HrMemberDao (HrMemberDao.java:124)     - 1==================
+2019-07-03 15:19:22,983 DEBUG [main] member.HrMemberDao (HrMemberDao.java:130)     - 2==================
+2019-07-03 15:19:22,984 DEBUG [main] member.HrMemberDao (HrMemberDao.java:131)     - param:
+HrMemberVO [userId=jame007_144, password=1234, name=이상무0000152, email=james0000152@naver.com, birth=20190613, gender=F, cellPhone=010-0152-0152, lvl=1, regId=happy_hr_c0000152, regDt=, modId=admin, modDt=, toString()=DTO [total=0, num=0]]
+2019-07-03 15:19:22,984 DEBUG [main] member.HrMemberDao (HrMemberDao.java:132)     - 2==================
+2019-07-03 15:19:22,989 DEBUG [main] member.HrMemberDao (HrMemberDao.java:143)     - 3==================
+2019-07-03 15:19:22,989 DEBUG [main] member.HrMemberDao (HrMemberDao.java:144)     - flag:
+1
+2019-07-03 15:19:22,990 DEBUG [main] member.HrMemberDao (HrMemberDao.java:145)     - 3==================
+2019-07-03 15:19:22,990 DEBUG [main] member.HrMemberMain (HrMemberMain.java:57)     - ---------------
+2019-07-03 15:19:22,990 DEBUG [main] member.HrMemberMain (HrMemberMain.java:58)     - delFlag:1
+2019-07-03 15:19:22,990 DEBUG [main] member.HrMemberMain (HrMemberMain.java:59)     - ---------------
+2019-07-03 15:19:22,990 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:19:23,014 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@30c15d8b
+2019-07-03 15:19:23,017 DEBUG [main] member.HrMemberDao (HrMemberDao.java:35)     - 1.conn:oracle.jdbc.driver.T4CConnection@30c15d8b
+2019-07-03 15:19:23,018 DEBUG [main] member.HrMemberDao (HrMemberDao.java:66)     - 2.sql:
+INSERT INTO hr_member ( 
+    user_id,            
+    password,           
+    name,               
+    email,              
+    birth,              
+    gender,             
+    cell_phone_num,     
+    lvl,                
+    reg_id,             
+    reg_dt,             
+    mod_id,             
+    mod_dt              
+) VALUES (              
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    SYSDATE,            
+    ?,                  
+    SYSDATE             
+)                       
+
+2019-07-03 15:19:23,018 DEBUG [main] member.HrMemberDao (HrMemberDao.java:67)     - 3.param:
+HrMemberVO [userId=jame007_144, password=1234, name=이상무0000152, email=james0000152@naver.com, birth=20190613, gender=F, cellPhone=010-0152-0152, lvl=1, regId=happy_hr_c0000152, regDt=, modId=admin, modDt=, toString()=DTO [total=0, num=0]]
+2019-07-03 15:19:23,020 DEBUG [main] member.HrMemberDao (HrMemberDao.java:82)     - 4.flag:1
+2019-07-03 15:19:23,021 DEBUG [main] member.HrMemberMain (HrMemberMain.java:65)     - ---------------
+2019-07-03 15:19:23,021 DEBUG [main] member.HrMemberMain (HrMemberMain.java:66)     - add flag:1
+2019-07-03 15:19:23,021 DEBUG [main] member.HrMemberMain (HrMemberMain.java:67)     - ---------------
+2019-07-03 15:19:23,021 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:19:23,048 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@13c9d689
+2019-07-03 15:19:23,049 DEBUG [main] member.HrMemberDao (HrMemberDao.java:185)     - 1.conn:oracle.jdbc.driver.T4CConnection@13c9d689
+2019-07-03 15:19:23,050 DEBUG [main] member.HrMemberDao (HrMemberDao.java:186)     - 2.sql:
+ SELECT                                       
+     user_id,                                 
+     password,                                
+     name,                                    
+     email,                                   
+     birth,                                   
+     DECODE(gender,'F','여자','M','남자') gender, 
+     cell_phone,                               
+     DECODE(lvl,1,'사용자',9,'관리자') lvl,         
+ 	B.cell_phone_num,         				 
+ 	cd_name('LVL', B.lvl) lvl, 				 
+     reg_id,                                  
+     TO_CHAR(reg_dt,'YYYY-MM-DD') red_dt,     
+     mod_id,                                  
+     TO_CHAR(mod_dt,'YYYY-MM-DD') mod_dt      
+ FROM                                         
+     hr_member                                
+ where user_id = :user_id                     
+
+2019-07-03 15:19:23,055 DEBUG [main] member.HrMemberDao (HrMemberDao.java:191)     - 3.param:jame007_144
+2019-07-03 15:19:23,067 DEBUG [main] member.HrMemberMain (HrMemberMain.java:73)     - ---------------
+2019-07-03 15:19:23,068 DEBUG [main] member.HrMemberMain (HrMemberMain.java:74)     - outVO:null
+2019-07-03 15:19:23,068 DEBUG [main] member.HrMemberMain (HrMemberMain.java:75)     - ---------------
+2019-07-03 15:19:23,068 DEBUG [main] member.HrMemberMain (HrMemberMain.java:85)     - ---------------
+2019-07-03 15:19:23,069 DEBUG [main] member.HrMemberMain (HrMemberMain.java:86)     - 두 객체는 다르다: 등록실패null
+2019-07-03 15:19:23,069 DEBUG [main] member.HrMemberMain (HrMemberMain.java:87)     - ---------------
+2019-07-03 15:19:48,909 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:19:49,107 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@5f205aa
+2019-07-03 15:19:49,107 DEBUG [main] member.HrMemberDao (HrMemberDao.java:122)     - 1==================
+2019-07-03 15:19:49,107 DEBUG [main] member.HrMemberDao (HrMemberDao.java:123)     - query:
+DELETE FROM hr_member 
+WHERE user_id = ?     
+
+2019-07-03 15:19:49,108 DEBUG [main] member.HrMemberDao (HrMemberDao.java:124)     - 1==================
+2019-07-03 15:19:49,156 DEBUG [main] member.HrMemberDao (HrMemberDao.java:130)     - 2==================
+2019-07-03 15:19:49,156 DEBUG [main] member.HrMemberDao (HrMemberDao.java:131)     - param:
+HrMemberVO [userId=jame007_144, password=1234, name=이상무0000152, email=james0000152@naver.com, birth=20190613, gender=F, cellPhone=010-0152-0152, lvl=1, regId=happy_hr_c0000152, regDt=, modId=admin, modDt=, toString()=DTO [total=0, num=0]]
+2019-07-03 15:19:49,156 DEBUG [main] member.HrMemberDao (HrMemberDao.java:132)     - 2==================
+2019-07-03 15:19:49,162 DEBUG [main] member.HrMemberDao (HrMemberDao.java:143)     - 3==================
+2019-07-03 15:19:49,162 DEBUG [main] member.HrMemberDao (HrMemberDao.java:144)     - flag:
+1
+2019-07-03 15:19:49,162 DEBUG [main] member.HrMemberDao (HrMemberDao.java:145)     - 3==================
+2019-07-03 15:19:49,162 DEBUG [main] member.HrMemberMain (HrMemberMain.java:57)     - ---------------
+2019-07-03 15:19:49,162 DEBUG [main] member.HrMemberMain (HrMemberMain.java:58)     - delFlag:1
+2019-07-03 15:19:49,162 DEBUG [main] member.HrMemberMain (HrMemberMain.java:59)     - ---------------
+2019-07-03 15:19:49,163 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:19:49,197 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@a67c67e
+2019-07-03 15:19:49,198 DEBUG [main] member.HrMemberDao (HrMemberDao.java:35)     - 1.conn:oracle.jdbc.driver.T4CConnection@a67c67e
+2019-07-03 15:19:49,198 DEBUG [main] member.HrMemberDao (HrMemberDao.java:66)     - 2.sql:
+INSERT INTO hr_member ( 
+    user_id,            
+    password,           
+    name,               
+    email,              
+    birth,              
+    gender,             
+    cell_phone_num,     
+    lvl,                
+    reg_id,             
+    reg_dt,             
+    mod_id,             
+    mod_dt              
+) VALUES (              
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    SYSDATE,            
+    ?,                  
+    SYSDATE             
+)                       
+
+2019-07-03 15:19:49,198 DEBUG [main] member.HrMemberDao (HrMemberDao.java:67)     - 3.param:
+HrMemberVO [userId=jame007_144, password=1234, name=이상무0000152, email=james0000152@naver.com, birth=20190613, gender=F, cellPhone=010-0152-0152, lvl=1, regId=happy_hr_c0000152, regDt=, modId=admin, modDt=, toString()=DTO [total=0, num=0]]
+2019-07-03 15:19:49,199 DEBUG [main] member.HrMemberDao (HrMemberDao.java:82)     - 4.flag:1
+2019-07-03 15:19:49,200 DEBUG [main] member.HrMemberMain (HrMemberMain.java:65)     - ---------------
+2019-07-03 15:19:49,200 DEBUG [main] member.HrMemberMain (HrMemberMain.java:66)     - add flag:1
+2019-07-03 15:19:49,200 DEBUG [main] member.HrMemberMain (HrMemberMain.java:67)     - ---------------
+2019-07-03 15:19:49,201 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:19:49,222 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@5ce81285
+2019-07-03 15:19:49,223 DEBUG [main] member.HrMemberDao (HrMemberDao.java:185)     - 1.conn:oracle.jdbc.driver.T4CConnection@5ce81285
+2019-07-03 15:19:49,223 DEBUG [main] member.HrMemberDao (HrMemberDao.java:186)     - 2.sql:
+ SELECT                                       
+     user_id,                                 
+     password,                                
+     name,                                    
+     email,                                   
+     birth,                                   
+     DECODE(gender,'F','여자','M','남자') gender, 
+     cell_phone,                               
+     DECODE(lvl,1,'사용자',9,'관리자') lvl,         
+ 	B.cell_phone_num,         				 
+ 	cd_name('LVL', B.lvl) lvl, 				 
+     reg_id,                                  
+     TO_CHAR(reg_dt,'YYYY-MM-DD') red_dt,     
+     mod_id,                                  
+     TO_CHAR(mod_dt,'YYYY-MM-DD') mod_dt      
+ FROM                                         
+     hr_member                                
+ where user_id = :user_id                     
+
+2019-07-03 15:19:49,226 DEBUG [main] member.HrMemberDao (HrMemberDao.java:191)     - 3.param:jame007_144
+2019-07-03 15:19:49,234 DEBUG [main] member.HrMemberMain (HrMemberMain.java:73)     - ---------------
+2019-07-03 15:19:49,235 DEBUG [main] member.HrMemberMain (HrMemberMain.java:74)     - outVO:null
+2019-07-03 15:19:49,235 DEBUG [main] member.HrMemberMain (HrMemberMain.java:75)     - ---------------
+2019-07-03 15:19:49,235 DEBUG [main] member.HrMemberMain (HrMemberMain.java:85)     - ---------------
+2019-07-03 15:19:49,235 DEBUG [main] member.HrMemberMain (HrMemberMain.java:86)     - 두 객체는 다르다: 등록실패null
+2019-07-03 15:19:49,236 DEBUG [main] member.HrMemberMain (HrMemberMain.java:87)     - ---------------
+2019-07-03 15:20:59,784 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:20:59,984 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@5f205aa
+2019-07-03 15:20:59,984 DEBUG [main] member.HrMemberDao (HrMemberDao.java:122)     - 1==================
+2019-07-03 15:20:59,985 DEBUG [main] member.HrMemberDao (HrMemberDao.java:123)     - query:
+DELETE FROM hr_member 
+WHERE user_id = ?     
+
+2019-07-03 15:20:59,986 DEBUG [main] member.HrMemberDao (HrMemberDao.java:124)     - 1==================
+2019-07-03 15:21:00,035 DEBUG [main] member.HrMemberDao (HrMemberDao.java:130)     - 2==================
+2019-07-03 15:21:00,035 DEBUG [main] member.HrMemberDao (HrMemberDao.java:131)     - param:
+HrMemberVO [userId=jame007_144, password=1234, name=이상무0000152, email=james0000152@naver.com, birth=20190613, gender=F, cellPhone=010-0152-0152, lvl=1, regId=happy_hr_c0000152, regDt=, modId=admin, modDt=, toString()=DTO [total=0, num=0]]
+2019-07-03 15:21:00,035 DEBUG [main] member.HrMemberDao (HrMemberDao.java:132)     - 2==================
+2019-07-03 15:21:00,039 DEBUG [main] member.HrMemberDao (HrMemberDao.java:143)     - 3==================
+2019-07-03 15:21:00,040 DEBUG [main] member.HrMemberDao (HrMemberDao.java:144)     - flag:
+1
+2019-07-03 15:21:00,040 DEBUG [main] member.HrMemberDao (HrMemberDao.java:145)     - 3==================
+2019-07-03 15:21:00,040 DEBUG [main] member.HrMemberMain (HrMemberMain.java:57)     - ---------------
+2019-07-03 15:21:00,040 DEBUG [main] member.HrMemberMain (HrMemberMain.java:58)     - delFlag:1
+2019-07-03 15:21:00,040 DEBUG [main] member.HrMemberMain (HrMemberMain.java:59)     - ---------------
+2019-07-03 15:21:00,040 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:21:00,061 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@a67c67e
+2019-07-03 15:21:00,063 DEBUG [main] member.HrMemberDao (HrMemberDao.java:35)     - 1.conn:oracle.jdbc.driver.T4CConnection@a67c67e
+2019-07-03 15:21:00,064 DEBUG [main] member.HrMemberDao (HrMemberDao.java:66)     - 2.sql:
+INSERT INTO hr_member ( 
+    user_id,            
+    password,           
+    name,               
+    email,              
+    birth,              
+    gender,             
+    cell_phone_num,     
+    lvl,                
+    reg_id,             
+    reg_dt,             
+    mod_id,             
+    mod_dt              
+) VALUES (              
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    SYSDATE,            
+    ?,                  
+    SYSDATE             
+)                       
+
+2019-07-03 15:21:00,064 DEBUG [main] member.HrMemberDao (HrMemberDao.java:67)     - 3.param:
+HrMemberVO [userId=jame007_144, password=1234, name=이상무0000152, email=james0000152@naver.com, birth=20190613, gender=F, cellPhone=010-0152-0152, lvl=1, regId=happy_hr_c0000152, regDt=, modId=admin, modDt=, toString()=DTO [total=0, num=0]]
+2019-07-03 15:21:00,067 DEBUG [main] member.HrMemberDao (HrMemberDao.java:82)     - 4.flag:1
+2019-07-03 15:21:00,068 DEBUG [main] member.HrMemberMain (HrMemberMain.java:65)     - ---------------
+2019-07-03 15:21:00,068 DEBUG [main] member.HrMemberMain (HrMemberMain.java:66)     - add flag:1
+2019-07-03 15:21:00,069 DEBUG [main] member.HrMemberMain (HrMemberMain.java:67)     - ---------------
+2019-07-03 15:21:00,069 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:21:00,094 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@5ce81285
+2019-07-03 15:21:00,094 DEBUG [main] member.HrMemberDao (HrMemberDao.java:185)     - 1.conn:oracle.jdbc.driver.T4CConnection@5ce81285
+2019-07-03 15:21:00,094 DEBUG [main] member.HrMemberDao (HrMemberDao.java:186)     - 2.sql:
+ SELECT                                       
+     user_id,                                 
+     password,                                
+     name,                                    
+     email,                                   
+     birth,                                   
+     DECODE(gender,'F','여자','M','남자') gender, 
+     cell_phone,                               
+     DECODE(lvl,1,'사용자',9,'관리자') lvl,         
+ 	B.cell_phone_num,         				 
+ 	cd_name('LVL', B.lvl) lvl, 				 
+     reg_id,                                  
+     TO_CHAR(reg_dt,'YYYY-MM-DD') red_dt,     
+     mod_id,                                  
+     TO_CHAR(mod_dt,'YYYY-MM-DD') mod_dt      
+ FROM                                         
+     hr_member                                
+ where user_id = :user_id                     
+
+2019-07-03 15:21:00,096 DEBUG [main] member.HrMemberDao (HrMemberDao.java:191)     - 3.param:jame007_144
+2019-07-03 15:21:00,100 DEBUG [main] member.HrMemberMain (HrMemberMain.java:73)     - ---------------
+2019-07-03 15:21:00,100 DEBUG [main] member.HrMemberMain (HrMemberMain.java:74)     - outVO:null
+2019-07-03 15:21:00,100 DEBUG [main] member.HrMemberMain (HrMemberMain.java:75)     - ---------------
+2019-07-03 15:21:00,100 DEBUG [main] member.HrMemberMain (HrMemberMain.java:85)     - ---------------
+2019-07-03 15:21:00,101 DEBUG [main] member.HrMemberMain (HrMemberMain.java:86)     - 두 객체는 다르다: 등록실패null
+2019-07-03 15:21:00,101 DEBUG [main] member.HrMemberMain (HrMemberMain.java:87)     - ---------------
+2019-07-03 15:21:46,153 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:21:46,349 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@5f205aa
+2019-07-03 15:21:46,350 DEBUG [main] member.HrMemberDao (HrMemberDao.java:122)     - 1==================
+2019-07-03 15:21:46,350 DEBUG [main] member.HrMemberDao (HrMemberDao.java:123)     - query:
+DELETE FROM hr_member 
+WHERE user_id = ?     
+
+2019-07-03 15:21:46,351 DEBUG [main] member.HrMemberDao (HrMemberDao.java:124)     - 1==================
+2019-07-03 15:21:46,399 DEBUG [main] member.HrMemberDao (HrMemberDao.java:130)     - 2==================
+2019-07-03 15:21:46,400 DEBUG [main] member.HrMemberDao (HrMemberDao.java:131)     - param:
+HrMemberVO [userId=jame007_144, password=1234, name=이상무0000152, email=james0000152@naver.com, birth=20190613, gender=F, cellPhone=010-0152-0152, lvl=1, regId=happy_hr_c0000152, regDt=, modId=admin, modDt=, toString()=DTO [total=0, num=0]]
+2019-07-03 15:21:46,400 DEBUG [main] member.HrMemberDao (HrMemberDao.java:132)     - 2==================
+2019-07-03 15:21:46,404 DEBUG [main] member.HrMemberDao (HrMemberDao.java:143)     - 3==================
+2019-07-03 15:21:46,405 DEBUG [main] member.HrMemberDao (HrMemberDao.java:144)     - flag:
+1
+2019-07-03 15:21:46,405 DEBUG [main] member.HrMemberDao (HrMemberDao.java:145)     - 3==================
+2019-07-03 15:21:46,405 DEBUG [main] member.HrMemberMain (HrMemberMain.java:57)     - ---------------
+2019-07-03 15:21:46,405 DEBUG [main] member.HrMemberMain (HrMemberMain.java:58)     - delFlag:1
+2019-07-03 15:21:46,405 DEBUG [main] member.HrMemberMain (HrMemberMain.java:59)     - ---------------
+2019-07-03 15:21:46,405 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:21:46,425 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@a67c67e
+2019-07-03 15:21:46,426 DEBUG [main] member.HrMemberDao (HrMemberDao.java:35)     - 1.conn:oracle.jdbc.driver.T4CConnection@a67c67e
+2019-07-03 15:21:46,426 DEBUG [main] member.HrMemberDao (HrMemberDao.java:66)     - 2.sql:
+INSERT INTO hr_member ( 
+    user_id,            
+    password,           
+    name,               
+    email,              
+    birth,              
+    gender,             
+    cell_phone_num,     
+    lvl,                
+    reg_id,             
+    reg_dt,             
+    mod_id,             
+    mod_dt              
+) VALUES (              
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    SYSDATE,            
+    ?,                  
+    SYSDATE             
+)                       
+
+2019-07-03 15:21:46,426 DEBUG [main] member.HrMemberDao (HrMemberDao.java:67)     - 3.param:
+HrMemberVO [userId=jame007_144, password=1234, name=이상무0000152, email=james0000152@naver.com, birth=20190613, gender=F, cellPhone=010-0152-0152, lvl=1, regId=happy_hr_c0000152, regDt=, modId=admin, modDt=, toString()=DTO [total=0, num=0]]
+2019-07-03 15:21:46,427 DEBUG [main] member.HrMemberDao (HrMemberDao.java:82)     - 4.flag:1
+2019-07-03 15:21:46,428 DEBUG [main] member.HrMemberMain (HrMemberMain.java:65)     - ---------------
+2019-07-03 15:21:46,428 DEBUG [main] member.HrMemberMain (HrMemberMain.java:66)     - add flag:1
+2019-07-03 15:21:46,428 DEBUG [main] member.HrMemberMain (HrMemberMain.java:67)     - ---------------
+2019-07-03 15:21:46,429 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:21:46,451 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@5ce81285
+2019-07-03 15:21:46,452 DEBUG [main] member.HrMemberDao (HrMemberDao.java:184)     - 1.conn:oracle.jdbc.driver.T4CConnection@5ce81285
+2019-07-03 15:21:46,452 DEBUG [main] member.HrMemberDao (HrMemberDao.java:185)     - 2.sql:
+ SELECT                                       
+     user_id,                                 
+     password,                                
+     name,                                    
+     email,                                   
+     birth,                                   
+     DECODE(gender,'F','여자','M','남자') gender, 
+     cell_phone,                               
+     DECODE(lvl,1,'사용자',9,'관리자') lvl,         
+ 	B.cell_phone_num,         				 
+     reg_id,                                  
+     TO_CHAR(reg_dt,'YYYY-MM-DD') red_dt,     
+     mod_id,                                  
+     TO_CHAR(mod_dt,'YYYY-MM-DD') mod_dt      
+ FROM                                         
+     hr_member                                
+ where user_id = :user_id                     
+
+2019-07-03 15:21:46,455 DEBUG [main] member.HrMemberDao (HrMemberDao.java:190)     - 3.param:jame007_144
+2019-07-03 15:21:46,463 DEBUG [main] member.HrMemberMain (HrMemberMain.java:73)     - ---------------
+2019-07-03 15:21:46,464 DEBUG [main] member.HrMemberMain (HrMemberMain.java:74)     - outVO:null
+2019-07-03 15:21:46,464 DEBUG [main] member.HrMemberMain (HrMemberMain.java:75)     - ---------------
+2019-07-03 15:21:46,464 DEBUG [main] member.HrMemberMain (HrMemberMain.java:85)     - ---------------
+2019-07-03 15:21:46,464 DEBUG [main] member.HrMemberMain (HrMemberMain.java:86)     - 두 객체는 다르다: 등록실패null
+2019-07-03 15:21:46,465 DEBUG [main] member.HrMemberMain (HrMemberMain.java:87)     - ---------------
+2019-07-03 15:22:42,915 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:22:43,118 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@5f205aa
+2019-07-03 15:22:43,118 DEBUG [main] member.HrMemberDao (HrMemberDao.java:122)     - 1==================
+2019-07-03 15:22:43,119 DEBUG [main] member.HrMemberDao (HrMemberDao.java:123)     - query:
+DELETE FROM hr_member 
+WHERE user_id = ?     
+
+2019-07-03 15:22:43,120 DEBUG [main] member.HrMemberDao (HrMemberDao.java:124)     - 1==================
+2019-07-03 15:22:43,168 DEBUG [main] member.HrMemberDao (HrMemberDao.java:130)     - 2==================
+2019-07-03 15:22:43,168 DEBUG [main] member.HrMemberDao (HrMemberDao.java:131)     - param:
+HrMemberVO [userId=jame007_144, password=1234, name=이상무0000152, email=james0000152@naver.com, birth=20190613, gender=F, cellPhone=010-0152-0152, lvl=1, regId=happy_hr_c0000152, regDt=, modId=admin, modDt=, toString()=DTO [total=0, num=0]]
+2019-07-03 15:22:43,169 DEBUG [main] member.HrMemberDao (HrMemberDao.java:132)     - 2==================
+2019-07-03 15:22:43,174 DEBUG [main] member.HrMemberDao (HrMemberDao.java:143)     - 3==================
+2019-07-03 15:22:43,174 DEBUG [main] member.HrMemberDao (HrMemberDao.java:144)     - flag:
+1
+2019-07-03 15:22:43,174 DEBUG [main] member.HrMemberDao (HrMemberDao.java:145)     - 3==================
+2019-07-03 15:22:43,174 DEBUG [main] member.HrMemberMain (HrMemberMain.java:57)     - ---------------
+2019-07-03 15:22:43,174 DEBUG [main] member.HrMemberMain (HrMemberMain.java:58)     - delFlag:1
+2019-07-03 15:22:43,174 DEBUG [main] member.HrMemberMain (HrMemberMain.java:59)     - ---------------
+2019-07-03 15:22:43,174 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:22:43,192 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@a67c67e
+2019-07-03 15:22:43,193 DEBUG [main] member.HrMemberDao (HrMemberDao.java:35)     - 1.conn:oracle.jdbc.driver.T4CConnection@a67c67e
+2019-07-03 15:22:43,193 DEBUG [main] member.HrMemberDao (HrMemberDao.java:66)     - 2.sql:
+INSERT INTO hr_member ( 
+    user_id,            
+    password,           
+    name,               
+    email,              
+    birth,              
+    gender,             
+    cell_phone_num,     
+    lvl,                
+    reg_id,             
+    reg_dt,             
+    mod_id,             
+    mod_dt              
+) VALUES (              
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    ?,                  
+    SYSDATE,            
+    ?,                  
+    SYSDATE             
+)                       
+
+2019-07-03 15:22:43,194 DEBUG [main] member.HrMemberDao (HrMemberDao.java:67)     - 3.param:
+HrMemberVO [userId=jame007_144, password=1234, name=이상무0000152, email=james0000152@naver.com, birth=20190613, gender=F, cellPhone=010-0152-0152, lvl=1, regId=happy_hr_c0000152, regDt=, modId=admin, modDt=, toString()=DTO [total=0, num=0]]
+2019-07-03 15:22:43,195 DEBUG [main] member.HrMemberDao (HrMemberDao.java:82)     - 4.flag:1
+2019-07-03 15:22:43,196 DEBUG [main] member.HrMemberMain (HrMemberMain.java:65)     - ---------------
+2019-07-03 15:22:43,196 DEBUG [main] member.HrMemberMain (HrMemberMain.java:66)     - add flag:1
+2019-07-03 15:22:43,196 DEBUG [main] member.HrMemberMain (HrMemberMain.java:67)     - ---------------
+2019-07-03 15:22:43,196 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:22:43,217 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@5ce81285
+2019-07-03 15:22:43,218 DEBUG [main] member.HrMemberDao (HrMemberDao.java:183)     - 1.conn:oracle.jdbc.driver.T4CConnection@5ce81285
+2019-07-03 15:22:43,218 DEBUG [main] member.HrMemberDao (HrMemberDao.java:184)     - 2.sql:
+ SELECT                                       
+     user_id,                                 
+     password,                                
+     name,                                    
+     email,                                   
+     birth,                                   
+     DECODE(gender,'F','여자','M','남자') gender, 
+     cell_phone_num,                           
+     DECODE(lvl,1,'사용자',9,'관리자') lvl,         
+     reg_id,                                  
+     TO_CHAR(reg_dt,'YYYY-MM-DD') red_dt,     
+     mod_id,                                  
+     TO_CHAR(mod_dt,'YYYY-MM-DD') mod_dt      
+ FROM                                         
+     hr_member                                
+ where user_id = :user_id                     
+
+2019-07-03 15:22:43,219 DEBUG [main] member.HrMemberDao (HrMemberDao.java:189)     - 3.param:jame007_144
+2019-07-03 15:22:43,228 DEBUG [main] member.HrMemberMain (HrMemberMain.java:73)     - ---------------
+2019-07-03 15:22:43,228 DEBUG [main] member.HrMemberMain (HrMemberMain.java:74)     - outVO:HrMemberVO [userId=jame007_144, password=1234, name=이상무0000152, email=james0000152@naver.com, birth=20190613, gender=여자, cellPhone=010-0152-0152, lvl=사용자, regId=happy_hr_c0000152, regDt=2019-07-03, modId=admin, modDt=2019-07-03, toString()=DTO [total=0, num=0]]
+2019-07-03 15:22:43,229 DEBUG [main] member.HrMemberMain (HrMemberMain.java:75)     - ---------------
+2019-07-03 15:22:43,229 DEBUG [main] member.HrMemberMain (HrMemberMain.java:81)     - ---------------
+2019-07-03 15:22:43,229 DEBUG [main] member.HrMemberMain (HrMemberMain.java:82)     - 두 객체는 동일: 등록성공HrMemberVO [userId=jame007_144, password=1234, name=이상무0000152, email=james0000152@naver.com, birth=20190613, gender=여자, cellPhone=010-0152-0152, lvl=사용자, regId=happy_hr_c0000152, regDt=2019-07-03, modId=admin, modDt=2019-07-03, toString()=DTO [total=0, num=0]]
+2019-07-03 15:22:43,229 DEBUG [main] member.HrMemberMain (HrMemberMain.java:83)     - ---------------
+2019-07-03 15:23:04,727 DEBUG [main] member.HrMemberDao (HrMemberDao.java:298)     - sql:
+ SELECT T1.*, T2.*										 
+ FROM                                                     
+ (                                                        
+ SELECT B.rnum as num                                     
+       ,B.user_id                                         
+ 	  ,B.password                                        
+ 	  ,B.name                                            
+ 	  ,B.email                                           
+ 	  ,B.birth                                           
+		  ,(                        						 
+    		 SELECT code_nm        							 
+ 		 FROM code             							 
+ 		 WHERE code_id=B.gender 						 
+ 		)gender                    						 
+		  ,B.cell_phone_num         						 
+ 	  ,cd_name('LVL', B.lvl) lvl 						 
+ 	  ,B.mod_id                                          
+ 	  ,TO_CHAR(b.mod_dt,'YYYY-MM-DD') mod_dt             
+ FROM(                                                    
+ 	SELECT ROWNUM AS rnum, A.*                           
+ 	FROM(                                                
+ 		SELECT * FROM hr_member                          
+ 		--SEARCH CONDITION                               
+WHERE name like ?||'%' 
+ 		ORDER BY mod_dt DESC                             
+ 	)A                                                   
+     WHERE ROWNUM <=( ? *( ? -1)+?) 
+     )B                                                   
+ WHERE B.rnum>= ( ? *( ? -1)+1)              
+ )T1                                                      
+ CROSS JOIN                                               
+ (                                                        
+ SELECT COUNT(*) total_cnt                                
+ FROM hr_member                                           
+ --SEARCH CONDITION                                       
+WHERE name like ?||'%' 
+ )T2                                                      
+
+2019-07-03 15:23:04,781 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-03 15:23:04,981 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@5f205aa
+2019-07-03 15:23:05,029 DEBUG [main] member.HrMemberDao (HrMemberDao.java:334)     - 3.param: 
+SearchVO [pageSize=10, pageNum=1, searchDiv=10, searchWord=이상무001]
+2019-07-03 15:23:05,284 DEBUG [main] member.HrMemberMain (HrMemberMain.java:98)     - ---------------
+2019-07-03 15:23:05,284 DEBUG [main] member.HrMemberMain (HrMemberMain.java:99)     - list[HrMemberVO [userId=happy_hr_c0010000, password=1234, name=이상무0010000, email=james0010000@naver.com, birth=20180428, gender=여자, cellPhone=010-1000-1000, lvl=관리자, regId=null, regDt=null, modId=happy_hr_c0010000, modDt=2018-04-28, toString()=DTO [total=10000, num=1]], HrMemberVO [userId=happy_hr_c0010009, password=1234, name=이상무0010009, email=james0010009@naver.com, birth=20180428, gender=남자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010009, modDt=2018-04-28, toString()=DTO [total=10000, num=2]], HrMemberVO [userId=happy_hr_c0010008, password=1234, name=이상무0010008, email=james0010008@naver.com, birth=20180428, gender=여자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010008, modDt=2018-04-28, toString()=DTO [total=10000, num=3]], HrMemberVO [userId=happy_hr_c0010007, password=1234, name=이상무0010007, email=james0010007@naver.com, birth=20180428, gender=남자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010007, modDt=2018-04-28, toString()=DTO [total=10000, num=4]], HrMemberVO [userId=happy_hr_c0010006, password=1234, name=이상무0010006, email=james0010006@naver.com, birth=20180428, gender=여자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010006, modDt=2018-04-28, toString()=DTO [total=10000, num=5]], HrMemberVO [userId=happy_hr_c0010005, password=1234, name=이상무0010005, email=james0010005@naver.com, birth=20180428, gender=남자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010005, modDt=2018-04-28, toString()=DTO [total=10000, num=6]], HrMemberVO [userId=happy_hr_c0010004, password=1234, name=이상무0010004, email=james0010004@naver.com, birth=20180428, gender=여자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010004, modDt=2018-04-28, toString()=DTO [total=10000, num=7]], HrMemberVO [userId=happy_hr_c0010003, password=1234, name=이상무0010003, email=james0010003@naver.com, birth=20180428, gender=남자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010003, modDt=2018-04-28, toString()=DTO [total=10000, num=8]], HrMemberVO [userId=happy_hr_c0010002, password=1234, name=이상무0010002, email=james0010002@naver.com, birth=20180428, gender=여자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010002, modDt=2018-04-28, toString()=DTO [total=10000, num=9]], HrMemberVO [userId=happy_hr_c0010001, password=1234, name=이상무0010001, email=james0010001@naver.com, birth=20180428, gender=남자, cellPhone=010-1000-1000, lvl=일반사용자, regId=null, regDt=null, modId=happy_hr_c0010001, modDt=2018-04-28, toString()=DTO [total=10000, num=10]]]
+2019-07-03 15:23:05,285 DEBUG [main] member.HrMemberMain (HrMemberMain.java:100)     - ---------------

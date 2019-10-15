@@ -1,0 +1,38 @@
+2019-07-24 10:40:15,013 DEBUG [main] cmn.StringUtil    (StringUtil.java:97)     - =======================
+2019-07-24 10:40:15,029 DEBUG [main] cmn.StringUtil    (StringUtil.java:98)     - <table border="0" align="center" cellpadding="0" cellspacing="0" width="100%"> 
+<tr> 
+<td align="center"> 
+<b>1</b> &nbsp;&nbsp;<a href="javascript:doSearchPage('member.do',2);" >2</a>&nbsp;&nbsp; 
+<a href="javascript:doSearchPage('member.do',3);" >3</a>&nbsp;&nbsp; 
+<a href="javascript:doSearchPage('member.do',4);" >4</a>&nbsp;&nbsp; 
+<a href="javascript:doSearchPage('member.do',5);" >5</a>&nbsp;&nbsp; 
+<a href="javascript:doSearchPage('member.do',6);" >6</a>&nbsp;&nbsp; 
+<a href="javascript:doSearchPage('member.do',7);" >7</a>&nbsp;&nbsp; 
+<a href="javascript:doSearchPage('member.do',8);" >8</a>&nbsp;&nbsp; 
+<a href="javascript:doSearchPage('member.do',9);" >9</a>&nbsp;&nbsp; 
+<a href="javascript:doSearchPage('member.do',10);" >10</a>&nbsp;&nbsp; 
+<a href="javascript:doSearchPage('member.do',101);" >< </a> 
+<a href="javascript:doSearchPage('member.do',101);" >&raquo; </a> 
+</td> 
+</tr> 
+</table
+2019-07-24 10:40:15,030 DEBUG [main] cmn.StringUtil    (StringUtil.java:99)     - =======================
+2019-07-24 10:43:13,626 DEBUG [main] cmn.StringUtil    (StringUtil.java:97)     - =======================
+2019-07-24 10:43:13,627 DEBUG [main] cmn.StringUtil    (StringUtil.java:98)     - <table border="0" align="center" cellpadding="0" cellspacing="0" width="100%"> 
+<tr> 
+<td align="center"> 
+<b>1</b> &nbsp;&nbsp;<a href="javascript:doSearchPage('member.do',2);" >2</a>&nbsp;&nbsp; 
+<a href="javascript:doSearchPage('member.do',3);" >3</a>&nbsp;&nbsp; 
+<a href="javascript:doSearchPage('member.do',4);" >4</a>&nbsp;&nbsp; 
+<a href="javascript:doSearchPage('member.do',5);" >5</a>&nbsp;&nbsp; 
+<a href="javascript:doSearchPage('member.do',6);" >6</a>&nbsp;&nbsp; 
+<a href="javascript:doSearchPage('member.do',7);" >7</a>&nbsp;&nbsp; 
+<a href="javascript:doSearchPage('member.do',8);" >8</a>&nbsp;&nbsp; 
+<a href="javascript:doSearchPage('member.do',9);" >9</a>&nbsp;&nbsp; 
+<a href="javascript:doSearchPage('member.do',10);" >10</a>&nbsp;&nbsp; 
+<a href="javascript:doSearchPage('member.do',101);" >> </a> 
+<a href="javascript:doSearchPage('member.do',101);" >&raquo; </a> 
+</td> 
+</tr> 
+</table>
+2019-07-24 10:43:13,627 DEBUG [main] cmn.StringUtil    (StringUtil.java:99)     - =======================

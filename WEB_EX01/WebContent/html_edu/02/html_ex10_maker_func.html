@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script>
+	/*
+		encodeURI(URI); // 웹 주소에서 사용하는 특수문자 제외하고 16진수로 변환
+		decodeURI(encodedURI); // 16진수로 변환되어 있는 것을 원래대로 되돌림
+	*/
+	
+	var strURI = "https://www.sist.co.kr/notice/noticeContent.do?seq=201&name=쌍용";
+	
+	console.log("strURI:"+strURI);
+	
+	//인코딩
+	var encodeStr = encodeURI(strURI);
+	console.log("encodeStr:"+encodeStr);
+	
+	//디코딩
+	var decodeStr = decodeURI(encodeStr);
+	console.log("decodeStr:"+decodeStr);
+	</script>
+</body>
+</html>

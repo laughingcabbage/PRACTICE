@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>WEB_EX01</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <filter>
+    <filter-name>sitemesh</filter-name>
+    <filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>sitemesh</filter-name>
+    <url-pattern>/data/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <servlet-name>s1_firstservlet</servlet-name>
+    <servlet-class>com.hr.servlet.s1.FirstServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>s1_secondservlet</servlet-name>
+    <servlet-class>com.hr.servlet.s1.SecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>s1_firstservlet</servlet-name>
+    <url-pattern>/s1/firstservlet.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>s1_secondservlet</servlet-name>
+    <url-pattern>/s1/secondservlet.do</url-pattern>
+  </servlet-mapping>
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+</web-app>

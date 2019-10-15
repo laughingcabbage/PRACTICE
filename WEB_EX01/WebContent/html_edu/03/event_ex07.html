@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<input type="button" id="btn" name="btn" value="button" />
+	<script>
+		//property방식: event target이 되는 객체의 property에 event를 등록
+
+		var btn = document.getElementById('btn');
+	
+		function btnEvent(){
+			alert('btnEvent');
+			btn.onclick = null; //event제거
+		}
+		
+		//event 등록
+		btn.onclick = btnEvent;
+		
+	</script>
+</body>
+</html>

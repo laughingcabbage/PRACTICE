@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="/WEB_EX01/js/jquery-1.12.4.js"></script>
+</head>
+<body>
+
+	<script>
+		/*
+			String   -> JSON obj : JSON.parse();
+			JSON obj -> String	 : JSON.stringify(jsonObj);
+		*/
+		
+		//json형태의 String을 만들어 보자.
+		var obj = '{"name":"Gary","age":25,"jobTitle":"front dev","job":"dev"}';
+		
+		console.log(obj);
+		
+		//Server():DTO->JSON(gson, jsonsimple, jackson등의 라이브러리 사용하면 됨)
+		
+		var jsonObj = JSON.parse(obj);
+		console.log(jsonObj);
+		console.log(jsonObj.name);
+		console.log(jsonObj.age);
+		
+		var jsonStr = JSON.stringify(jsonObj);
+		console.log(jsonStr);
+	</script>
+</body>
+</html>

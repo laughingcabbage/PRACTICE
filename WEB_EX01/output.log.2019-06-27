@@ -1,0 +1,233 @@
+2019-06-27 15:10:17,632 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-27 15:10:17,901 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-27 15:10:17,902 DEBUG [main] board.BoardDao    (BoardDao.java:116)     - 1======================
+2019-06-27 15:10:17,902 DEBUG [main] board.BoardDao    (BoardDao.java:117)     - query:
+ SELECT seq,                                          
+     title,                                           
+     read_cnt,                                        
+     contents,                                        
+     reg_id,                                          
+     TO_CHAR(reg_dt,'YYYY-MM-DD HH24:mi:ss') reg_dt   
+ FROM board                                           
+ WHERE seq = ?                                        
+
+2019-06-27 15:10:17,904 DEBUG [main] board.BoardDao    (BoardDao.java:118)     - 1======================
+2019-06-27 15:10:17,989 DEBUG [main] board.BoardDao    (BoardDao.java:126)     - 2======================
+2019-06-27 15:10:17,989 DEBUG [main] board.BoardDao    (BoardDao.java:127)     - param seq:12
+2019-06-27 15:10:17,989 DEBUG [main] board.BoardDao    (BoardDao.java:128)     - 2======================
+2019-06-27 15:10:18,015 DEBUG [main] board.BoardTest   (BoardTest.java:24)     - ======================
+2019-06-27 15:10:18,015 DEBUG [main] board.BoardTest   (BoardTest.java:25)     - outVO:BoardVO [seq=12, title=제목3, readCnt=0, contents=내용3, regId=admin3, regDt=2019-06-26 15:18:47, toString()=DTO [total=0, num=0]]
+2019-06-27 15:10:18,015 DEBUG [main] board.BoardTest   (BoardTest.java:26)     - ======================
+2019-06-27 15:25:24,824 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-27 15:25:25,027 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-27 15:25:25,027 DEBUG [main] board.BoardDao    (BoardDao.java:66)     - 1======================
+2019-06-27 15:25:25,027 DEBUG [main] board.BoardDao    (BoardDao.java:67)     - query:
+ DELETE FROM board  
+ WHERE seq = ?      
+
+2019-06-27 15:25:25,029 DEBUG [main] board.BoardDao    (BoardDao.java:68)     - 1======================
+2019-06-27 15:25:25,083 DEBUG [main] board.BoardDao    (BoardDao.java:75)     - 2======================
+2019-06-27 15:25:25,084 DEBUG [main] board.BoardDao    (BoardDao.java:76)     - param:
+ DELETE FROM board  
+ WHERE seq = ?      
+
+2019-06-27 15:25:25,084 DEBUG [main] board.BoardDao    (BoardDao.java:77)     - 2======================
+2019-06-27 15:25:25,098 DEBUG [main] board.BoardDao    (BoardDao.java:84)     - 3======================
+2019-06-27 15:25:25,098 DEBUG [main] board.BoardDao    (BoardDao.java:85)     - transaction=oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-27 15:25:25,098 DEBUG [main] board.BoardDao    (BoardDao.java:86)     - 3======================
+2019-06-27 15:25:25,101 DEBUG [main] board.BoardDao    (BoardDao.java:99)     - 3==================
+2019-06-27 15:25:25,101 DEBUG [main] board.BoardDao    (BoardDao.java:100)     - flag:
+1
+2019-06-27 15:25:25,101 DEBUG [main] board.BoardDao    (BoardDao.java:101)     - 3==================
+2019-06-27 15:43:34,404 DEBUG [main] board.BoardDao    (BoardDao.java:57)     - 1=================================
+2019-06-27 15:43:34,405 DEBUG [main] board.BoardDao    (BoardDao.java:58)     - query:
+ INSERT INTO board (     
+     seq,                
+     title,              
+     contents,           
+     reg_id,             
+     reg_dt              
+ ) VALUES (              
+     SEQ_BOARD.nextval,  
+     ?,                  
+     ?,                  
+     ?,                  
+     SYSDATE             
+ )                       
+
+2019-06-27 15:43:34,406 DEBUG [main] board.BoardDao    (BoardDao.java:59)     - 1=================================
+2019-06-27 15:43:34,464 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-27 15:43:34,678 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@31f924f5
+2019-06-27 15:43:34,733 DEBUG [main] board.BoardDao    (BoardDao.java:71)     - 2=================================
+2019-06-27 15:43:34,733 DEBUG [main] board.BoardDao    (BoardDao.java:72)     - param:BoardVO [seq=1, title=제목1, readCnt=0, contents=내용1, regId=admin, regDt=, toString()=DTO [total=0, num=0]]
+2019-06-27 15:43:34,733 DEBUG [main] board.BoardDao    (BoardDao.java:73)     - 2=================================
+2019-06-27 15:43:34,758 DEBUG [main] board.BoardDao    (BoardDao.java:77)     - 3=================================
+2019-06-27 15:43:34,758 DEBUG [main] board.BoardDao    (BoardDao.java:78)     - flag:1
+2019-06-27 15:43:34,758 DEBUG [main] board.BoardDao    (BoardDao.java:79)     - 3=================================
+2019-06-27 15:48:14,950 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-27 15:48:15,153 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-27 15:48:15,153 DEBUG [main] board.BoardDao    (BoardDao.java:117)     - 1======================
+2019-06-27 15:48:15,153 DEBUG [main] board.BoardDao    (BoardDao.java:118)     - query:
+ DELETE FROM board  
+ WHERE seq = ?      
+
+2019-06-27 15:48:15,155 DEBUG [main] board.BoardDao    (BoardDao.java:119)     - 1======================
+2019-06-27 15:48:15,211 DEBUG [main] board.BoardDao    (BoardDao.java:126)     - 2======================
+2019-06-27 15:48:15,212 DEBUG [main] board.BoardDao    (BoardDao.java:127)     - param:
+ DELETE FROM board  
+ WHERE seq = ?      
+
+2019-06-27 15:48:15,212 DEBUG [main] board.BoardDao    (BoardDao.java:128)     - 2======================
+2019-06-27 15:48:15,215 DEBUG [main] board.BoardDao    (BoardDao.java:135)     - 3======================
+2019-06-27 15:48:15,215 DEBUG [main] board.BoardDao    (BoardDao.java:136)     - transaction: oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-27 15:48:15,215 DEBUG [main] board.BoardDao    (BoardDao.java:137)     - 3======================
+2019-06-27 15:48:15,217 DEBUG [main] board.BoardDao    (BoardDao.java:150)     - 4==================
+2019-06-27 15:48:15,217 DEBUG [main] board.BoardDao    (BoardDao.java:151)     - flag:1
+2019-06-27 15:48:15,217 DEBUG [main] board.BoardDao    (BoardDao.java:152)     - 4==================
+2019-06-27 15:49:51,370 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-27 15:49:51,580 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-27 15:49:51,581 DEBUG [main] board.BoardDao    (BoardDao.java:117)     - 1======================
+2019-06-27 15:49:51,581 DEBUG [main] board.BoardDao    (BoardDao.java:118)     - query:
+ DELETE FROM board  
+ WHERE seq = ?      
+
+2019-06-27 15:49:51,582 DEBUG [main] board.BoardDao    (BoardDao.java:119)     - 1======================
+2019-06-27 15:49:51,637 DEBUG [main] board.BoardDao    (BoardDao.java:126)     - 2======================
+2019-06-27 15:49:51,637 DEBUG [main] board.BoardDao    (BoardDao.java:127)     - param:
+ DELETE FROM board  
+ WHERE seq = ?      
+
+2019-06-27 15:49:51,637 DEBUG [main] board.BoardDao    (BoardDao.java:128)     - 2======================
+2019-06-27 15:49:51,640 DEBUG [main] board.BoardDao    (BoardDao.java:135)     - 3======================
+2019-06-27 15:49:51,640 DEBUG [main] board.BoardDao    (BoardDao.java:136)     - transaction: oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-27 15:49:51,640 DEBUG [main] board.BoardDao    (BoardDao.java:137)     - 3======================
+2019-06-27 15:49:51,643 DEBUG [main] board.BoardDao    (BoardDao.java:151)     - 4==================
+2019-06-27 15:49:51,643 DEBUG [main] board.BoardDao    (BoardDao.java:152)     - flag:1
+2019-06-27 15:49:51,643 DEBUG [main] board.BoardDao    (BoardDao.java:153)     - 4==================
+2019-06-27 15:56:58,079 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-27 15:56:58,289 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-27 15:56:58,289 DEBUG [main] board.BoardDao    (BoardDao.java:117)     - 1======================
+2019-06-27 15:56:58,289 DEBUG [main] board.BoardDao    (BoardDao.java:118)     - query:
+ DELETE FROM board  
+ WHERE seq = ?      
+
+2019-06-27 15:56:58,291 DEBUG [main] board.BoardDao    (BoardDao.java:119)     - 1======================
+2019-06-27 15:56:58,346 DEBUG [main] board.BoardDao    (BoardDao.java:126)     - 2======================
+2019-06-27 15:56:58,346 DEBUG [main] board.BoardDao    (BoardDao.java:127)     - param:
+ DELETE FROM board  
+ WHERE seq = ?      
+
+2019-06-27 15:56:58,346 DEBUG [main] board.BoardDao    (BoardDao.java:128)     - 2======================
+2019-06-27 15:56:58,350 DEBUG [main] board.BoardDao    (BoardDao.java:135)     - 3======================
+2019-06-27 15:56:58,350 DEBUG [main] board.BoardDao    (BoardDao.java:136)     - transaction: oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-27 15:56:58,350 DEBUG [main] board.BoardDao    (BoardDao.java:137)     - 3======================
+2019-06-27 15:56:58,353 DEBUG [main] board.BoardDao    (BoardDao.java:151)     - 4==================
+2019-06-27 15:56:58,353 DEBUG [main] board.BoardDao    (BoardDao.java:152)     - flag:1
+2019-06-27 15:56:58,354 DEBUG [main] board.BoardDao    (BoardDao.java:153)     - 4==================
+2019-06-27 16:25:03,819 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-27 16:25:04,026 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-27 16:25:04,026 DEBUG [main] board.BoardDao    (BoardDao.java:117)     - 1======================
+2019-06-27 16:25:04,026 DEBUG [main] board.BoardDao    (BoardDao.java:118)     - query:
+ DELETE FROM board  
+ WHERE seq = ?      
+
+2019-06-27 16:25:04,028 DEBUG [main] board.BoardDao    (BoardDao.java:119)     - 1======================
+2019-06-27 16:25:04,082 DEBUG [main] board.BoardDao    (BoardDao.java:126)     - 2======================
+2019-06-27 16:25:04,082 DEBUG [main] board.BoardDao    (BoardDao.java:127)     - param:
+ DELETE FROM board  
+ WHERE seq = ?      
+
+2019-06-27 16:25:04,082 DEBUG [main] board.BoardDao    (BoardDao.java:128)     - 2======================
+2019-06-27 16:25:04,086 DEBUG [main] board.BoardDao    (BoardDao.java:157)     - 4==================
+2019-06-27 16:25:04,087 DEBUG [main] board.BoardDao    (BoardDao.java:158)     - flag:0
+2019-06-27 16:25:04,087 DEBUG [main] board.BoardDao    (BoardDao.java:159)     - 4==================
+2019-06-27 16:25:54,688 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-27 16:25:54,893 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-27 16:25:54,893 DEBUG [main] board.BoardDao    (BoardDao.java:117)     - 1======================
+2019-06-27 16:25:54,893 DEBUG [main] board.BoardDao    (BoardDao.java:118)     - query:
+ DELETE FROM board  
+ WHERE seq = ?      
+
+2019-06-27 16:25:54,895 DEBUG [main] board.BoardDao    (BoardDao.java:119)     - 1======================
+2019-06-27 16:25:54,951 DEBUG [main] board.BoardDao    (BoardDao.java:126)     - 2======================
+2019-06-27 16:25:54,952 DEBUG [main] board.BoardDao    (BoardDao.java:127)     - param:
+ DELETE FROM board  
+ WHERE seq = ?      
+
+2019-06-27 16:25:54,952 DEBUG [main] board.BoardDao    (BoardDao.java:128)     - 2======================
+2019-06-27 16:25:54,955 DEBUG [main] board.BoardDao    (BoardDao.java:135)     - 3======================
+2019-06-27 16:25:54,955 DEBUG [main] board.BoardDao    (BoardDao.java:136)     - transaction: oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-27 16:25:54,955 DEBUG [main] board.BoardDao    (BoardDao.java:137)     - 3======================
+2019-06-27 16:25:54,958 DEBUG [main] board.BoardDao    (BoardDao.java:157)     - 4==================
+2019-06-27 16:25:54,958 DEBUG [main] board.BoardDao    (BoardDao.java:158)     - flag:1
+2019-06-27 16:25:54,958 DEBUG [main] board.BoardDao    (BoardDao.java:159)     - 4==================
+2019-06-27 16:30:31,077 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-27 16:30:31,281 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-27 16:30:31,281 DEBUG [main] board.BoardDao    (BoardDao.java:117)     - 1======================
+2019-06-27 16:30:31,281 DEBUG [main] board.BoardDao    (BoardDao.java:118)     - query:
+ DELETE FROM board  
+ WHERE seq = ?      
+
+2019-06-27 16:30:31,282 DEBUG [main] board.BoardDao    (BoardDao.java:119)     - 1======================
+2019-06-27 16:30:31,338 DEBUG [main] board.BoardDao    (BoardDao.java:126)     - 2======================
+2019-06-27 16:30:31,338 DEBUG [main] board.BoardDao    (BoardDao.java:127)     - param:
+ DELETE FROM board  
+ WHERE seq = ?      
+
+2019-06-27 16:30:31,338 DEBUG [main] board.BoardDao    (BoardDao.java:128)     - 2======================
+2019-06-27 16:30:31,342 DEBUG [main] board.BoardDao    (BoardDao.java:150)     - 3======================
+2019-06-27 16:30:31,342 DEBUG [main] board.BoardDao    (BoardDao.java:151)     - transaction: oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-27 16:30:31,342 DEBUG [main] board.BoardDao    (BoardDao.java:152)     - 3======================
+2019-06-27 16:30:31,344 DEBUG [main] board.BoardDao    (BoardDao.java:162)     - 4==================
+2019-06-27 16:30:31,344 DEBUG [main] board.BoardDao    (BoardDao.java:163)     - flag:1
+2019-06-27 16:30:31,344 DEBUG [main] board.BoardDao    (BoardDao.java:164)     - 4==================
+2019-06-27 16:47:53,778 DEBUG [main] board.BoardDao    (BoardDao.java:57)     - 1=================================
+2019-06-27 16:47:53,780 DEBUG [main] board.BoardDao    (BoardDao.java:58)     - query:
+ INSERT INTO board (     
+     seq,                
+     title,              
+     contents,           
+     reg_id,             
+     reg_dt              
+ ) VALUES (              
+     SEQ_BOARD.nextval,  
+     ?,                  
+     ?,                  
+     ?,                  
+     SYSDATE             
+ )                       
+
+2019-06-27 16:47:53,780 DEBUG [main] board.BoardDao    (BoardDao.java:59)     - 1=================================
+2019-06-27 16:47:53,840 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-27 16:47:54,048 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@31f924f5
+2019-06-27 16:47:54,103 DEBUG [main] board.BoardDao    (BoardDao.java:71)     - 2=================================
+2019-06-27 16:47:54,103 DEBUG [main] board.BoardDao    (BoardDao.java:72)     - param:BoardVO [seq=1, title=제목1, readCnt=0, contents=내용1, regId=admin, regDt=, toString()=DTO [total=0, num=0]]
+2019-06-27 16:47:54,103 DEBUG [main] board.BoardDao    (BoardDao.java:73)     - 2=================================
+2019-06-27 16:47:54,107 DEBUG [main] board.BoardDao    (BoardDao.java:77)     - 3=================================
+2019-06-27 16:47:54,107 DEBUG [main] board.BoardDao    (BoardDao.java:78)     - flag:1
+2019-06-27 16:47:54,107 DEBUG [main] board.BoardDao    (BoardDao.java:79)     - 3=================================
+2019-06-27 16:48:07,383 DEBUG [main] board.BoardDao    (BoardDao.java:57)     - 1=================================
+2019-06-27 16:48:07,385 DEBUG [main] board.BoardDao    (BoardDao.java:58)     - query:
+ INSERT INTO board (     
+     seq,                
+     title,              
+     contents,           
+     reg_id,             
+     reg_dt              
+ ) VALUES (              
+     SEQ_BOARD.nextval,  
+     ?,                  
+     ?,                  
+     ?,                  
+     SYSDATE             
+ )                       
+
+2019-06-27 16:48:07,385 DEBUG [main] board.BoardDao    (BoardDao.java:59)     - 1=================================
+2019-06-27 16:48:07,441 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-27 16:48:07,646 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@31f924f5
+2019-06-27 16:48:07,706 DEBUG [main] board.BoardDao    (BoardDao.java:71)     - 2=================================
+2019-06-27 16:48:07,706 DEBUG [main] board.BoardDao    (BoardDao.java:72)     - param:BoardVO [seq=1, title=제목1, readCnt=0, contents=내용1, regId=admin, regDt=, toString()=DTO [total=0, num=0]]
+2019-06-27 16:48:07,706 DEBUG [main] board.BoardDao    (BoardDao.java:73)     - 2=================================
+2019-06-27 16:48:07,710 DEBUG [main] board.BoardDao    (BoardDao.java:77)     - 3=================================
+2019-06-27 16:48:07,710 DEBUG [main] board.BoardDao    (BoardDao.java:78)     - flag:1
+2019-06-27 16:48:07,710 DEBUG [main] board.BoardDao    (BoardDao.java:79)     - 3=================================

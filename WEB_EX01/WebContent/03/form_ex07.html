@@ -1,0 +1,41 @@
+<!-- 
+	method 
+		-  get: 주소표시줄에 사용자가 입력한 정보가 그대로 드러남(256~4096byte 전달 가능)
+			    http://localhost:8080/WEB_EX01/03/login.do?user_id=1234&user_pw=1234
+		- post: 입력내용에 제한이 없음. 주소표시줄에 사용자가 입력한 정보가 드러나지 않음.
+	action: 서버 상에 처리할 프로그램 지정
+	name  : 폼에 이름을 지정하는 것
+	target: 태그에서 지정한 파일을 현재 창이 아닌 다른 위치
+-->
+
+<!-- 
+	input type="text, hidden, password, checkbox, radio, file, submit, button, reset"만 쓴다
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form</title>
+</head>
+<body>
+	<h3>form checkbox, radio</h3>
+	<hr/>
+
+	<form action="login.do" method="get">
+		<fieldset>
+			<legend>checkbox</legend>
+			<label><input type="checkbox" name="mailing01" value="new">해외단신</label>
+			<label><input type="checkbox" name="mailing02" value="dialog">회화</label>
+			<label><input type="checkbox" name="mailing03" value="pops">팝스</label>
+		</fieldset>
+		<fieldset>
+			<legend>radio</legend>
+			<label><input type="radio" name="subject" value="100">일반</label>
+			<label><input type="radio" name="subject" value="200">관리자</label>
+			<label><input type="radio" name="subject" value="300">슈퍼관리자</label>
+		</fieldset>
+		<br/>
+		<input type="submit" value="전송">
+	</form>
+</body>
+</html>

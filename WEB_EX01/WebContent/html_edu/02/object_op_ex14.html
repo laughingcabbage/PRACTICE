@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script>
+		function User(name){
+			this.name = name;
+			this.sayHello = function(){
+								console.log("Hello, I am "+this.name);
+							};
+		}
+		
+		var user1 = new User("Tom");
+		var user2 = new User("SIST");
+		user1.sayHello();
+		user2.sayHello();
+	</script>
+</body>
+</html>

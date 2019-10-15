@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/WEB_EX01/js/jquery-ui.css">
+<style type="text/css">
+	.ui-tab{
+		font-size: 12px;
+	}
+</style>
+<title>Insert title here</title>
+<script src="/WEB_EX01/js/jquery-1.12.4.js"></script>
+<script src="/WEB_EX01/js/jquery-ui.js"></script>
+</head>
+<body>
+	<div id="tabs">
+		<ul>
+			<li><a href="#tabs-1">One</a></li>
+			<li><a href="#tabs-2">Two</a></li>
+			<li><a href="#tabs-3">Three</a></li>
+		</ul>
+		<div id="tabs-1">내용1</div>
+		<div id="tabs-2">내용2</div>
+		<div id="tabs-3">내용3</div>
+	</div>
+	<script>
+		$("#tabs").tabs();
+		$(document).ready(function(){
+			
+		});
+		
+	</script>
+</body>
+</html>

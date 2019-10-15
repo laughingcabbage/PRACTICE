@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script>
+		//콜백함수: 객체의 상태변화가 발생(이벤트)하면 자신을 호출하도록 알려준다.
+		//AJAX(비동기 통신):비동기적인 웹 애플리케이션을 제작하기 위해 사용하는 웹 개발 기법.
+		var count = 1;
+		
+		function sayHello(){
+			console.log("Hello Javascript: "+count);
+			count++;
+		}
+		
+		setTimeout(sayHello, 5000); //5초 뒤에 sayHello를 호출하라는 뜻
+		console.log("***Hello JavaScript***");
+		
+	</script>
+</body>
+</html>

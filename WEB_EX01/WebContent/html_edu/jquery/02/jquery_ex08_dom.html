@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="/WEB_EX01/js/jquery-1.12.4.js"></script>
+</head>
+<body>
+	<div id="dom01">
+		<div>Demo Box</div>
+		<ul>
+			<li>List Item 01</li>
+			<li>List Item 02</li>
+		</ul>
+	</div>
+	<input type="button" id="btn01" value="add" />
+	<div id="div01"></div>
+	<script>
+		/*
+			DOM제어
+				append()   : 입력받은 contents를 마지막에 추가
+				appendTo() : 입력받은 contents를 element의 마지막에 추가
+				prepend()  : 입력받은 contents를 시작 위치에 추가
+				prependTo(): 입력받은 contents를 element의 시작 위치에 추가
+				html()	   : html을 가져옴
+				text()	   : text를 가져옴
+				wrap()	   : 부모 element를 생성
+				unwrap()   : 부모 element를 제거
+				remove()   : element와 관련된 event/data 삭제
+				empty()	   : element의 자식 node를 삭제		
+		*/
+		
+		$("#btn01").on("click", function(){
+			console.log($("#dom01").text());
+			//dom01의 text를 가져와서 div01에 넣는 것
+			$("#div01").html($("#dom01").text());
+		});
+		
+	</script>
+</body>
+</html>

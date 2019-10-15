@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<!-- onload: 웹페이지에 포함된 모든 것들이 완전히 로드되었을 때 발생하는 event -->
+<body>
+
+	<!-- InLine방식 Event handler 연결(권장하지 않음) -->
+	<input type="button" value="InLine" onclick="alert('Hello World!');" />
+	
+	<!-- InLine방식 Event handler 연결 (권장)-->
+	<input type="button" value="InLine_function" onclick="clickEvent();" />
+	
+	<script>
+		/*
+			- event : button click, mouse hover, key(ex:enter), 브라우저가 웹페이지 로딩을 끝냈을 때
+			
+			- <body onload="start();">
+				- event target	  : body 
+				- event type	  : load
+				- event attribute : onload
+				- event handler	  : start()
+				
+			- event 처리 방식 : inline, property, 표준이벤트모델
+				- inline : 태그 내에서 이벤트를 구현하는 방법
+
+		*/
+		
+		function start(){
+			alert('onload:start()');		
+		}
+				
+		function clickEvent(){
+			alert('clickEvent');
+		}
+	
+	</script>
+</body>
+</html>

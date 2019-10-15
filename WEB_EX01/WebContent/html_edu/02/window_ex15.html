@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script>
+	/*
+	브라우저 내장 객체
+							window
+							  |
+	document	location	history		screen	   navigator
+
+	window : 브라우저 내장 객체의 최상위 객체 
+		  	  브라우저 창 하나에 하나의 window객체 생성
+			 window객체는 전역 객체
+			  전역객체는 객체의 프로퍼티, 메소드를 쓸 때 이름을 명시할 필요가 없음
+			  브라우저 화면을 참조할 수 있는 객체
+	*/
+	
+	var gVal = 88;
+	
+	alert('alert javascript'+gVal);
+	
+	//이렇게 해도 되지만 전역객체라서 window. 안 써도 됨
+	window.alert('window.alert'+window.gVal);
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 id="header1">My header1</h1>
+	<h1 class="header2">My header2</h1>
+	<a name="tagA" href="https://cafe.naer.com/kndjang">My Link</a>
+	<script>
+		/*
+			document.createElement(tagName)	   : Element생성		
+			document.createTextNode(data)	   : Text Node생성
+			document.appendChild(Element)	   : Element에 Child로 붙인다.
+			document.setAttribute(name, value) : Element의 속성 설정 
+			document.getAttribute(name, value) : Element의 속성 가져오기
+			
+			removeChild(node) 				   : 자식 node 삭제
+			removeAttribute(attributeName) 	   : 객체의 속성 삭제
+			
+			(이렇게 코딩하면 코드량이 많아지기 때문에 jquery를 쓴다.)
+		*/
+		
+		
+		//<h2 id="header3">My header3</h2>를 javascript로 써 보자.
+		
+		//1. h2 element를 생성
+		var header_3 = document.createElement('h2');
+		
+		//2. My header3이라는 텍스트를 생성
+		var textNode = document.createTextNode('My header3');
+		
+		//3. header_3이라는 변수의 속성을 설정(id가 header3임)
+		header_3.setAttribute('id', 'header3');
+		header_3.setAttribute('style', 'color:blue');
+		
+		//4. header_3에 textNode를 붙인다. 
+		header_3.appendChild(textNode);
+		
+		//5. body element에 header_3이라는 변수를 붙인다.
+		document.body.appendChild(header_3);
+		
+		//header_3의 속성을 가져와 봄
+		document.write("header_3: "+header_3.getAttribute('id'));
+		
+	</script>
+</body>
+</html>

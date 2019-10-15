@@ -1,0 +1,47 @@
+<!-- 
+	CSS(Cascading Style Sheets): HTML과 함께 웹 표준의 기본 개념
+		-HTML: 웹 문서의 골격
+		-CSS : 웹 문서의 디자인 요소 
+		
+		*{속성} : 문서 전체에 대해 이 속성을 적용
+		태그{속성}: 특정 태그에 대해 이 속성을 적용
+		.스타일 {}: class속성  ex) <input class=".스타일이름" />
+		#스타일 {}: id속성	 ex) <input id=".스타일이름" />
+		이름1, 이름2, ... {속성}: 여러 항목에 같은 스타일을 적용
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- 외부 style 포함하는 방법 -->
+<!-- link rel="stylesheet" media="all" type="text/css" href="주소" -->
+<style type="text/css">
+/*p{color:blue;}
+선택자{스타일속성: 속성값;}
+*/
+@font-face{
+	font-family: NanumSquare;
+	src:url(https://)
+}
+
+#container{
+	background-color:#ff6a00; /*배경색*/
+	width: 300px; /*넓이*/
+	height: 200px; /*높이*/
+	margin: 0 auto; /*가로 중앙 배치*/
+	border: 1px solid black;
+}
+</style>
+<title>CSS</title>
+</head>
+<body>
+	<h3>CSS DIV</h3>
+	<hr/>
+	<div id="container">
+	</div>
+	<div id="container">
+	</div>
+	<div id="container">
+	</div>
+</body>
+</html>

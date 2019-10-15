@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<input type="button" id="btn" value="버튼" />
+	<script>
+		/*
+			-표준 이벤트 모델: 한 번에 여러 이벤트 등록 가능.
+			
+			-이벤트 등록
+				-addEventListner(eventType, eventHandler, useCapture)
+					- eventType	   : ex) onclick
+					- eventHandler : event 처리 메소드
+					- useCapture   : 이벤트 캡처리 여부(default는 false)
+				-attachEvent(eventType, eventHandler) : IE
+			
+			-이벤트 삭제
+				-removeEventListener(eventType, eventHandler);
+				-detachEvent(eventType, eventHandler) : IE
+		*/
+		
+		//id로 element찾기
+		var btn = document.getElementById('btn');
+			
+		//eventHandler 생성
+		function btnEvent01(){
+			alert('btnEvent01');
+		}
+		
+		//IE용 eventHandler 생성
+		function btnEvent02(){
+			alert('btnEvent02');
+		}
+		
+		if(btn.addEventListener){//표준 이벤트 모델
+			btn.addEventListener('click', btnEvent01, false);
+			btn.addEventListener('click', btnEvent02, false);
+		}else if(btn.attachEvent){//IE전용 이벤트 메소드
+			tn.attachEvent('click', btnEvent02)
+		}
+		
+	</script>
+</body>
+</html>

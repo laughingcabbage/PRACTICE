@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+	table{
+		background-color: #eee;
+	}
+</style>
+<title>Insert title here</title>
+<script src="/WEB_EX01/js/jquery-1.12.4.js"></script>
+</head>
+<body>
+	<table border="1">
+		<tr><td>Row with Index 0</td></tr>
+		<tr><td>Row with Index 1</td></tr>
+		<tr><td>Row with Index 2</td></tr>
+		<tr><td>Row with Index 3</td></tr>
+	</table>
+	<script>
+		/*
+			filter select
+				-:even select : 짝수 element
+				-:odd select  : 홀수 element
+				-:first select: 첫번째 element
+				-:last select : 마지막 element
+				-:eq()		 : n번째
+				-:lt()		 : n번째보다 작은
+				-:gt()		 : n번째보다 큰
+		*/
+		
+		//짝수인 row에만 색을 주자
+		//$("tr:even").css("background-color", "#f00");
+				
+		//마지막에만 색을 주자
+		//$("tr:last").css("background-color", "#f00");
+		
+		//eq로 원하는 곳에만 색을 주자
+		//$("tr:eq(2)").css("background-color", "#f00");
+		
+		//lt로 2번째보다 작은 곳에만 색을 주자
+		$("tr:lt(2)").css("background-color", "#f00");
+	</script>
+</body>
+</html>

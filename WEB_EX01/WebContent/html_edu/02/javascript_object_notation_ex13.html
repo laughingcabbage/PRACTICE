@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script>
+		/*
+			객체: 데이터 저장(데이터 접근 방법이 Array)
+				 key-value쌍으로 구성되어 있음.
+				 key를 통해서 data에 접근
+				 함수, 배열, 다른 객체
+		*/
+		
+		var user = {name:"Tim", age:23, gender:"man", country:"KO"};
+		
+		console.log("user.name:"+user.name);
+		console.log("user.age:"+user.age);
+		
+		//삭제
+		delete(user.age);
+		
+		//삭제해서 undefined로 나온다 
+		console.log("user.age:"+user.age);
+		
+		//변경
+		user.name="WWW";
+		console.log("user.name:"+user.name);
+		
+		//Math함수도 있다 ex)Math.random();
+		//Date함수도 있다 ex)Date.toString();
+	</script>
+</body>
+</html>

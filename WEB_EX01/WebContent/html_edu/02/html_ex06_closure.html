@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script>
+		/*
+			inner function(내부함수): 함수 내부에 선언한 함수. 함수가 지역변수
+		*/
+		
+		function outterFunc(arg1, arg2, arg3){
+			
+			function innerFunc(x, y, z){
+				return x+y+z;
+			}
+			
+			return innerFunc(arg1,arg2,arg3);
+		}
+			
+		console.log(outterFunc(8,10,13));
+	</script>
+</body>
+</html>

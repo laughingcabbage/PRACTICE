@@ -1,0 +1,638 @@
+2019-07-01 14:26:01,141 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 14:26:01,688 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-07-01 14:26:01,688 DEBUG [main] board.BoardDao    (BoardDao.java:215)     - 1======================
+2019-07-01 14:26:01,688 DEBUG [main] board.BoardDao    (BoardDao.java:216)     - query:
+ SELECT MAX(seq) seq 
+ FROM board          
+ WHERE seq>0         
+
+2019-07-01 14:26:01,690 DEBUG [main] board.BoardDao    (BoardDao.java:217)     - 1======================
+2019-07-01 14:26:01,761 DEBUG [main] board.BoardDao    (BoardDao.java:226)     - 2======================
+2019-07-01 14:26:01,762 DEBUG [main] board.BoardDao    (BoardDao.java:227)     - seq:30
+2019-07-01 14:26:01,762 DEBUG [main] board.BoardDao    (BoardDao.java:228)     - 2======================
+2019-07-01 14:36:50,780 DEBUG [main] board.BoardDao    (BoardDao.java:57)     - 1=================================
+2019-07-01 14:36:50,782 DEBUG [main] board.BoardDao    (BoardDao.java:58)     - query:
+ INSERT INTO board (     
+     seq,                
+     title,              
+     contents,           
+     reg_id,             
+     reg_dt              
+ ) VALUES (              
+     SEQ_BOARD.nextval,  
+     ?,                  
+     ?,                  
+     ?,                  
+     SYSDATE             
+ )                       
+
+2019-07-01 14:36:50,782 DEBUG [main] board.BoardDao    (BoardDao.java:59)     - 1=================================
+2019-07-01 14:36:50,840 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 14:36:51,046 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@31f924f5
+2019-07-01 14:36:51,102 DEBUG [main] board.BoardDao    (BoardDao.java:71)     - 2=================================
+2019-07-01 14:36:51,102 DEBUG [main] board.BoardDao    (BoardDao.java:72)     - param:BoardVO [seq=1, title=제목1, readCnt=0, contents=내용1, regId=admin, regDt=, toString()=DTO [total=0, num=0]]
+2019-07-01 14:36:51,102 DEBUG [main] board.BoardDao    (BoardDao.java:73)     - 2=================================
+2019-07-01 14:36:51,127 DEBUG [main] board.BoardDao    (BoardDao.java:77)     - 3=================================
+2019-07-01 14:36:51,128 DEBUG [main] board.BoardDao    (BoardDao.java:78)     - flag:1
+2019-07-01 14:36:51,128 DEBUG [main] board.BoardDao    (BoardDao.java:79)     - 3=================================
+2019-07-01 14:36:51,131 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 14:36:51,154 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@30c15d8b
+2019-07-01 14:36:51,154 DEBUG [main] board.BoardDao    (BoardDao.java:215)     - 1======================
+2019-07-01 14:36:51,154 DEBUG [main] board.BoardDao    (BoardDao.java:216)     - query:
+ SELECT MAX(seq) seq 
+ FROM board          
+ WHERE seq>0         
+
+2019-07-01 14:36:51,154 DEBUG [main] board.BoardDao    (BoardDao.java:217)     - 1======================
+2019-07-01 14:36:51,166 DEBUG [main] board.BoardDao    (BoardDao.java:226)     - 2======================
+2019-07-01 14:36:51,166 DEBUG [main] board.BoardDao    (BoardDao.java:227)     - seq:40
+2019-07-01 14:36:51,166 DEBUG [main] board.BoardDao    (BoardDao.java:228)     - 2======================
+2019-07-01 14:36:51,181 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 14:36:51,196 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@40a4337a
+2019-07-01 14:36:51,196 DEBUG [main] board.BoardDao    (BoardDao.java:269)     - 1======================
+2019-07-01 14:36:51,196 DEBUG [main] board.BoardDao    (BoardDao.java:270)     - query:
+ SELECT seq,                                          
+     title,                                           
+     read_cnt,                                        
+     contents,                                        
+     reg_id,                                          
+     TO_CHAR(reg_dt,'YYYY-MM-DD HH24:mi:ss') reg_dt   
+ FROM board                                           
+ WHERE seq = ?                                        
+
+2019-07-01 14:36:51,196 DEBUG [main] board.BoardDao    (BoardDao.java:271)     - 1======================
+2019-07-01 14:36:51,196 DEBUG [main] board.BoardDao    (BoardDao.java:279)     - 2======================
+2019-07-01 14:36:51,197 DEBUG [main] board.BoardDao    (BoardDao.java:280)     - param seq:40
+2019-07-01 14:36:51,197 DEBUG [main] board.BoardDao    (BoardDao.java:281)     - 2======================
+2019-07-01 14:36:51,203 DEBUG [main] board.BoardTest   (BoardTest.java:82)     - =============================
+2019-07-01 14:36:51,203 DEBUG [main] board.BoardTest   (BoardTest.java:83)     - 단건등록 성공
+BoardVO [seq=40, title=제목1, readCnt=0, contents=내용1, regId=admin, regDt=2019-07-01 14:36:51, toString()=DTO [total=0, num=0]]
+2019-07-01 14:36:51,203 DEBUG [main] board.BoardTest   (BoardTest.java:84)     - =============================
+2019-07-01 14:38:24,155 DEBUG [main] board.BoardDao    (BoardDao.java:57)     - 1=================================
+2019-07-01 14:38:24,157 DEBUG [main] board.BoardDao    (BoardDao.java:58)     - query:
+ INSERT INTO board (     
+     seq,                
+     title,              
+     contents,           
+     reg_id,             
+     reg_dt              
+ ) VALUES (              
+     SEQ_BOARD.nextval,  
+     ?,                  
+     ?,                  
+     ?,                  
+     SYSDATE             
+ )                       
+
+2019-07-01 14:38:24,157 DEBUG [main] board.BoardDao    (BoardDao.java:59)     - 1=================================
+2019-07-01 14:38:24,213 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 14:38:24,416 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@31f924f5
+2019-07-01 14:38:24,474 DEBUG [main] board.BoardDao    (BoardDao.java:71)     - 2=================================
+2019-07-01 14:38:24,474 DEBUG [main] board.BoardDao    (BoardDao.java:72)     - param:BoardVO [seq=1, title=제목1, readCnt=0, contents=내용1, regId=admin, regDt=, toString()=DTO [total=0, num=0]]
+2019-07-01 14:38:24,474 DEBUG [main] board.BoardDao    (BoardDao.java:73)     - 2=================================
+2019-07-01 14:38:24,478 DEBUG [main] board.BoardDao    (BoardDao.java:77)     - 3=================================
+2019-07-01 14:38:24,478 DEBUG [main] board.BoardDao    (BoardDao.java:78)     - flag:1
+2019-07-01 14:38:24,479 DEBUG [main] board.BoardDao    (BoardDao.java:79)     - 3=================================
+2019-07-01 14:38:24,480 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 14:38:24,511 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@30c15d8b
+2019-07-01 14:38:24,511 DEBUG [main] board.BoardDao    (BoardDao.java:215)     - 1======================
+2019-07-01 14:38:24,512 DEBUG [main] board.BoardDao    (BoardDao.java:216)     - query:
+ SELECT MAX(seq) seq 
+ FROM board          
+ WHERE seq>0         
+
+2019-07-01 14:38:24,512 DEBUG [main] board.BoardDao    (BoardDao.java:217)     - 1======================
+2019-07-01 14:38:24,544 DEBUG [main] board.BoardDao    (BoardDao.java:226)     - 2======================
+2019-07-01 14:38:24,545 DEBUG [main] board.BoardDao    (BoardDao.java:227)     - seq:41
+2019-07-01 14:38:24,545 DEBUG [main] board.BoardDao    (BoardDao.java:228)     - 2======================
+2019-07-01 14:38:24,547 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 14:38:24,577 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@40a4337a
+2019-07-01 14:38:24,577 DEBUG [main] board.BoardDao    (BoardDao.java:269)     - 1======================
+2019-07-01 14:38:24,577 DEBUG [main] board.BoardDao    (BoardDao.java:270)     - query:
+ SELECT seq,                                          
+     title,                                           
+     read_cnt,                                        
+     contents,                                        
+     reg_id,                                          
+     TO_CHAR(reg_dt,'YYYY-MM-DD HH24:mi:ss') reg_dt   
+ FROM board                                           
+ WHERE seq = ?                                        
+
+2019-07-01 14:38:24,577 DEBUG [main] board.BoardDao    (BoardDao.java:271)     - 1======================
+2019-07-01 14:38:24,578 DEBUG [main] board.BoardDao    (BoardDao.java:279)     - 2======================
+2019-07-01 14:38:24,578 DEBUG [main] board.BoardDao    (BoardDao.java:280)     - param seq:41
+2019-07-01 14:38:24,578 DEBUG [main] board.BoardDao    (BoardDao.java:281)     - 2======================
+2019-07-01 14:38:24,584 DEBUG [main] board.BoardTest   (BoardTest.java:82)     - =============================
+2019-07-01 14:38:24,584 DEBUG [main] board.BoardTest   (BoardTest.java:83)     - 단건등록 성공
+BoardVO [seq=41, title=제목1, readCnt=0, contents=내용1, regId=admin, regDt=2019-07-01 14:38:24, toString()=DTO [total=0, num=0]]
+2019-07-01 14:38:24,584 DEBUG [main] board.BoardTest   (BoardTest.java:84)     - =============================
+2019-07-01 14:50:08,011 DEBUG [main] board.BoardDao    (BoardDao.java:57)     - 1=================================
+2019-07-01 14:50:08,013 DEBUG [main] board.BoardDao    (BoardDao.java:58)     - query:
+ INSERT INTO board (     
+     seq,                
+     title,              
+     contents,           
+     reg_id,             
+     reg_dt              
+ ) VALUES (              
+     SEQ_BOARD.nextval,  
+     ?,                  
+     ?,                  
+     ?,                  
+     SYSDATE             
+ )                       
+
+2019-07-01 14:50:08,013 DEBUG [main] board.BoardDao    (BoardDao.java:59)     - 1=================================
+2019-07-01 14:50:08,072 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 14:50:08,280 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@31f924f5
+2019-07-01 14:50:08,339 DEBUG [main] board.BoardDao    (BoardDao.java:71)     - 2=================================
+2019-07-01 14:50:08,339 DEBUG [main] board.BoardDao    (BoardDao.java:72)     - param:BoardVO [seq=1, title=제목1, readCnt=0, contents=내용1, regId=admin, regDt=, toString()=DTO [total=0, num=0]]
+2019-07-01 14:50:08,339 DEBUG [main] board.BoardDao    (BoardDao.java:73)     - 2=================================
+2019-07-01 14:50:08,343 DEBUG [main] board.BoardDao    (BoardDao.java:77)     - 3=================================
+2019-07-01 14:50:08,343 DEBUG [main] board.BoardDao    (BoardDao.java:78)     - flag:1
+2019-07-01 14:50:08,344 DEBUG [main] board.BoardDao    (BoardDao.java:79)     - 3=================================
+2019-07-01 14:50:08,345 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 14:50:08,371 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@30c15d8b
+2019-07-01 14:50:08,371 DEBUG [main] board.BoardDao    (BoardDao.java:215)     - 1======================
+2019-07-01 14:50:08,371 DEBUG [main] board.BoardDao    (BoardDao.java:216)     - query:
+ SELECT MAX(seq) seq 
+ FROM board          
+ WHERE seq>0         
+
+2019-07-01 14:50:08,371 DEBUG [main] board.BoardDao    (BoardDao.java:217)     - 1======================
+2019-07-01 14:50:08,383 DEBUG [main] board.BoardDao    (BoardDao.java:226)     - 2======================
+2019-07-01 14:50:08,383 DEBUG [main] board.BoardDao    (BoardDao.java:227)     - seq:42
+2019-07-01 14:50:08,383 DEBUG [main] board.BoardDao    (BoardDao.java:228)     - 2======================
+2019-07-01 14:50:08,384 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 14:50:08,423 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@40a4337a
+2019-07-01 14:50:08,423 DEBUG [main] board.BoardDao    (BoardDao.java:269)     - 1======================
+2019-07-01 14:50:08,424 DEBUG [main] board.BoardDao    (BoardDao.java:270)     - query:
+ SELECT seq,                                          
+     title,                                           
+     read_cnt,                                        
+     contents,                                        
+     reg_id,                                          
+     TO_CHAR(reg_dt,'YYYY-MM-DD HH24:mi:ss') reg_dt   
+ FROM board                                           
+ WHERE seq = ?                                        
+
+2019-07-01 14:50:08,424 DEBUG [main] board.BoardDao    (BoardDao.java:271)     - 1======================
+2019-07-01 14:50:08,425 DEBUG [main] board.BoardDao    (BoardDao.java:279)     - 2======================
+2019-07-01 14:50:08,426 DEBUG [main] board.BoardDao    (BoardDao.java:280)     - param seq:42
+2019-07-01 14:50:08,426 DEBUG [main] board.BoardDao    (BoardDao.java:281)     - 2======================
+2019-07-01 14:50:08,433 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 14:50:08,471 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@1f2586d6
+2019-07-01 14:50:08,471 DEBUG [main] board.BoardDao    (BoardDao.java:110)     - 1.=============================
+2019-07-01 14:50:08,471 DEBUG [main] board.BoardDao    (BoardDao.java:111)     - query:
+ UPDATE board          
+ SET title = ?,        
+     contents = ?,     
+     reg_id = ?,       
+     reg_dt = sysdate  
+ WHERE seq = ?         
+
+2019-07-01 14:50:08,471 DEBUG [main] board.BoardDao    (BoardDao.java:112)     - 1.=============================
+2019-07-01 14:50:08,471 DEBUG [main] board.BoardDao    (BoardDao.java:121)     - 2.=============================
+2019-07-01 14:50:08,471 DEBUG [main] board.BoardDao    (BoardDao.java:122)     - param:BoardVO [seq=42, title=제목_U, readCnt=0, contents=내용_U, regId=admin_U, regDt=2019-07-01 14:50:08, toString()=DTO [total=0, num=0]]
+2019-07-01 14:50:08,471 DEBUG [main] board.BoardDao    (BoardDao.java:123)     - 2.=============================
+2019-07-01 14:50:08,474 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 14:50:08,496 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@10683d9d
+2019-07-01 14:50:08,497 DEBUG [main] board.BoardDao    (BoardDao.java:269)     - 1======================
+2019-07-01 14:50:08,497 DEBUG [main] board.BoardDao    (BoardDao.java:270)     - query:
+ SELECT seq,                                          
+     title,                                           
+     read_cnt,                                        
+     contents,                                        
+     reg_id,                                          
+     TO_CHAR(reg_dt,'YYYY-MM-DD HH24:mi:ss') reg_dt   
+ FROM board                                           
+ WHERE seq = ?                                        
+
+2019-07-01 14:50:08,497 DEBUG [main] board.BoardDao    (BoardDao.java:271)     - 1======================
+2019-07-01 14:50:08,497 DEBUG [main] board.BoardDao    (BoardDao.java:279)     - 2======================
+2019-07-01 14:50:08,497 DEBUG [main] board.BoardDao    (BoardDao.java:280)     - param seq:42
+2019-07-01 14:50:08,497 DEBUG [main] board.BoardDao    (BoardDao.java:281)     - 2======================
+2019-07-01 14:50:08,499 DEBUG [main] board.BoardTest   (BoardTest.java:100)     - ======================
+2019-07-01 14:50:08,499 DEBUG [main] board.BoardTest   (BoardTest.java:101)     - 단건수정 실패
+2019-07-01 14:50:08,499 DEBUG [main] board.BoardTest   (BoardTest.java:102)     - ======================
+2019-07-01 14:51:31,426 DEBUG [main] board.BoardDao    (BoardDao.java:57)     - 1=================================
+2019-07-01 14:51:31,428 DEBUG [main] board.BoardDao    (BoardDao.java:58)     - query:
+ INSERT INTO board (     
+     seq,                
+     title,              
+     contents,           
+     reg_id,             
+     reg_dt              
+ ) VALUES (              
+     SEQ_BOARD.nextval,  
+     ?,                  
+     ?,                  
+     ?,                  
+     SYSDATE             
+ )                       
+
+2019-07-01 14:51:31,428 DEBUG [main] board.BoardDao    (BoardDao.java:59)     - 1=================================
+2019-07-01 14:51:31,484 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 14:51:31,691 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@31f924f5
+2019-07-01 14:51:31,746 DEBUG [main] board.BoardDao    (BoardDao.java:71)     - 2=================================
+2019-07-01 14:51:31,746 DEBUG [main] board.BoardDao    (BoardDao.java:72)     - param:BoardVO [seq=1, title=제목1, readCnt=0, contents=내용1, regId=admin, regDt=, toString()=DTO [total=0, num=0]]
+2019-07-01 14:51:31,747 DEBUG [main] board.BoardDao    (BoardDao.java:73)     - 2=================================
+2019-07-01 14:51:31,751 DEBUG [main] board.BoardDao    (BoardDao.java:77)     - 3=================================
+2019-07-01 14:51:31,751 DEBUG [main] board.BoardDao    (BoardDao.java:78)     - flag:1
+2019-07-01 14:51:31,751 DEBUG [main] board.BoardDao    (BoardDao.java:79)     - 3=================================
+2019-07-01 14:51:31,753 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 14:51:31,781 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@30c15d8b
+2019-07-01 14:51:31,782 DEBUG [main] board.BoardDao    (BoardDao.java:215)     - 1======================
+2019-07-01 14:51:31,782 DEBUG [main] board.BoardDao    (BoardDao.java:216)     - query:
+ SELECT MAX(seq) seq 
+ FROM board          
+ WHERE seq>0         
+
+2019-07-01 14:51:31,783 DEBUG [main] board.BoardDao    (BoardDao.java:217)     - 1======================
+2019-07-01 14:51:31,806 DEBUG [main] board.BoardDao    (BoardDao.java:226)     - 2======================
+2019-07-01 14:51:31,806 DEBUG [main] board.BoardDao    (BoardDao.java:227)     - seq:43
+2019-07-01 14:51:31,806 DEBUG [main] board.BoardDao    (BoardDao.java:228)     - 2======================
+2019-07-01 14:51:31,807 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 14:51:31,830 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@40a4337a
+2019-07-01 14:51:31,830 DEBUG [main] board.BoardDao    (BoardDao.java:269)     - 1======================
+2019-07-01 14:51:31,830 DEBUG [main] board.BoardDao    (BoardDao.java:270)     - query:
+ SELECT seq,                                          
+     title,                                           
+     read_cnt,                                        
+     contents,                                        
+     reg_id,                                          
+     TO_CHAR(reg_dt,'YYYY-MM-DD HH24:mi:ss') reg_dt   
+ FROM board                                           
+ WHERE seq = ?                                        
+
+2019-07-01 14:51:31,831 DEBUG [main] board.BoardDao    (BoardDao.java:271)     - 1======================
+2019-07-01 14:51:31,831 DEBUG [main] board.BoardDao    (BoardDao.java:279)     - 2======================
+2019-07-01 14:51:31,831 DEBUG [main] board.BoardDao    (BoardDao.java:280)     - param seq:43
+2019-07-01 14:51:31,831 DEBUG [main] board.BoardDao    (BoardDao.java:281)     - 2======================
+2019-07-01 14:51:31,836 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 14:51:31,865 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@1f2586d6
+2019-07-01 14:51:31,865 DEBUG [main] board.BoardDao    (BoardDao.java:110)     - 1.=============================
+2019-07-01 14:51:31,866 DEBUG [main] board.BoardDao    (BoardDao.java:111)     - query:
+ UPDATE board          
+ SET title = ?,        
+     contents = ?,     
+     reg_id = ?,       
+     reg_dt = sysdate  
+ WHERE seq = ?         
+
+2019-07-01 14:51:31,866 DEBUG [main] board.BoardDao    (BoardDao.java:112)     - 1.=============================
+2019-07-01 14:51:31,867 DEBUG [main] board.BoardDao    (BoardDao.java:121)     - 2.=============================
+2019-07-01 14:51:31,868 DEBUG [main] board.BoardDao    (BoardDao.java:122)     - param:BoardVO [seq=43, title=제목_U, readCnt=0, contents=내용_U, regId=admin_U, regDt=2019-07-01 14:51:31, toString()=DTO [total=0, num=0]]
+2019-07-01 14:51:31,868 DEBUG [main] board.BoardDao    (BoardDao.java:123)     - 2.=============================
+2019-07-01 14:51:31,873 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 14:51:31,914 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@10683d9d
+2019-07-01 14:51:31,915 DEBUG [main] board.BoardDao    (BoardDao.java:269)     - 1======================
+2019-07-01 14:51:31,915 DEBUG [main] board.BoardDao    (BoardDao.java:270)     - query:
+ SELECT seq,                                          
+     title,                                           
+     read_cnt,                                        
+     contents,                                        
+     reg_id,                                          
+     TO_CHAR(reg_dt,'YYYY-MM-DD HH24:mi:ss') reg_dt   
+ FROM board                                           
+ WHERE seq = ?                                        
+
+2019-07-01 14:51:31,915 DEBUG [main] board.BoardDao    (BoardDao.java:271)     - 1======================
+2019-07-01 14:51:31,915 DEBUG [main] board.BoardDao    (BoardDao.java:279)     - 2======================
+2019-07-01 14:51:31,915 DEBUG [main] board.BoardDao    (BoardDao.java:280)     - param seq:43
+2019-07-01 14:51:31,915 DEBUG [main] board.BoardDao    (BoardDao.java:281)     - 2======================
+2019-07-01 14:51:31,917 DEBUG [main] board.BoardTest   (BoardTest.java:100)     - ======================
+2019-07-01 14:51:31,917 DEBUG [main] board.BoardTest   (BoardTest.java:101)     - 단건수정 실패BoardVO [seq=43, title=제목_U, readCnt=0, contents=내용_U, regId=admin_U, regDt=2019-07-01 14:51:31, toString()=DTO [total=0, num=0]]BoardVO [seq=43, title=제목_U, readCnt=0, contents=내용_U, regId=admin_U, regDt=2019-07-01 14:51:31, toString()=DTO [total=0, num=0]]
+2019-07-01 14:51:31,918 DEBUG [main] board.BoardTest   (BoardTest.java:102)     - ======================
+2019-07-01 14:52:53,912 DEBUG [main] board.BoardDao    (BoardDao.java:57)     - 1=================================
+2019-07-01 14:52:53,914 DEBUG [main] board.BoardDao    (BoardDao.java:58)     - query:
+ INSERT INTO board (     
+     seq,                
+     title,              
+     contents,           
+     reg_id,             
+     reg_dt              
+ ) VALUES (              
+     SEQ_BOARD.nextval,  
+     ?,                  
+     ?,                  
+     ?,                  
+     SYSDATE             
+ )                       
+
+2019-07-01 14:52:53,914 DEBUG [main] board.BoardDao    (BoardDao.java:59)     - 1=================================
+2019-07-01 14:52:53,971 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 14:52:54,199 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@31f924f5
+2019-07-01 14:52:54,265 DEBUG [main] board.BoardDao    (BoardDao.java:71)     - 2=================================
+2019-07-01 14:52:54,265 DEBUG [main] board.BoardDao    (BoardDao.java:72)     - param:BoardVO [seq=1, title=제목1, readCnt=0, contents=내용1, regId=admin, regDt=, toString()=DTO [total=0, num=0]]
+2019-07-01 14:52:54,265 DEBUG [main] board.BoardDao    (BoardDao.java:73)     - 2=================================
+2019-07-01 14:52:54,269 DEBUG [main] board.BoardDao    (BoardDao.java:77)     - 3=================================
+2019-07-01 14:52:54,269 DEBUG [main] board.BoardDao    (BoardDao.java:78)     - flag:1
+2019-07-01 14:52:54,270 DEBUG [main] board.BoardDao    (BoardDao.java:79)     - 3=================================
+2019-07-01 14:52:54,271 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 14:52:54,299 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@30c15d8b
+2019-07-01 14:52:54,299 DEBUG [main] board.BoardDao    (BoardDao.java:215)     - 1======================
+2019-07-01 14:52:54,299 DEBUG [main] board.BoardDao    (BoardDao.java:216)     - query:
+ SELECT MAX(seq) seq 
+ FROM board          
+ WHERE seq>0         
+
+2019-07-01 14:52:54,299 DEBUG [main] board.BoardDao    (BoardDao.java:217)     - 1======================
+2019-07-01 14:52:54,311 DEBUG [main] board.BoardDao    (BoardDao.java:226)     - 2======================
+2019-07-01 14:52:54,311 DEBUG [main] board.BoardDao    (BoardDao.java:227)     - seq:44
+2019-07-01 14:52:54,311 DEBUG [main] board.BoardDao    (BoardDao.java:228)     - 2======================
+2019-07-01 14:52:54,335 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 14:52:54,381 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@40a4337a
+2019-07-01 14:52:54,381 DEBUG [main] board.BoardDao    (BoardDao.java:269)     - 1======================
+2019-07-01 14:52:54,381 DEBUG [main] board.BoardDao    (BoardDao.java:270)     - query:
+ SELECT seq,                                          
+     title,                                           
+     read_cnt,                                        
+     contents,                                        
+     reg_id,                                          
+     TO_CHAR(reg_dt,'YYYY-MM-DD HH24:mi:ss') reg_dt   
+ FROM board                                           
+ WHERE seq = ?                                        
+
+2019-07-01 14:52:54,382 DEBUG [main] board.BoardDao    (BoardDao.java:271)     - 1======================
+2019-07-01 14:52:54,382 DEBUG [main] board.BoardDao    (BoardDao.java:279)     - 2======================
+2019-07-01 14:52:54,382 DEBUG [main] board.BoardDao    (BoardDao.java:280)     - param seq:44
+2019-07-01 14:52:54,382 DEBUG [main] board.BoardDao    (BoardDao.java:281)     - 2======================
+2019-07-01 14:52:54,387 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 14:52:54,415 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@1f2586d6
+2019-07-01 14:52:54,415 DEBUG [main] board.BoardDao    (BoardDao.java:110)     - 1.=============================
+2019-07-01 14:52:54,415 DEBUG [main] board.BoardDao    (BoardDao.java:111)     - query:
+ UPDATE board          
+ SET title = ?,        
+     contents = ?,     
+     reg_id = ?,       
+     reg_dt = sysdate  
+ WHERE seq = ?         
+
+2019-07-01 14:52:54,416 DEBUG [main] board.BoardDao    (BoardDao.java:112)     - 1.=============================
+2019-07-01 14:52:54,416 DEBUG [main] board.BoardDao    (BoardDao.java:121)     - 2.=============================
+2019-07-01 14:52:54,416 DEBUG [main] board.BoardDao    (BoardDao.java:122)     - param:BoardVO [seq=44, title=제목_U, readCnt=0, contents=내용_U, regId=admin_U, regDt=2019-07-01 14:52:54, toString()=DTO [total=0, num=0]]
+2019-07-01 14:52:54,416 DEBUG [main] board.BoardDao    (BoardDao.java:123)     - 2.=============================
+2019-07-01 14:52:54,418 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 14:52:54,439 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@10683d9d
+2019-07-01 14:52:54,440 DEBUG [main] board.BoardDao    (BoardDao.java:269)     - 1======================
+2019-07-01 14:52:54,440 DEBUG [main] board.BoardDao    (BoardDao.java:270)     - query:
+ SELECT seq,                                          
+     title,                                           
+     read_cnt,                                        
+     contents,                                        
+     reg_id,                                          
+     TO_CHAR(reg_dt,'YYYY-MM-DD HH24:mi:ss') reg_dt   
+ FROM board                                           
+ WHERE seq = ?                                        
+
+2019-07-01 14:52:54,440 DEBUG [main] board.BoardDao    (BoardDao.java:271)     - 1======================
+2019-07-01 14:52:54,440 DEBUG [main] board.BoardDao    (BoardDao.java:279)     - 2======================
+2019-07-01 14:52:54,440 DEBUG [main] board.BoardDao    (BoardDao.java:280)     - param seq:44
+2019-07-01 14:52:54,440 DEBUG [main] board.BoardDao    (BoardDao.java:281)     - 2======================
+2019-07-01 14:52:54,442 DEBUG [main] board.BoardTest   (BoardTest.java:96)     - ======================
+2019-07-01 14:52:54,442 DEBUG [main] board.BoardTest   (BoardTest.java:97)     - 단건수정 성공:
+BoardVO [seq=44, title=제목_U, readCnt=0, contents=내용_U, regId=admin_U, regDt=2019-07-01 14:52:54, toString()=DTO [total=0, num=0]]
+2019-07-01 14:52:54,442 DEBUG [main] board.BoardTest   (BoardTest.java:98)     - ======================
+2019-07-01 15:37:41,891 DEBUG [main] board.BoardDao    (BoardDao.java:379)     - sql:
+ SELECT T1.*, T2.*                                                                              
+ FROM                                                                                           
+ (                                                                                              
+     SELECT B.rnum as num                                                                       
+           ,B.seq                                                                               
+           ,B.title                                                                             
+           ,B.read_cnt                                                                          
+           ,B.contents                                                                          
+           ,B.reg_id                                                                            
+           ,DECODE(TO_CHAR(B.reg_dt, 'YYYY-MM-DD'), TO_CHAR(SYSDATE, 'YYYY-MM-DD'),             
+ 				  TO_CHAR(B.reg_dt, 'HH24:MI:SS'), TO_CHAR(B.reg_dt, 'YYYY-MM-DD')) AS reg_dt  
+     FROM(                                                                                      
+         SELECT ROWNUM AS rnum, A.*                                                             
+         FROM(                                                                                  
+             SELECT * FROM board                                                                
+             --SEARCH CONDITION                                                                 
+             ORDER BY reg_dt DESC                                                               
+         )A                                                                                     
+         WHERE ROWNUM <= ( ? *( ? -1)+ ?)                                  
+     )B                                                                                         
+     WHERE B.rnum >= ( ? *( ? -1)+1)                                               
+ )T1                                                                                            
+ CROSS JOIN                                                                                     
+ (                                                                                              
+     SELECT COUNT(*) total_cnt                                                                  
+     FROM board a                                                                               
+     --SEARCH CONDITION                                                                         
+ )T2																							   
+
+2019-07-01 15:37:41,968 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 15:37:42,181 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@4cf4d528
+2019-07-01 15:37:42,234 DEBUG [main] board.BoardDao    (BoardDao.java:402)     - param:
+SearchVO [pageSize=10, pageNum=1, searchDiv=null, searchWord=null]
+2019-07-01 15:37:42,268 DEBUG [main] board.BoardDao    (BoardDao.java:419)     - ========================
+2019-07-01 15:37:42,268 DEBUG [main] board.BoardDao    (BoardDao.java:420)     - SQLException=부적합한 열 이름
+2019-07-01 15:37:42,268 DEBUG [main] board.BoardDao    (BoardDao.java:421)     - ========================
+2019-07-01 15:37:42,270 DEBUG [main] board.BoardTest   (BoardTest.java:150)     - =====================
+2019-07-01 15:37:42,270 DEBUG [main] board.BoardTest   (BoardTest.java:151)     - []
+2019-07-01 15:37:42,270 DEBUG [main] board.BoardTest   (BoardTest.java:152)     - =====================
+2019-07-01 15:41:00,518 DEBUG [main] board.BoardDao    (BoardDao.java:379)     - sql:
+ SELECT T1.*, T2.*                                                                              
+ FROM                                                                                           
+ (                                                                                              
+     SELECT B.rnum as num                                                                       
+           ,B.seq                                                                               
+           ,B.title                                                                             
+           ,B.read_cnt                                                                          
+           ,B.contents                                                                          
+           ,B.reg_id                                                                            
+           ,DECODE(TO_CHAR(B.reg_dt, 'YYYY-MM-DD'), TO_CHAR(SYSDATE, 'YYYY-MM-DD'),             
+ 				  TO_CHAR(B.reg_dt, 'HH24:MI:SS'), TO_CHAR(B.reg_dt, 'YYYY-MM-DD')) AS reg_dt  
+     FROM(                                                                                      
+         SELECT ROWNUM AS rnum, A.*                                                             
+         FROM(                                                                                  
+             SELECT * FROM board                                                                
+             --SEARCH CONDITION                                                                 
+             ORDER BY reg_dt DESC                                                               
+         )A                                                                                     
+         WHERE ROWNUM <= ( ? *( ? -1)+ ?)                                  
+     )B                                                                                         
+     WHERE B.rnum >= ( ? *( ? -1)+1)                                               
+ )T1                                                                                            
+ CROSS JOIN                                                                                     
+ (                                                                                              
+     SELECT COUNT(*) total_cnt                                                                  
+     FROM board a                                                                               
+     --SEARCH CONDITION                                                                         
+ )T2																							   
+
+2019-07-01 15:41:00,575 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 15:41:00,793 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@4cf4d528
+2019-07-01 15:41:00,850 DEBUG [main] board.BoardDao    (BoardDao.java:402)     - param:
+SearchVO [pageSize=10, pageNum=1, searchDiv=null, searchWord=null]
+2019-07-01 15:41:00,870 DEBUG [main] board.BoardDao    (BoardDao.java:419)     - ========================
+2019-07-01 15:41:00,870 DEBUG [main] board.BoardDao    (BoardDao.java:420)     - SQLException=부적합한 열 이름
+2019-07-01 15:41:00,870 DEBUG [main] board.BoardDao    (BoardDao.java:421)     - ========================
+2019-07-01 15:41:00,872 DEBUG [main] board.BoardTest   (BoardTest.java:150)     - =====================
+2019-07-01 15:41:00,872 DEBUG [main] board.BoardTest   (BoardTest.java:151)     - []
+2019-07-01 15:41:00,872 DEBUG [main] board.BoardTest   (BoardTest.java:152)     - =====================
+2019-07-01 15:43:11,504 DEBUG [main] board.BoardDao    (BoardDao.java:379)     - sql:
+ SELECT T1.*, T2.*                                                                              
+ FROM                                                                                           
+ (                                                                                              
+     SELECT B.rnum as num                                                                       
+           ,B.seq                                                                               
+           ,B.title                                                                             
+           ,B.read_cnt                                                                          
+           ,B.contents                                                                          
+           ,B.reg_id                                                                            
+           ,DECODE(TO_CHAR(B.reg_dt, 'YYYY-MM-DD'), TO_CHAR(SYSDATE, 'YYYY-MM-DD'),             
+ 				  TO_CHAR(B.reg_dt, 'HH24:MI:SS'), TO_CHAR(B.reg_dt, 'YYYY-MM-DD')) AS reg_dt  
+     FROM(                                                                                      
+         SELECT ROWNUM AS rnum, A.*                                                             
+         FROM(                                                                                  
+             SELECT * FROM board                                                                
+             --SEARCH CONDITION                                                                 
+WHERE title like ?||'%' 
+             ORDER BY reg_dt DESC                                                               
+         )A                                                                                     
+         WHERE ROWNUM <= ( ? *( ? -1)+ ?)                                  
+     )B                                                                                         
+     WHERE B.rnum >= ( ? *( ? -1)+1)                                               
+ )T1                                                                                            
+ CROSS JOIN                                                                                     
+ (                                                                                              
+     SELECT COUNT(*) total_cnt                                                                  
+     FROM board a                                                                               
+     --SEARCH CONDITION                                                                         
+WHERE title like ?||'%' 
+ )T2																							   
+
+2019-07-01 15:43:11,563 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 15:43:11,764 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@4cf4d528
+2019-07-01 15:43:11,823 DEBUG [main] board.BoardDao    (BoardDao.java:402)     - param:
+SearchVO [pageSize=10, pageNum=1, searchDiv=10, searchWord=제목]
+2019-07-01 15:43:11,844 DEBUG [main] board.BoardDao    (BoardDao.java:419)     - ========================
+2019-07-01 15:43:11,844 DEBUG [main] board.BoardDao    (BoardDao.java:420)     - SQLException=부적합한 열 이름
+2019-07-01 15:43:11,844 DEBUG [main] board.BoardDao    (BoardDao.java:421)     - ========================
+2019-07-01 15:43:11,846 DEBUG [main] board.BoardTest   (BoardTest.java:152)     - =====================
+2019-07-01 15:43:11,846 DEBUG [main] board.BoardTest   (BoardTest.java:153)     - []
+2019-07-01 15:43:11,846 DEBUG [main] board.BoardTest   (BoardTest.java:154)     - =====================
+2019-07-01 15:46:20,169 DEBUG [main] board.BoardDao    (BoardDao.java:379)     - sql:
+ SELECT T1.*, T2.*                                                                              
+ FROM                                                                                           
+ (                                                                                              
+     SELECT B.rnum as num                                                                       
+           ,B.seq                                                                               
+           ,B.title                                                                             
+           ,B.read_cnt                                                                          
+           ,B.contents                                                                          
+           ,B.reg_id                                                                            
+           ,DECODE(TO_CHAR(B.reg_dt, 'YYYY-MM-DD'), TO_CHAR(SYSDATE, 'YYYY-MM-DD'),             
+ 				  TO_CHAR(B.reg_dt, 'HH24:MI:SS'), TO_CHAR(B.reg_dt, 'YYYY-MM-DD')) AS reg_dt  
+     FROM(                                                                                      
+         SELECT ROWNUM AS rnum, A.*                                                             
+         FROM(                                                                                  
+             SELECT * FROM board                                                                
+             --SEARCH CONDITION                                                                 
+WHERE title like ?||'%' 
+             ORDER BY reg_dt DESC                                                               
+         )A                                                                                     
+         WHERE ROWNUM <= ( ? *( ? -1)+ ?)                                  
+     )B                                                                                         
+     WHERE B.rnum >= ( ? *( ? -1)+1)                                               
+ )T1                                                                                            
+ CROSS JOIN                                                                                     
+ (                                                                                              
+     SELECT COUNT(*) total_cnt                                                                  
+     FROM board a                                                                               
+     --SEARCH CONDITION                                                                         
+WHERE title like ?||'%' 
+ )T2																							   
+
+2019-07-01 15:46:20,226 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 15:46:20,427 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@4cf4d528
+2019-07-01 15:46:20,484 DEBUG [main] board.BoardDao    (BoardDao.java:402)     - param:
+SearchVO [pageSize=10, pageNum=1, searchDiv=10, searchWord=제목]
+2019-07-01 15:46:20,502 DEBUG [main] board.BoardDao    (BoardDao.java:419)     - ========================
+2019-07-01 15:46:20,502 DEBUG [main] board.BoardDao    (BoardDao.java:420)     - SQLException=부적합한 열 이름
+2019-07-01 15:46:20,503 DEBUG [main] board.BoardDao    (BoardDao.java:421)     - ========================
+2019-07-01 15:46:20,504 DEBUG [main] board.BoardTest   (BoardTest.java:152)     - =====================
+2019-07-01 15:46:20,504 DEBUG [main] board.BoardTest   (BoardTest.java:153)     - []
+2019-07-01 15:46:20,505 DEBUG [main] board.BoardTest   (BoardTest.java:154)     - =====================
+2019-07-01 15:46:54,731 DEBUG [main] board.BoardDao    (BoardDao.java:379)     - sql:
+ SELECT T1.*, T2.*                                                                              
+ FROM                                                                                           
+ (                                                                                              
+     SELECT B.rnum as num                                                                       
+           ,B.seq                                                                               
+           ,B.title                                                                             
+           ,B.read_cnt                                                                          
+           ,B.contents                                                                          
+           ,B.reg_id                                                                            
+           ,DECODE(TO_CHAR(B.reg_dt, 'YYYY-MM-DD'), TO_CHAR(SYSDATE, 'YYYY-MM-DD'),             
+ 				  TO_CHAR(B.reg_dt, 'HH24:MI:SS'), TO_CHAR(B.reg_dt, 'YYYY-MM-DD')) AS reg_dt  
+     FROM(                                                                                      
+         SELECT ROWNUM AS rnum, A.*                                                             
+         FROM(                                                                                  
+             SELECT * FROM board                                                                
+             --SEARCH CONDITION                                                                 
+WHERE title like ?||'%' 
+             ORDER BY reg_dt DESC                                                               
+         )A                                                                                     
+         WHERE ROWNUM <= ( ? *( ? -1)+ ?)                                  
+     )B                                                                                         
+     WHERE B.rnum >= ( ? *( ? -1)+1)                                               
+ )T1                                                                                            
+ CROSS JOIN                                                                                     
+ (                                                                                              
+     SELECT COUNT(*) total_cnt                                                                  
+     FROM board a                                                                               
+     --SEARCH CONDITION                                                                         
+WHERE title like ?||'%' 
+ )T2																							   
+
+2019-07-01 15:46:54,790 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 15:46:54,995 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@4cf4d528
+2019-07-01 15:46:55,053 DEBUG [main] board.BoardDao    (BoardDao.java:402)     - param:
+SearchVO [pageSize=10, pageNum=1, searchDiv=10, searchWord=제목]
+2019-07-01 15:46:55,074 DEBUG [main] board.BoardTest   (BoardTest.java:152)     - =====================
+2019-07-01 15:46:55,074 DEBUG [main] board.BoardTest   (BoardTest.java:153)     - [BoardVO [seq=44, title=제목_U, readCnt=0, contents=내용_U, regId=admin_U, regDt=14:52:54, toString()=DTO [total=0, num=0]], BoardVO [seq=43, title=제목_U, readCnt=0, contents=내용_U, regId=admin_U, regDt=14:51:31, toString()=DTO [total=0, num=0]], BoardVO [seq=42, title=제목_U, readCnt=0, contents=내용_U, regId=admin_U, regDt=14:50:08, toString()=DTO [total=0, num=0]], BoardVO [seq=41, title=제목1, readCnt=0, contents=내용1, regId=admin, regDt=14:38:24, toString()=DTO [total=0, num=0]], BoardVO [seq=40, title=제목1, readCnt=0, contents=내용1, regId=admin, regDt=14:36:51, toString()=DTO [total=0, num=0]], BoardVO [seq=17, title=제목1, readCnt=0, contents=내용1, regId=admin, regDt=2019-06-27, toString()=DTO [total=0, num=0]]]
+2019-07-01 15:46:55,074 DEBUG [main] board.BoardTest   (BoardTest.java:154)     - =====================
+2019-07-01 16:12:15,621 DEBUG [main] board.BoardDao    (BoardDao.java:379)     - sql:
+ SELECT T1.*, T2.*                                                                              
+ FROM                                                                                           
+ (                                                                                              
+     SELECT B.rnum as num                                                                       
+           ,B.seq                                                                               
+           ,B.title                                                                             
+           ,B.read_cnt                                                                          
+           ,B.contents                                                                          
+           ,B.reg_id                                                                            
+           ,DECODE(TO_CHAR(B.reg_dt, 'YYYY-MM-DD'), TO_CHAR(SYSDATE, 'YYYY-MM-DD'),             
+ 				  TO_CHAR(B.reg_dt, 'HH24:MI:SS'), TO_CHAR(B.reg_dt, 'YYYY-MM-DD')) AS reg_dt  
+     FROM(                                                                                      
+         SELECT ROWNUM AS rnum, A.*                                                             
+         FROM(                                                                                  
+             SELECT * FROM board                                                                
+             --SEARCH CONDITION                                                                 
+WHERE title like ?||'%' 
+             ORDER BY reg_dt DESC                                                               
+         )A                                                                                     
+         WHERE ROWNUM <= ( ? *( ? -1)+ ?)                                  
+     )B                                                                                         
+     WHERE B.rnum >= ( ? *( ? -1)+1)                                               
+ )T1                                                                                            
+ CROSS JOIN                                                                                     
+ (                                                                                              
+     SELECT COUNT(*) total_cnt                                                                  
+     FROM board a                                                                               
+     --SEARCH CONDITION                                                                         
+WHERE title like ?||'%' 
+ )T2																							   
+
+2019-07-01 16:12:15,679 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-01 16:12:15,893 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@4cf4d528
+2019-07-01 16:12:15,950 DEBUG [main] board.BoardDao    (BoardDao.java:402)     - param:
+SearchVO [pageSize=10, pageNum=1, searchDiv=10, searchWord=제목]
+2019-07-01 16:12:15,984 DEBUG [main] board.BoardTest   (BoardTest.java:152)     - =====================
+2019-07-01 16:12:15,984 DEBUG [main] board.BoardTest   (BoardTest.java:153)     - [BoardVO [seq=44, title=제목_U, readCnt=0, contents=내용_U, regId=admin_U, regDt=14:52:54, toString()=DTO [total=6, num=1]], BoardVO [seq=43, title=제목_U, readCnt=0, contents=내용_U, regId=admin_U, regDt=14:51:31, toString()=DTO [total=6, num=2]], BoardVO [seq=42, title=제목_U, readCnt=0, contents=내용_U, regId=admin_U, regDt=14:50:08, toString()=DTO [total=6, num=3]], BoardVO [seq=41, title=제목1, readCnt=0, contents=내용1, regId=admin, regDt=14:38:24, toString()=DTO [total=6, num=4]], BoardVO [seq=40, title=제목1, readCnt=0, contents=내용1, regId=admin, regDt=14:36:51, toString()=DTO [total=6, num=5]], BoardVO [seq=17, title=제목1, readCnt=0, contents=내용1, regId=admin, regDt=2019-06-27, toString()=DTO [total=6, num=6]]]
+2019-07-01 16:12:15,984 DEBUG [main] board.BoardTest   (BoardTest.java:154)     - =====================

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/WEB_EX01/js/jquery-ui.css">
+<style type="text/css">
+	.ui-menu{
+		width: 150px;
+		font-size: 12px;
+	}
+</style>
+<title>Insert title here</title>
+<script src="/WEB_EX01/js/jquery-1.12.4.js"></script>
+<script src="/WEB_EX01/js/jquery-ui.js"></script>
+</head>
+<body>
+	<ul id="menu">
+		<li class="ui-state-disabled">Test1</li>
+		<li>Test2</li>
+		<li>Test3
+			<ul>
+				<li class="ui-state-disabled">Test3-1</li>
+				<li>Test3-2</li>
+			</ul>
+		</li>
+		<li>Test4</li>
+		<li>Test5
+			<ul>
+				<li>Test5-1
+					<ul>
+						<li>Test5-1-1</li>
+						<li>Test5-1-2</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+	<script>
+		$("#menu").menu();
+	</script>
+</body>
+</html>

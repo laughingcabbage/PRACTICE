@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script>
+	/*
+	브라우저 내장 객체
+							window
+							  |
+	document	location	history		screen	   navigator
+
+	window : 브라우저 내장 객체의 최상위 객체 
+		  	  브라우저 창 하나에 하나의 window객체 생성
+			 window객체는 전역 객체
+			  전역객체는 객체의 프로퍼티, 메소드를 쓸 때 이름을 명시할 필요가 없음
+			  브라우저 화면을 참조할 수 있는 객체
+	*/
+	
+	var myWindow;
+	
+	function openWindow(){
+		var opt = "width=400, height=200, left=100, top=200, status=1";
+		myWindow = window.open("", "myWindow", opt);		
+	}
+	
+	function closeWindow(){
+		console.log("myWindow: "+myWindow);
+		if(myWindow){
+			myWindow.close();
+		}
+	}
+	
+	function checkWindow(){
+		if(!myWindow){//not open
+			alert("myWindow has never been opened");
+		}else{//open
+			console.log("myWindow.closed: "+myWindow.closed);
+			if(myWindow.closed){
+				alert("myWindow has been opened");
+			}else{
+				alert("myWindow has not been opened");
+			}
+		}
+	}
+	
+	</script>
+	<button onclick="openWindow();">myWindow열기</button>
+	<button onclick="closeWindow();">myWindow닫기</button>
+	<button onclick="checkWindow();">myWindow open/closed</button>
+</body>
+</html>

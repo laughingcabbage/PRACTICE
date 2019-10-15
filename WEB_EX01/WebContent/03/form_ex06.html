@@ -1,0 +1,53 @@
+<!-- 
+	method 
+		-  get: 주소표시줄에 사용자가 입력한 정보가 그대로 드러남(256~4096byte 전달 가능)
+			    http://localhost:8080/WEB_EX01/03/login.do?user_id=1234&user_pw=1234
+		- post: 입력내용에 제한이 없음. 주소표시줄에 사용자가 입력한 정보가 드러나지 않음.
+	action: 서버 상에 처리할 프로그램 지정
+	name  : 폼에 이름을 지정하는 것
+	target: 태그에서 지정한 파일을 현재 창이 아닌 다른 위치
+-->
+
+<!-- 
+	input type="text, hidden, password, checkbox, radio, file, submit, button, reset"만 쓴다
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form</title>
+</head>
+<body>
+	<h3>form</h3>
+	<hr/>
+	<!-- 
+		<select name=""> (name값으로 서버에 넘어간다 http://localhost:8080/WEB_EX01/03/login.do?user_div=300)
+			<option value="100">일반사용자</option>
+			<option value="200">관리자</option>
+			<option value="300">super관리자</option>
+		</select>
+		
+		selected: 셀렉트 박스에서 기본으로 선택되게 하는 것.(디폴트는 제일 위의 것이지만 다른 걸 기본 선택으로 바꿀 수 있다)
+		multiple: 다중선택 가능
+		optgroup: 셀렉트 박스의 그룹
+	-->
+	<form action="login.do" method="get">
+		<select name="user_div">
+			<optgroup label="JAVA">
+				<option value="100">JDBC</option>
+				<option value="200">OOP</option>
+			</optgroup>
+			
+			<optgroup label="JSP">
+				<option value="300">HTML</option>
+				<option value="400">CSS</option>
+			</optgroup>
+		</select>
+		<!-- rows:세로 줄 수
+			 cols:넓이-->
+		<br/>
+		<textarea name="txt_Contents" rows="10" cols="200"></textarea>
+		<input type="submit" value="전송" />
+	</form>
+</body>
+</html>

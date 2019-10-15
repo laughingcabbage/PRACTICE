@@ -1,0 +1,210 @@
+2019-07-22 09:43:49,312 DEBUG [main] code.CodeDao      ( CodeDao.java:69)     - 1.==========================
+2019-07-22 09:43:49,329 DEBUG [main] code.CodeDao      ( CodeDao.java:70)     - 1.query
+ SELECT b.code_id,                   
+        b.code_nm                    
+ FROM code_type A JOIN code B        
+ ON a.code_type_id = b.code_type_id  
+ WHERE b.code_type_id = ?            
+ AND b.use_yn =1                     
+ ORDER BY b.num                      
+
+2019-07-22 09:43:49,329 DEBUG [main] code.CodeDao      ( CodeDao.java:71)     - 1.==========================
+2019-07-22 09:43:49,406 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-22 09:43:49,621 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@57fa26b7
+2019-07-22 09:43:49,674 DEBUG [main] code.CodeDao      ( CodeDao.java:78)     - 2.==========================
+2019-07-22 09:43:49,674 DEBUG [main] code.CodeDao      ( CodeDao.java:79)     - 2.param=PAGE_SIZE
+2019-07-22 09:43:49,674 DEBUG [main] code.CodeDao      ( CodeDao.java:80)     - 2.==========================
+2019-07-22 09:43:49,704 DEBUG [main] code.CodeTest     (CodeTest.java:20)     - CodeVO [codeTypeId=null, codeId=5, codeNm=5, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-22 09:43:49,704 DEBUG [main] code.CodeTest     (CodeTest.java:20)     - CodeVO [codeTypeId=null, codeId=10, codeNm=10, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-22 09:43:49,704 DEBUG [main] code.CodeTest     (CodeTest.java:20)     - CodeVO [codeTypeId=null, codeId=50, codeNm=50, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-22 09:43:49,704 DEBUG [main] code.CodeTest     (CodeTest.java:20)     - CodeVO [codeTypeId=null, codeId=100, codeNm=100, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-22 09:43:49,705 DEBUG [main] code.CodeTest     (CodeTest.java:20)     - CodeVO [codeTypeId=null, codeId=200, codeNm=200, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-22 10:18:57,170 DEBUG [main] code.CodeDao      ( CodeDao.java:69)     - 1.==========================
+2019-07-22 10:18:57,171 DEBUG [main] code.CodeDao      ( CodeDao.java:70)     - 1.query
+ SELECT b.code_id,                   
+        b.code_nm                    
+ FROM code_type A JOIN code B        
+ ON a.code_type_id = b.code_type_id  
+ WHERE b.code_type_id = ?            
+ AND b.use_yn =1                     
+ ORDER BY b.num                      
+
+2019-07-22 10:18:57,172 DEBUG [main] code.CodeDao      ( CodeDao.java:71)     - 1.==========================
+2019-07-22 10:18:57,223 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-22 10:18:57,421 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@57fa26b7
+2019-07-22 10:18:57,473 DEBUG [main] code.CodeDao      ( CodeDao.java:78)     - 2.==========================
+2019-07-22 10:18:57,473 DEBUG [main] code.CodeDao      ( CodeDao.java:79)     - 2.param=PAGE_SIZE
+2019-07-22 10:18:57,473 DEBUG [main] code.CodeDao      ( CodeDao.java:80)     - 2.==========================
+2019-07-22 10:18:57,484 DEBUG [main] code.CodeTest     (CodeTest.java:23)     - CodeVO [codeTypeId=null, codeId=5, codeNm=5, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-22 10:18:57,484 DEBUG [main] code.CodeTest     (CodeTest.java:23)     - CodeVO [codeTypeId=null, codeId=10, codeNm=10, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-22 10:18:57,484 DEBUG [main] code.CodeTest     (CodeTest.java:23)     - CodeVO [codeTypeId=null, codeId=50, codeNm=50, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-22 10:18:57,485 DEBUG [main] code.CodeTest     (CodeTest.java:23)     - CodeVO [codeTypeId=null, codeId=100, codeNm=100, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-22 10:18:57,485 DEBUG [main] code.CodeTest     (CodeTest.java:23)     - CodeVO [codeTypeId=null, codeId=200, codeNm=200, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-22 10:18:57,485 DEBUG [main] cmn.StringUtil    (StringUtil.java:65)     - --------------------------------
+2019-07-22 10:18:57,485 DEBUG [main] cmn.StringUtil    (StringUtil.java:66)     - <select name='page_size' id=''><option value='5' >
+5</option>
+<option value='10' >
+10</option>
+<option value='50' >
+50</option>
+<option value='100' >
+100</option>
+<option value='200' >
+200</option>
+</select> 
+
+2019-07-22 10:18:57,485 DEBUG [main] cmn.StringUtil    (StringUtil.java:67)     - --------------------------------
+2019-07-22 10:19:53,746 DEBUG [main] code.CodeDao      ( CodeDao.java:69)     - 1.==========================
+2019-07-22 10:19:53,747 DEBUG [main] code.CodeDao      ( CodeDao.java:70)     - 1.query
+ SELECT b.code_id,                   
+        b.code_nm                    
+ FROM code_type A JOIN code B        
+ ON a.code_type_id = b.code_type_id  
+ WHERE b.code_type_id = ?            
+ AND b.use_yn =1                     
+ ORDER BY b.num                      
+
+2019-07-22 10:19:53,747 DEBUG [main] code.CodeDao      ( CodeDao.java:71)     - 1.==========================
+2019-07-22 10:19:53,801 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-22 10:19:54,005 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@57fa26b7
+2019-07-22 10:19:54,056 DEBUG [main] code.CodeDao      ( CodeDao.java:78)     - 2.==========================
+2019-07-22 10:19:54,057 DEBUG [main] code.CodeDao      ( CodeDao.java:79)     - 2.param=LVL
+2019-07-22 10:19:54,057 DEBUG [main] code.CodeDao      ( CodeDao.java:80)     - 2.==========================
+2019-07-22 10:19:54,067 DEBUG [main] code.CodeTest     (CodeTest.java:23)     - CodeVO [codeTypeId=null, codeId=1, codeNm=일반사용자, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-22 10:19:54,068 DEBUG [main] code.CodeTest     (CodeTest.java:23)     - CodeVO [codeTypeId=null, codeId=9, codeNm=관리자, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-22 10:19:54,068 DEBUG [main] cmn.StringUtil    (StringUtil.java:65)     - --------------------------------
+2019-07-22 10:19:54,068 DEBUG [main] cmn.StringUtil    (StringUtil.java:66)     - <select name='lvl' id=''><option value='1' selected='selected' >
+일반사용자</option>
+<option value='9' >
+관리자</option>
+</select> 
+
+2019-07-22 10:19:54,068 DEBUG [main] cmn.StringUtil    (StringUtil.java:67)     - --------------------------------
+2019-07-22 10:20:33,555 DEBUG [main] code.CodeDao      ( CodeDao.java:69)     - 1.==========================
+2019-07-22 10:20:33,556 DEBUG [main] code.CodeDao      ( CodeDao.java:70)     - 1.query
+ SELECT b.code_id,                   
+        b.code_nm                    
+ FROM code_type A JOIN code B        
+ ON a.code_type_id = b.code_type_id  
+ WHERE b.code_type_id = ?            
+ AND b.use_yn =1                     
+ ORDER BY b.num                      
+
+2019-07-22 10:20:33,557 DEBUG [main] code.CodeDao      ( CodeDao.java:71)     - 1.==========================
+2019-07-22 10:20:33,608 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-22 10:20:33,816 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@57fa26b7
+2019-07-22 10:20:33,867 DEBUG [main] code.CodeDao      ( CodeDao.java:78)     - 2.==========================
+2019-07-22 10:20:33,867 DEBUG [main] code.CodeDao      ( CodeDao.java:79)     - 2.param=LVL
+2019-07-22 10:20:33,867 DEBUG [main] code.CodeDao      ( CodeDao.java:80)     - 2.==========================
+2019-07-22 10:20:33,878 DEBUG [main] code.CodeTest     (CodeTest.java:23)     - CodeVO [codeTypeId=null, codeId=1, codeNm=일반사용자, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-22 10:20:33,879 DEBUG [main] code.CodeTest     (CodeTest.java:23)     - CodeVO [codeTypeId=null, codeId=9, codeNm=관리자, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-22 10:20:33,879 DEBUG [main] cmn.StringUtil    (StringUtil.java:65)     - --------------------------------
+2019-07-22 10:20:33,879 DEBUG [main] cmn.StringUtil    (StringUtil.java:66)     - <select name='lvl' id=''>
+<option value='1' selected='selected' >
+일반사용자</option>
+<option value='9' >
+관리자</option>
+</select> 
+
+2019-07-22 10:20:33,879 DEBUG [main] cmn.StringUtil    (StringUtil.java:67)     - --------------------------------
+2019-07-22 10:21:15,375 DEBUG [main] code.CodeDao      ( CodeDao.java:69)     - 1.==========================
+2019-07-22 10:21:15,377 DEBUG [main] code.CodeDao      ( CodeDao.java:70)     - 1.query
+ SELECT b.code_id,                   
+        b.code_nm                    
+ FROM code_type A JOIN code B        
+ ON a.code_type_id = b.code_type_id  
+ WHERE b.code_type_id = ?            
+ AND b.use_yn =1                     
+ ORDER BY b.num                      
+
+2019-07-22 10:21:15,377 DEBUG [main] code.CodeDao      ( CodeDao.java:71)     - 1.==========================
+2019-07-22 10:21:15,431 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-22 10:21:15,635 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@57fa26b7
+2019-07-22 10:21:15,693 DEBUG [main] code.CodeDao      ( CodeDao.java:78)     - 2.==========================
+2019-07-22 10:21:15,694 DEBUG [main] code.CodeDao      ( CodeDao.java:79)     - 2.param=LVL
+2019-07-22 10:21:15,694 DEBUG [main] code.CodeDao      ( CodeDao.java:80)     - 2.==========================
+2019-07-22 10:21:15,704 DEBUG [main] code.CodeTest     (CodeTest.java:23)     - CodeVO [codeTypeId=null, codeId=1, codeNm=일반사용자, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-22 10:21:15,705 DEBUG [main] code.CodeTest     (CodeTest.java:23)     - CodeVO [codeTypeId=null, codeId=9, codeNm=관리자, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-22 10:21:15,705 DEBUG [main] cmn.StringUtil    (StringUtil.java:65)     - --------------------------------
+2019-07-22 10:21:15,705 DEBUG [main] cmn.StringUtil    (StringUtil.java:66)     - <select name='lvl' id=''>
+<option value='1' selected='selected' >일반사용자</option>
+<option value='9' >관리자</option>
+</select> 
+
+2019-07-22 10:21:15,705 DEBUG [main] cmn.StringUtil    (StringUtil.java:67)     - --------------------------------
+2019-07-22 10:22:10,721 DEBUG [main] code.CodeDao      ( CodeDao.java:69)     - 1.==========================
+2019-07-22 10:22:10,723 DEBUG [main] code.CodeDao      ( CodeDao.java:70)     - 1.query
+ SELECT b.code_id,                   
+        b.code_nm                    
+ FROM code_type A JOIN code B        
+ ON a.code_type_id = b.code_type_id  
+ WHERE b.code_type_id = ?            
+ AND b.use_yn =1                     
+ ORDER BY b.num                      
+
+2019-07-22 10:22:10,723 DEBUG [main] code.CodeDao      ( CodeDao.java:71)     - 1.==========================
+2019-07-22 10:22:10,776 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-22 10:22:10,999 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@57fa26b7
+2019-07-22 10:22:11,051 DEBUG [main] code.CodeDao      ( CodeDao.java:78)     - 2.==========================
+2019-07-22 10:22:11,051 DEBUG [main] code.CodeDao      ( CodeDao.java:79)     - 2.param=LVL
+2019-07-22 10:22:11,051 DEBUG [main] code.CodeDao      ( CodeDao.java:80)     - 2.==========================
+2019-07-22 10:22:11,073 DEBUG [main] code.CodeTest     (CodeTest.java:23)     - CodeVO [codeTypeId=null, codeId=1, codeNm=일반사용자, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-22 10:22:11,073 DEBUG [main] code.CodeTest     (CodeTest.java:23)     - CodeVO [codeTypeId=null, codeId=9, codeNm=관리자, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-22 10:22:11,073 DEBUG [main] cmn.StringUtil    (StringUtil.java:65)     - --------------------------------
+2019-07-22 10:22:11,073 DEBUG [main] cmn.StringUtil    (StringUtil.java:66)     - <select name='lvl' id=''>
+	<option value='1' selected='selected' >일반사용자</option>
+	<option value='9' >관리자</option>
+</select> 
+
+2019-07-22 10:22:11,074 DEBUG [main] cmn.StringUtil    (StringUtil.java:67)     - --------------------------------
+2019-07-22 10:22:27,381 DEBUG [main] code.CodeDao      ( CodeDao.java:69)     - 1.==========================
+2019-07-22 10:22:27,382 DEBUG [main] code.CodeDao      ( CodeDao.java:70)     - 1.query
+ SELECT b.code_id,                   
+        b.code_nm                    
+ FROM code_type A JOIN code B        
+ ON a.code_type_id = b.code_type_id  
+ WHERE b.code_type_id = ?            
+ AND b.use_yn =1                     
+ ORDER BY b.num                      
+
+2019-07-22 10:22:27,382 DEBUG [main] code.CodeDao      ( CodeDao.java:71)     - 1.==========================
+2019-07-22 10:22:27,438 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-22 10:22:27,635 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@57fa26b7
+2019-07-22 10:22:27,687 DEBUG [main] code.CodeDao      ( CodeDao.java:78)     - 2.==========================
+2019-07-22 10:22:27,687 DEBUG [main] code.CodeDao      ( CodeDao.java:79)     - 2.param=LVL
+2019-07-22 10:22:27,688 DEBUG [main] code.CodeDao      ( CodeDao.java:80)     - 2.==========================
+2019-07-22 10:22:27,698 DEBUG [main] code.CodeTest     (CodeTest.java:23)     - CodeVO [codeTypeId=null, codeId=1, codeNm=일반사용자, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-22 10:22:27,699 DEBUG [main] code.CodeTest     (CodeTest.java:23)     - CodeVO [codeTypeId=null, codeId=9, codeNm=관리자, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-22 10:22:27,699 DEBUG [main] cmn.StringUtil    (StringUtil.java:65)     - --------------------------------
+2019-07-22 10:22:27,699 DEBUG [main] cmn.StringUtil    (StringUtil.java:66)     - 
+<select name='lvl' id=''>
+	<option value='1' selected='selected' >일반사용자</option>
+	<option value='9' >관리자</option>
+</select> 
+
+2019-07-22 10:22:27,699 DEBUG [main] cmn.StringUtil    (StringUtil.java:67)     - --------------------------------
+2019-07-22 10:22:40,770 DEBUG [main] code.CodeDao      ( CodeDao.java:69)     - 1.==========================
+2019-07-22 10:22:40,771 DEBUG [main] code.CodeDao      ( CodeDao.java:70)     - 1.query
+ SELECT b.code_id,                   
+        b.code_nm                    
+ FROM code_type A JOIN code B        
+ ON a.code_type_id = b.code_type_id  
+ WHERE b.code_type_id = ?            
+ AND b.use_yn =1                     
+ ORDER BY b.num                      
+
+2019-07-22 10:22:40,772 DEBUG [main] code.CodeDao      ( CodeDao.java:71)     - 1.==========================
+2019-07-22 10:22:40,825 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-07-22 10:22:41,033 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@57fa26b7
+2019-07-22 10:22:41,083 DEBUG [main] code.CodeDao      ( CodeDao.java:78)     - 2.==========================
+2019-07-22 10:22:41,083 DEBUG [main] code.CodeDao      ( CodeDao.java:79)     - 2.param=LVL
+2019-07-22 10:22:41,083 DEBUG [main] code.CodeDao      ( CodeDao.java:80)     - 2.==========================
+2019-07-22 10:22:41,094 DEBUG [main] code.CodeTest     (CodeTest.java:23)     - CodeVO [codeTypeId=null, codeId=1, codeNm=일반사용자, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-22 10:22:41,094 DEBUG [main] code.CodeTest     (CodeTest.java:23)     - CodeVO [codeTypeId=null, codeId=9, codeNm=관리자, useYn=null, num=0, regId=null, regDt=null, modId=null, modDt=null]
+2019-07-22 10:22:41,095 DEBUG [main] cmn.StringUtil    (StringUtil.java:65)     - --------------------------------
+2019-07-22 10:22:41,095 DEBUG [main] cmn.StringUtil    (StringUtil.java:66)     - 
+<select name='lvl' id=''>
+	<option value='1' selected='selected' >일반사용자</option>
+	<option value='9' >관리자</option>
+</select>
+2019-07-22 10:22:41,095 DEBUG [main] cmn.StringUtil    (StringUtil.java:67)     - --------------------------------

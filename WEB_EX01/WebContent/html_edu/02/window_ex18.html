@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+	body{
+		width:5000px;
+		height:5000px;
+	}
+</style>
+<title>Insert title here</title>
+</head>
+<body>
+	<button onclick="javascript:funcScrollBy();">scrollBy</button>
+	<button onclick="javascript:funcScrollTo();">scrollTo</button>
+	<script>
+	
+		function funcScrollBy(){
+			//스크롤의 위치를 상대적으로 이동
+			window.scrollBy(0, 100);
+		}
+		
+		function funcScrollTo(){
+			//스크롤의 위치를 절대적으로 이동
+			window.scrollTo(0, 50);
+		}
+	</script>
+</body>
+</html>

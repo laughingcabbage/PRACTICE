@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+	th, tr, td{
+		border:solid black 1px;
+	}
+</style>
+<title>Insert title here</title>
+<script src="/WEB_EX01/js/jquery-1.12.4.js"></script>
+</head>
+<body>
+	<table id="records_table">
+		<thead>
+			<tr>
+				<th>순위</th>
+				<th>내용</th>
+				<th>UID</th>
+			</tr>
+		</thead>
+		<tbody>
+			
+		</tbody>
+	</table>
+	<script>
+		var respond = '[{"rank":1,"content":"hr_class","UID":5},{"rank":2,"content":"hr_jquery_class","UID":6}]';
+		
+		//json으로 만들기
+		//respond = JSON.parse(respond);
+		respond=$.parseJSON(respond);
+		console.log(respond);
+		
+		$(function(){
+			$.each(respond, function(i, item){
+				console.log(i+":"+item.rank);
+				var tr = $('<tr>').append(
+							$('<td>').text(item.rank),
+							$('<td>').text(item.content), 
+							$('<td>').text(item.UID)
+				).appendTo('#records_table>tbody');
+			})//--each
+		});//--$(function())
+	</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+	p{
+		margin:8px;
+		font-size: 16px;
+	}
+	
+	.selected{
+		background-color: yellow;
+		color: blue;
+	}
+</style>
+<title>Insert title here</title>
+<script src="/WEB_EX01/js/jquery-1.12.4.js"></script>
+</head>
+<body>
+	<div>
+		<button id="btn01">Add</button>
+		<button id="btn02">Remove</button>
+		<button id="btn03">Toggle</button>
+	</div>
+	<p>This is Class Test</p>
+	<script>
+		/*
+			addClass()   : class추가
+			hasClass()   : class가 있는지 여부(true or false)
+			removeClass(): class제거
+			toggleClass(): class가 없으면 추가, 있으면 제거
+		*/
+		
+		//버튼이 클릭되면 이 함수 실행
+		$("button").on("click", function(){
+			
+			//클릭된 element의 id값 가져오기 
+			var id = $(this).attr("id");
+			
+			if(id=="btn01"){
+				$("p").addClass("selected");
+			}else if(id=="btn02"){
+				$("p").removeClass();
+			}else if(id=="btn03"){
+				$("p").toggleClass("selected");
+			}
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script>
+		/*
+			eval(): 함수의 매개변수로 받은 문자열을 자바스크립트 코드로 만든다.
+		*/
+		
+		var evalStr = "1+2";
+		
+		//문자열이니까 그냥 1+2라고 나옴
+		console.log(evalStr);
+		
+		//eval을 쓰면 1+2가 코드가 되어 연산이 되고 3이 나옴
+		console.log(eval(evalStr));
+	
+		var evalStr01 = "var num1 = 1;";
+		evalStr01+="var num2 = 2;";
+		
+		eval(evalStr01);
+		console.log(num1+num2);
+	</script>
+</body>
+</html>

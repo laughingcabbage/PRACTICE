@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+	.outer{
+		background: green;
+		border: solid 1px;
+	}
+	
+	.container{
+		padding:5px;
+		margin:5px;
+		background: red;
+		border: solid 1px;
+	}
+	
+	.inner{
+		padding:5px;
+		margin:5px;
+		background: blue;
+		border: solid 1px;
+	}
+</style>
+<title>Insert title here</title>
+<script src="/WEB_EX01/js/jquery-1.12.4.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="inner">Hello</div>
+		<div class="inner">Good Morning</div>
+	</div>
+	<br/>
+	<input type="button" id="btn01" value="add" />
+	<script>
+		$("#btn01").on("click", function(){
+			$(".inner").wrap("<div class='outer'></div>");
+		});
+	</script>
+</body>
+</html>

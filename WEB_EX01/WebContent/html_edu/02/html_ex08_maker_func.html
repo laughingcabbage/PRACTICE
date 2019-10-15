@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script>
+		/*
+			parseInt()	 : 문자->int, 진법 변환도 가능
+						   ex) parseInt(10,16) -> 10을 16진수로
+			parseFloat() : 문자->float
+		*/
+		
+		var strNum01 = "12";
+		var strNum02 = "12.1";
+		var strNum03 = "12$"
+		
+		console.log("parseInt(strNum01)="+parseInt(strNum01));
+		console.log("parseInt(strNum01,8)="+parseInt(strNum01,8));
+		
+		//12.1이라 int 아닌데 그냥 12로 바꿔버림...
+		console.log("parseInt(strNum02)="+parseInt(strNum02));
+		
+		//12$인데 12로 바꿈
+		console.log("parseInt(strNum03)="+parseInt(strNum03));
+		
+		console.log("--------------------------------------");
+		
+		var strNum04 = "12";
+		var strNum05 = "12.1";
+		var strNum06 = "12$";
+		
+		console.log(parseFloat(strNum04));
+		console.log(parseFloat(strNum05));
+		console.log(parseFloat(strNum06));
+		
+	</script>
+</body>
+</html>

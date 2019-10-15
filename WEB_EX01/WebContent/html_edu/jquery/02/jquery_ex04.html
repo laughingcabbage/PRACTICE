@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+	p{
+		color:blue;
+		margin:8px;
+	}
+</style>
+<title>Insert title here</title>
+<script src="/WEB_EX01/js/jquery-1.12.4.js"></script>
+</head>
+<body>
+	<div>
+		<button>Feed</button>
+		<button>the</button>
+		<button>Input</button>	
+	</div>
+	<input type="text" value="some text"/>
+	<p></p>
+	<script>
+	/*
+		attribute제어
+			-attr(): 주어진 조건에 맞는 속성값을 가져온다. (속성값 설정: attr(속성, 값))
+					 $(element).attr("checked"): checked라는 String값이 나옴
+			-prop(): 주어진 조건에 맞는 프로퍼티값을 가져온다. 
+					 $(element).prop("checked"): 체크박스의 체크 상태를 알려 줌(true, false)
+			-val() : 주어진 조건에 맞는 element의 값을 가져온다.
+			-removeAttr(): 주어진 조건에 맞는 조건을 삭제한다.
+			-removeProp(): 주어진 조건에 맞는 프로퍼티를 삭제한다.	
+	*/
+	
+	//element에 값을 하나 넣어 주는 것... 이걸 하면 저 위의 <p></p>에 input의 value가 들어온다
+	$("p").text("Initial value:"+$("input").val());
+	
+	//button을 클릭하면 실행
+	$("button").on("click", function(){
+		//console.log("button");
+		console.log($(this).text()); //this의 값을 text로 가져온다
+		
+		var text = $(this).text();
+		
+		//input에 text라는 변수의 값을 넣는다
+		$("input").val(text);
+	});
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+	h3{
+		margin: 0;
+	}
+	div, span, p{
+		width : 80px;
+		height: 40px;
+		background-color: #eeeeee;
+		float 	: left;
+		padding : 10px;
+		margin   : 10px;
+	}
+	#test{
+		width: auto;
+		height: auto;
+		background-color: transparent;
+	}
+</style>
+<title>Insert title here</title>
+<script src="/WEB_EX01/js/jquery-1.12.4.js"></script>
+</head>
+<body>
+	<div id="test">
+		<div>DIV</div>
+		<span>SPAN</span>
+		<p><button>Button</button></p>
+	</div>
+	<script>
+		/*
+			SELECT 
+				-All select : $("*")								- 모든 element
+				-ID selector: $("#id")								- element의 id 
+				-Class selector: $(".class")						- element의 class
+				-Element selector: $("element")						- element tag선택
+				-Multiple selector: $("element, element, element")
+		*/
+		
+		//*하면 모든 element선택
+		//var element = $("*").css("border", "3px solid red");
+		
+		//"body"하면 body element선택
+		//prepend: 앞에다 덧붙이는 것
+		//$("body").prepend("<h3>h3 element</h3>");
+				
+		//id로 선택할 때는 #id	
+		//find는 children을 가져 옴
+		$("#test").find("*").css("border", "3px solid red");		
+		
+		$(document).ready(function(){
+			//alert('1');
+		});
+		
+	</script>
+</body>
+</html>

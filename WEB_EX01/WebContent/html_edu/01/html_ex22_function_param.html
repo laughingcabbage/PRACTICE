@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script>
+		//매개변수 리턴값 : 가변인자
+		function add(){
+			var length = arguments.length;
+			console.log("arguments.length="+arguments.length);
+			if(length<2){
+				return "2개 이상 인자를 입력하세요.";
+			}else{
+				var sum = 0;
+				for(var idx in arguments){
+					sum+=arguments[idx];
+					console.log(idx+":"+arguments[idx]);
+				}
+				return sum;
+			}
+		}
+		
+		console.log("add()="+add());
+		console.log("add(1)="+add(1));
+		console.log("add(1,2,3,4,5)="+add(1,2,3,4,5));
+		
+	</script>
+</body>
+</html>

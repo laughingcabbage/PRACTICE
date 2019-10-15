@@ -1,0 +1,411 @@
+2019-06-28 14:16:26,388 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-28 14:16:26,600 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-28 14:16:26,601 DEBUG [main] board.BoardDao    (BoardDao.java:110)     - 1.=============================
+2019-06-28 14:16:26,601 DEBUG [main] board.BoardDao    (BoardDao.java:111)     - query:
+ UPDATE board          
+ SET title = ?,        
+     contents = ?,     
+     reg_id = ?,       
+     reg_dt = sysdate  
+ WHERE seq = ?         
+
+2019-06-28 14:16:26,602 DEBUG [main] board.BoardDao    (BoardDao.java:112)     - 1.=============================
+2019-06-28 14:16:26,660 DEBUG [main] board.BoardDao    (BoardDao.java:121)     - 2.=============================
+2019-06-28 14:16:26,661 DEBUG [main] board.BoardDao    (BoardDao.java:122)     - param:BoardVO [seq=16, title=HR_U, readCnt=0, contents=HR_Contents_U, regId=admin_U, regDt=, toString()=DTO [total=0, num=0]]
+2019-06-28 14:16:26,661 DEBUG [main] board.BoardDao    (BoardDao.java:123)     - 2.=============================
+2019-06-28 14:52:01,483 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-28 14:52:01,692 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-28 14:52:01,752 DEBUG [main] board.BoardDao    (BoardDao.java:301)     - 1.==============================
+2019-06-28 14:52:01,752 DEBUG [main] board.BoardDao    (BoardDao.java:302)     - query:
+ MERGE INTO board ta                                                  
+ USING                                                                
+ (                                                                    
+     SELECT                                                           
+         ? 			AS seq,                                          
+         ?			AS title,                                        
+         ? 			AS contents,                                     
+         ? 			AS reg_id                                        
+     FROM dual                                                        
+ )tb                                                                  
+ ON(ta.seq = tb.seq)                                                  
+ WHEN MATCHED THEN                                                    
+ UPDATE                                                               
+ SET title    = tb.title,                                             
+     contents = tb.contents,                                          
+     reg_id   = tb.reg_id,                                            
+     reg_dt   = sysdate                                               
+ WHEN NOT MATCHED THEN                                                
+ INSERT (ta.seq, ta.title, ta.contents, ta.reg_id, ta.reg_dt)         
+ VALUES (seq_board.nextval, tb.title, tb.contents, tb.reg_id, sysdate)
+
+2019-06-28 14:52:01,754 DEBUG [main] board.BoardDao    (BoardDao.java:303)     - 1.==============================
+2019-06-28 14:52:01,754 DEBUG [main] board.BoardDao    (BoardDao.java:309)     - 2.==============================
+2019-06-28 14:52:01,754 DEBUG [main] board.BoardDao    (BoardDao.java:310)     - param:
+BoardVO [seq=999, title=aaaa, readCnt=0, contents=bbbbb, regId=ccccc, regDt=, toString()=DTO [total=0, num=0]]
+2019-06-28 14:52:01,754 DEBUG [main] board.BoardDao    (BoardDao.java:311)     - 2.==============================
+2019-06-28 14:52:36,108 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-28 14:52:36,312 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-28 14:52:36,369 DEBUG [main] board.BoardDao    (BoardDao.java:301)     - 1.==============================
+2019-06-28 14:52:36,369 DEBUG [main] board.BoardDao    (BoardDao.java:302)     - query:
+ MERGE INTO board ta                                                  
+ USING                                                                
+ (                                                                    
+     SELECT                                                           
+         ? 			AS seq,                                          
+         ?			AS title,                                        
+         ? 			AS contents,                                     
+         ? 			AS reg_id                                        
+     FROM dual                                                        
+ )tb                                                                  
+ ON(ta.seq = tb.seq)                                                  
+ WHEN MATCHED THEN                                                    
+ UPDATE                                                               
+ SET title    = tb.title,                                             
+     contents = tb.contents,                                          
+     reg_id   = tb.reg_id,                                            
+     reg_dt   = sysdate                                               
+ WHEN NOT MATCHED THEN                                                
+ INSERT (ta.seq, ta.title, ta.contents, ta.reg_id, ta.reg_dt)         
+ VALUES (seq_board.nextval, tb.title, tb.contents, tb.reg_id, sysdate)
+
+2019-06-28 14:52:36,371 DEBUG [main] board.BoardDao    (BoardDao.java:303)     - 1.==============================
+2019-06-28 14:52:36,371 DEBUG [main] board.BoardDao    (BoardDao.java:309)     - 2.==============================
+2019-06-28 14:52:36,371 DEBUG [main] board.BoardDao    (BoardDao.java:310)     - param:
+BoardVO [seq=10, title=aaaa, readCnt=0, contents=bbbbb, regId=ccccc, regDt=, toString()=DTO [total=0, num=0]]
+2019-06-28 14:52:36,371 DEBUG [main] board.BoardDao    (BoardDao.java:311)     - 2.==============================
+2019-06-28 14:54:57,975 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-28 14:54:58,182 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-28 14:54:58,237 DEBUG [main] board.BoardDao    (BoardDao.java:301)     - 1.==============================
+2019-06-28 14:54:58,237 DEBUG [main] board.BoardDao    (BoardDao.java:302)     - query:
+ MERGE INTO board ta                                                  
+ USING                                                                
+ (                                                                    
+     SELECT                                                           
+         ? 			AS seq,                                          
+         ?			AS title,                                        
+         ? 			AS contents,                                     
+         ? 			AS reg_id                                        
+     FROM dual                                                        
+ )tb                                                                  
+ ON(ta.seq = tb.seq)                                                  
+ WHEN MATCHED THEN                                                    
+ UPDATE                                                               
+ SET title    = tb.title,                                             
+     contents = tb.contents,                                          
+     reg_id   = tb.reg_id,                                            
+     reg_dt   = sysdate                                               
+ WHEN NOT MATCHED THEN                                                
+ INSERT (ta.seq, ta.title, ta.contents, ta.reg_id, ta.reg_dt)         
+ VALUES (seq_board.nextval, tb.title, tb.contents, tb.reg_id, sysdate)
+
+2019-06-28 14:54:58,239 DEBUG [main] board.BoardDao    (BoardDao.java:303)     - 1.==============================
+2019-06-28 14:54:58,239 DEBUG [main] board.BoardDao    (BoardDao.java:310)     - 2.==============================
+2019-06-28 14:54:58,239 DEBUG [main] board.BoardDao    (BoardDao.java:311)     - param:
+BoardVO [seq=10, title=aaaa, readCnt=0, contents=bbbbb, regId=ccccc, regDt=, toString()=DTO [total=0, num=0]]
+2019-06-28 14:54:58,239 DEBUG [main] board.BoardDao    (BoardDao.java:312)     - 2.==============================
+2019-06-28 14:57:52,933 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-28 14:57:53,135 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-28 14:57:53,192 DEBUG [main] board.BoardDao    (BoardDao.java:302)     - 1.==============================
+2019-06-28 14:57:53,192 DEBUG [main] board.BoardDao    (BoardDao.java:303)     - query:
+ MERGE INTO board ta                                                  
+ USING                                                                
+ (                                                                    
+     SELECT                                                           
+         ? 			AS seq,                                          
+         ?			AS title,                                        
+         ? 			AS contents,                                     
+         ? 			AS reg_id                                        
+     FROM dual                                                        
+ )tb                                                                  
+ ON(ta.seq = tb.seq)                                                  
+ WHEN MATCHED THEN                                                    
+ UPDATE                                                               
+ SET title    = tb.title,                                             
+     contents = tb.contents,                                          
+     reg_id   = tb.reg_id,                                            
+     reg_dt   = sysdate                                               
+ WHEN NOT MATCHED THEN                                                
+ INSERT (ta.seq, ta.title, ta.contents, ta.reg_id, ta.reg_dt)         
+ VALUES (seq_board.nextval, tb.title, tb.contents, tb.reg_id, sysdate)
+
+2019-06-28 14:57:53,194 DEBUG [main] board.BoardDao    (BoardDao.java:304)     - 1.==============================
+2019-06-28 14:57:53,194 DEBUG [main] board.BoardDao    (BoardDao.java:311)     - 2.==============================
+2019-06-28 14:57:53,194 DEBUG [main] board.BoardDao    (BoardDao.java:312)     - param:
+BoardVO [seq=10, title=aaaa, readCnt=0, contents=bbbbb, regId=ccccc, regDt=, toString()=DTO [total=0, num=0]]
+2019-06-28 14:57:53,194 DEBUG [main] board.BoardDao    (BoardDao.java:313)     - 2.==============================
+2019-06-28 14:58:03,107 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-28 14:58:03,312 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-28 14:58:03,371 DEBUG [main] board.BoardDao    (BoardDao.java:302)     - 1.==============================
+2019-06-28 14:58:03,372 DEBUG [main] board.BoardDao    (BoardDao.java:303)     - query:
+ MERGE INTO board ta                                                  
+ USING                                                                
+ (                                                                    
+     SELECT                                                           
+         ? 			AS seq,                                          
+         ?			AS title,                                        
+         ? 			AS contents,                                     
+         ? 			AS reg_id                                        
+     FROM dual                                                        
+ )tb                                                                  
+ ON(ta.seq = tb.seq)                                                  
+ WHEN MATCHED THEN                                                    
+ UPDATE                                                               
+ SET title    = tb.title,                                             
+     contents = tb.contents,                                          
+     reg_id   = tb.reg_id,                                            
+     reg_dt   = sysdate                                               
+ WHEN NOT MATCHED THEN                                                
+ INSERT (ta.seq, ta.title, ta.contents, ta.reg_id, ta.reg_dt)         
+ VALUES (seq_board.nextval, tb.title, tb.contents, tb.reg_id, sysdate)
+
+2019-06-28 14:58:03,373 DEBUG [main] board.BoardDao    (BoardDao.java:304)     - 1.==============================
+2019-06-28 14:58:03,373 DEBUG [main] board.BoardDao    (BoardDao.java:311)     - 2.==============================
+2019-06-28 14:58:03,373 DEBUG [main] board.BoardDao    (BoardDao.java:312)     - param:
+BoardVO [seq=10, title=aaaa, readCnt=0, contents=bbbbb, regId=ccccc, regDt=, toString()=DTO [total=0, num=0]]
+2019-06-28 14:58:03,374 DEBUG [main] board.BoardDao    (BoardDao.java:313)     - 2.==============================
+2019-06-28 14:58:48,482 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-28 14:58:48,695 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-28 14:58:48,750 DEBUG [main] board.BoardDao    (BoardDao.java:302)     - 1.==============================
+2019-06-28 14:58:48,750 DEBUG [main] board.BoardDao    (BoardDao.java:303)     - query:
+ MERGE INTO board ta                                                  
+ USING                                                                
+ (                                                                    
+     SELECT                                                           
+         ? 			AS seq,                                          
+         ?			AS title,                                        
+         ? 			AS contents,                                     
+         ? 			AS reg_id                                        
+     FROM dual                                                        
+ )tb                                                                  
+ ON(ta.seq = tb.seq)                                                  
+ WHEN MATCHED THEN                                                    
+ UPDATE                                                               
+ SET title    = tb.title,                                             
+     contents = tb.contents,                                          
+     reg_id   = tb.reg_id,                                            
+     reg_dt   = sysdate                                               
+ WHEN NOT MATCHED THEN                                                
+ INSERT (ta.seq, ta.title, ta.contents, ta.reg_id, ta.reg_dt)         
+ VALUES (seq_board.nextval, tb.title, tb.contents, tb.reg_id, sysdate)
+
+2019-06-28 14:58:48,751 DEBUG [main] board.BoardDao    (BoardDao.java:304)     - 1.==============================
+2019-06-28 14:58:48,752 DEBUG [main] board.BoardDao    (BoardDao.java:311)     - 2.==============================
+2019-06-28 14:58:48,752 DEBUG [main] board.BoardDao    (BoardDao.java:312)     - param:
+BoardVO [seq=10, title=aaaa, readCnt=0, contents=bbbbb, regId=ccccc, regDt=, toString()=DTO [total=0, num=0]]
+2019-06-28 14:58:48,752 DEBUG [main] board.BoardDao    (BoardDao.java:313)     - 2.==============================
+2019-06-28 15:00:30,144 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-28 15:00:30,350 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-28 15:00:30,404 DEBUG [main] board.BoardDao    (BoardDao.java:302)     - 1.==============================
+2019-06-28 15:00:30,405 DEBUG [main] board.BoardDao    (BoardDao.java:303)     - query:
+ MERGE INTO board ta                                                  
+ USING                                                                
+ (                                                                    
+     SELECT                                                           
+         ? 			AS seq,                                          
+         ?			AS title,                                        
+         ? 			AS contents,                                     
+         ? 			AS reg_id                                        
+     FROM dual                                                        
+ )tb                                                                  
+ ON(ta.seq = tb.seq)                                                  
+ WHEN MATCHED THEN                                                    
+ UPDATE                                                               
+ SET title    = tb.title,                                             
+     contents = tb.contents,                                          
+     reg_id   = tb.reg_id,                                            
+     reg_dt   = sysdate                                               
+ WHEN NOT MATCHED THEN                                                
+ INSERT (ta.seq, ta.title, ta.contents, ta.reg_id, ta.reg_dt)         
+ VALUES (seq_board.nextval, tb.title, tb.contents, tb.reg_id, sysdate)
+
+2019-06-28 15:00:30,406 DEBUG [main] board.BoardDao    (BoardDao.java:304)     - 1.==============================
+2019-06-28 15:00:30,406 DEBUG [main] board.BoardDao    (BoardDao.java:311)     - 2.==============================
+2019-06-28 15:00:30,406 DEBUG [main] board.BoardDao    (BoardDao.java:312)     - param:
+BoardVO [seq=22, title=aaaa, readCnt=0, contents=bbbbb, regId=ccccc, regDt=, toString()=DTO [total=0, num=0]]
+2019-06-28 15:00:30,406 DEBUG [main] board.BoardDao    (BoardDao.java:313)     - 2.==============================
+2019-06-28 15:05:24,933 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-28 15:05:25,139 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-28 15:05:25,196 DEBUG [main] board.BoardDao    (BoardDao.java:301)     - 1.==============================
+2019-06-28 15:05:25,196 DEBUG [main] board.BoardDao    (BoardDao.java:302)     - query:
+ MERGE INTO board ta                                                  
+ USING                                                                
+ (                                                                    
+     SELECT                                                           
+         ? 			AS seq,                                          
+         ?			AS title,                                        
+         ? 			AS contents,                                     
+         ? 			AS reg_id                                        
+     FROM dual                                                        
+ )tb                                                                  
+ ON(ta.seq = tb.seq)                                                  
+ WHEN MATCHED THEN                                                    
+ UPDATE                                                               
+ SET title    = tb.title,                                             
+     contents = tb.contents,                                          
+     reg_id   = tb.reg_id,                                            
+     reg_dt   = sysdate                                               
+ WHEN NOT MATCHED THEN                                                
+ INSERT (ta.seq, ta.title, ta.contents, ta.reg_id, ta.reg_dt)         
+ VALUES (seq_board.nextval, tb.title, tb.contents, tb.reg_id, sysdate)
+
+2019-06-28 15:05:25,198 DEBUG [main] board.BoardDao    (BoardDao.java:303)     - 1.==============================
+2019-06-28 15:05:25,198 DEBUG [main] board.BoardDao    (BoardDao.java:310)     - 2.==============================
+2019-06-28 15:05:25,198 DEBUG [main] board.BoardDao    (BoardDao.java:311)     - param:
+BoardVO [seq=22, title=aaaa, readCnt=0, contents=bbbbb, regId=ccccc, regDt=, toString()=DTO [total=0, num=0]]
+2019-06-28 15:05:25,198 DEBUG [main] board.BoardDao    (BoardDao.java:312)     - 2.==============================
+2019-06-28 15:05:48,840 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-28 15:05:49,054 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-28 15:05:49,112 DEBUG [main] board.BoardDao    (BoardDao.java:301)     - 1.==============================
+2019-06-28 15:05:49,112 DEBUG [main] board.BoardDao    (BoardDao.java:302)     - query:
+ MERGE INTO board ta                                                  
+ USING                                                                
+ (                                                                    
+     SELECT                                                           
+         ? 			AS seq,                                          
+         ?			AS title,                                        
+         ? 			AS contents,                                     
+         ? 			AS reg_id                                        
+     FROM dual                                                        
+ )tb                                                                  
+ ON(ta.seq = tb.seq)                                                  
+ WHEN MATCHED THEN                                                    
+ UPDATE                                                               
+ SET title    = tb.title,                                             
+     contents = tb.contents,                                          
+     reg_id   = tb.reg_id,                                            
+     reg_dt   = sysdate                                               
+ WHEN NOT MATCHED THEN                                                
+ INSERT (ta.seq, ta.title, ta.contents, ta.reg_id, ta.reg_dt)         
+ VALUES (seq_board.nextval, tb.title, tb.contents, tb.reg_id, sysdate)
+
+2019-06-28 15:05:49,113 DEBUG [main] board.BoardDao    (BoardDao.java:303)     - 1.==============================
+2019-06-28 15:05:49,114 DEBUG [main] board.BoardDao    (BoardDao.java:310)     - 2.==============================
+2019-06-28 15:05:49,114 DEBUG [main] board.BoardDao    (BoardDao.java:311)     - param:
+BoardVO [seq=13, title=aaaa, readCnt=0, contents=bbbbb, regId=ccccc, regDt=, toString()=DTO [total=0, num=0]]
+2019-06-28 15:05:49,114 DEBUG [main] board.BoardDao    (BoardDao.java:312)     - 2.==============================
+2019-06-28 15:07:37,772 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-28 15:07:37,976 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-28 15:07:38,033 DEBUG [main] board.BoardDao    (BoardDao.java:301)     - 1.==============================
+2019-06-28 15:07:38,034 DEBUG [main] board.BoardDao    (BoardDao.java:302)     - query:
+ MERGE INTO board ta                                                  
+ USING                                                                
+ (                                                                    
+     SELECT                                                           
+         ? 			AS seq,                                          
+         ?			AS title,                                        
+         ? 			AS contents,                                     
+         ? 			AS reg_id                                        
+     FROM dual                                                        
+ )tb                                                                  
+ ON(ta.seq = tb.seq)                                                  
+ WHEN MATCHED THEN                                                    
+ UPDATE                                                               
+ SET title    = tb.title,                                             
+     contents = tb.contents,                                          
+     reg_id   = tb.reg_id,                                            
+     reg_dt   = sysdate                                               
+ WHEN NOT MATCHED THEN                                                
+ INSERT (ta.seq, ta.title, ta.contents, ta.reg_id, ta.reg_dt)         
+ VALUES (seq_board.nextval, tb.title, tb.contents, tb.reg_id, sysdate)
+
+2019-06-28 15:07:38,035 DEBUG [main] board.BoardDao    (BoardDao.java:303)     - 1.==============================
+2019-06-28 15:07:38,035 DEBUG [main] board.BoardDao    (BoardDao.java:310)     - 2.==============================
+2019-06-28 15:07:38,035 DEBUG [main] board.BoardDao    (BoardDao.java:311)     - param:
+BoardVO [seq=13, title=13, readCnt=0, contents=13, regId=13, regDt=, toString()=DTO [total=0, num=0]]
+2019-06-28 15:07:38,036 DEBUG [main] board.BoardDao    (BoardDao.java:312)     - 2.==============================
+2019-06-28 15:07:52,318 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-28 15:07:52,528 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-28 15:07:52,583 DEBUG [main] board.BoardDao    (BoardDao.java:301)     - 1.==============================
+2019-06-28 15:07:52,583 DEBUG [main] board.BoardDao    (BoardDao.java:302)     - query:
+ MERGE INTO board ta                                                  
+ USING                                                                
+ (                                                                    
+     SELECT                                                           
+         ? 			AS seq,                                          
+         ?			AS title,                                        
+         ? 			AS contents,                                     
+         ? 			AS reg_id                                        
+     FROM dual                                                        
+ )tb                                                                  
+ ON(ta.seq = tb.seq)                                                  
+ WHEN MATCHED THEN                                                    
+ UPDATE                                                               
+ SET title    = tb.title,                                             
+     contents = tb.contents,                                          
+     reg_id   = tb.reg_id,                                            
+     reg_dt   = sysdate                                               
+ WHEN NOT MATCHED THEN                                                
+ INSERT (ta.seq, ta.title, ta.contents, ta.reg_id, ta.reg_dt)         
+ VALUES (seq_board.nextval, tb.title, tb.contents, tb.reg_id, sysdate)
+
+2019-06-28 15:07:52,584 DEBUG [main] board.BoardDao    (BoardDao.java:303)     - 1.==============================
+2019-06-28 15:07:52,584 DEBUG [main] board.BoardDao    (BoardDao.java:310)     - 2.==============================
+2019-06-28 15:07:52,585 DEBUG [main] board.BoardDao    (BoardDao.java:311)     - param:
+BoardVO [seq=999, title=13, readCnt=0, contents=13, regId=13, regDt=, toString()=DTO [total=0, num=0]]
+2019-06-28 15:07:52,585 DEBUG [main] board.BoardDao    (BoardDao.java:312)     - 2.==============================
+2019-06-28 15:09:38,232 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-28 15:09:38,437 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-28 15:09:38,493 DEBUG [main] board.BoardDao    (BoardDao.java:301)     - 1.==============================
+2019-06-28 15:09:38,493 DEBUG [main] board.BoardDao    (BoardDao.java:302)     - query:
+ MERGE INTO board ta                                                  
+ USING                                                                
+ (                                                                    
+     SELECT                                                           
+         ? 			AS seq,                                          
+         ?			AS title,                                        
+         ? 			AS contents,                                     
+         ? 			AS reg_id                                        
+     FROM dual                                                        
+ )tb                                                                  
+ ON(ta.seq = tb.seq)                                                  
+ WHEN MATCHED THEN                                                    
+ UPDATE                                                               
+ SET title    = tb.title,                                             
+     contents = tb.contents,                                          
+     reg_id   = tb.reg_id,                                            
+     reg_dt   = sysdate                                               
+ WHEN NOT MATCHED THEN                                                
+ INSERT (ta.seq, ta.title, ta.contents, ta.reg_id, ta.reg_dt)         
+ VALUES (seq_board.nextval, tb.title, tb.contents, tb.reg_id, sysdate)
+
+2019-06-28 15:09:38,495 DEBUG [main] board.BoardDao    (BoardDao.java:303)     - 1.==============================
+2019-06-28 15:09:38,495 DEBUG [main] board.BoardDao    (BoardDao.java:310)     - 2.==============================
+2019-06-28 15:09:38,495 DEBUG [main] board.BoardDao    (BoardDao.java:311)     - param:
+BoardVO [seq=11, title=13, readCnt=0, contents=13, regId=13, regDt=, toString()=DTO [total=0, num=0]]
+2019-06-28 15:09:38,495 DEBUG [main] board.BoardDao    (BoardDao.java:312)     - 2.==============================
+2019-06-28 15:09:38,499 DEBUG [main] board.BoardDao    (BoardDao.java:316)     - 3.==============================
+2019-06-28 15:09:38,500 DEBUG [main] board.BoardDao    (BoardDao.java:317)     - flag:1
+2019-06-28 15:09:38,500 DEBUG [main] board.BoardDao    (BoardDao.java:318)     - 3.==============================
+2019-06-28 15:10:18,413 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:27)     - 1.jdbc 드라이버 로딩
+2019-06-28 15:10:18,628 DEBUG [main] cmn.ConnectionMaker (ConnectionMaker.java:37)     - 2.데이터베이스 커넥션 생성:oracle.jdbc.driver.T4CConnection@545997b1
+2019-06-28 15:10:18,683 DEBUG [main] board.BoardDao    (BoardDao.java:301)     - 1.==============================
+2019-06-28 15:10:18,683 DEBUG [main] board.BoardDao    (BoardDao.java:302)     - query:
+ MERGE INTO board ta                                                  
+ USING                                                                
+ (                                                                    
+     SELECT                                                           
+         ? 			AS seq,                                          
+         ?			AS title,                                        
+         ? 			AS contents,                                     
+         ? 			AS reg_id                                        
+     FROM dual                                                        
+ )tb                                                                  
+ ON(ta.seq = tb.seq)                                                  
+ WHEN MATCHED THEN                                                    
+ UPDATE                                                               
+ SET title    = tb.title,                                             
+     contents = tb.contents,                                          
+     reg_id   = tb.reg_id,                                            
+     reg_dt   = sysdate                                               
+ WHEN NOT MATCHED THEN                                                
+ INSERT (ta.seq, ta.title, ta.contents, ta.reg_id, ta.reg_dt)         
+ VALUES (seq_board.nextval, tb.title, tb.contents, tb.reg_id, sysdate)
+
+2019-06-28 15:10:18,685 DEBUG [main] board.BoardDao    (BoardDao.java:303)     - 1.==============================
+2019-06-28 15:10:18,685 DEBUG [main] board.BoardDao    (BoardDao.java:310)     - 2.==============================
+2019-06-28 15:10:18,685 DEBUG [main] board.BoardDao    (BoardDao.java:311)     - param:
+BoardVO [seq=13, title=아, readCnt=0, contents=아아, regId=아아아, regDt=, toString()=DTO [total=0, num=0]]
+2019-06-28 15:10:18,685 DEBUG [main] board.BoardDao    (BoardDao.java:312)     - 2.==============================
+2019-06-28 15:10:18,690 DEBUG [main] board.BoardDao    (BoardDao.java:316)     - 3.==============================
+2019-06-28 15:10:18,690 DEBUG [main] board.BoardDao    (BoardDao.java:317)     - flag:1
+2019-06-28 15:10:18,690 DEBUG [main] board.BoardDao    (BoardDao.java:318)     - 3.==============================
