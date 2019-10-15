@@ -26,8 +26,8 @@ public class MailService {
 		
 		//1. 발신자의 메일 계정과 비번	
 		String host = "smtp.naver.com"; 		//naver smtp서버명
-		String user = "udding14@naver.com";	 	//발신자 메일 계정 주소
-		String password = "108203jin1."; 		//발신자 메일 계정 비밀번호
+		String user = "";	 	//발신자 메일 계정 주소
+		String password = ""; 		//발신자 메일 계정 비밀번호
 			
 		//2. Property에 smtp서버정보 설정
 		Properties props = new Properties();
